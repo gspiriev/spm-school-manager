@@ -7,9 +7,9 @@
     <packaging>pom</packaging>
     <name>School Plan Manager</name>
     <scm>
-        <connection>scm:git:file://home/root_spiriev/NetBeansProjects/SchoolScheduleRepoClone</connection>
-        <developerConnection>scm:git:file://home/root_spiriev/NetBeansProjects/SchoolScheduleRepoClone</developerConnection>
-        <url>file://home/root_spiriev/NetBeansProjects/SchoolScheduleRepoClone</url>
+        <connection>scm:git:file://home/root_spiriev/NetBeansProjects/spm-school-plan-manager/.git/refs/heads</connection>
+        <developerConnection>scm:git:file://home/root_spiriev/NetBeansProjects/spm-school-plan-manager/.git/refs/heads</developerConnection>
+        <url>file://home/root_spiriev/NetBeansProjects/spm-school-plan-manager</url>
     </scm>
     
     <properties>
