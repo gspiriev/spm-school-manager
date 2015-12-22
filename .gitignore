@@ -1,5 +1,6 @@
-/spm-dao-api/target/
-/spm-domain-model/target/
-/spm-dao-file/target/
-/spm-business-logic/target/
-/spm-application-file/target/
+/spm-dao-api/target/**
+/spm-domain-model/target/**
+/spm-dao-file/target/**
+/spm-business-logic/target/**
+/spm-application-file/target/**
+nbactions.xml
