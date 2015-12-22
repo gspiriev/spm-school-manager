@@ -4,3 +4,4 @@
 /spm-business-logic/target/**
 /spm-application-file/target/**
 nbactions.xml
+*.~
