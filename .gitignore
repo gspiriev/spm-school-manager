@@ -3,5 +3,9 @@
 /spm-dao-file/target/**
 /spm-business-logic/target/**
 /spm-application-file/target/**
-nbactions.xml
+/spm-dao-api/nbactions.xml
+/spm-domain-model/nbactions.xml
+/spm-dao-file/nbactions.xml
+/spm-business-logic/nbactions.xml
+/spm-application-file/nbactions.xml
 *~
