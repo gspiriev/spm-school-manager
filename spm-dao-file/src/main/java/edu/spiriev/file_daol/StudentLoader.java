@@ -14,12 +14,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import edu.spiriev.domain_model.*;
 import edu.spiriev.file_daol.*;
+import edu.spiriev.file_manipulation.*;
 
 /**
  * Loads a list a students from a resource file
  * @author root_spiriev
  */
-public class StudentLoader {
+public class StudentLoader implements StudentIO {
     
     private final InputStream studentsFile;
     
@@ -29,7 +30,8 @@ public class StudentLoader {
         this.studentsFile = cl.getResourceAsStream("Students");
     }
     
-    public ArrayList<Student> loadStudentsFromFile() {
+    @Override
+    public ArrayList<Student> readAndCreateStudentsList() {
         
         ArrayList<Student> studentList = new ArrayList<>();
         try(BufferedReader br = new BufferedReader(new InputStreamReader(this.studentsFile))) {
@@ -47,5 +49,4 @@ public class StudentLoader {
         
         return studentList;
     }
-    
 }

@@ -14,6 +14,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import edu.spiriev.domain_model.*;
 import edu.spiriev.file_daol.*;
+import edu.spiriev.file_manipulation.*;
 
 
 
@@ -21,7 +22,7 @@ import edu.spiriev.file_daol.*;
  * Loads and creates a musical piece list from a file with musical pieces
  * @author root_spiriev
  */
-public class MusicalPieceLoader {
+public class MusicalPieceLoader implements MusicalPieceIO{
     
     private final InputStream musicalPiecesFile;
 
@@ -30,6 +31,7 @@ public class MusicalPieceLoader {
         this.musicalPiecesFile = cl.getResourceAsStream("Graded_Pieces_All_CSV.csv");
     }
     
+    @Override
     public ArrayList<MusicalPiece> readAndCreateGradedMusicalPieceList(Grade g){
         
        ArrayList<MusicalPiece> musicalPieceList = new ArrayList<>();
@@ -37,8 +39,7 @@ public class MusicalPieceLoader {
         try(
         BufferedReader reader = new BufferedReader(new InputStreamReader(this.musicalPiecesFile)))
         {
-            //skip the first line.
-            reader.readLine();
+            
             while(reader.ready()) {
                 
                 MusicalPiece piece = parse(reader.readLine());
@@ -66,5 +67,5 @@ public class MusicalPieceLoader {
         
         return piece;
     }
-    
+
 }

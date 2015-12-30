@@ -55,7 +55,7 @@ public class AnnualLessonDisposition {
     private void run() throws UnsupportedEncodingException{
         
         LinkedHashMap<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
-        ArrayList<Student> studentList = new StudentLoader().loadStudentsFromFile();
+        ArrayList<Student> studentList = new StudentLoader().readAndCreateStudentsList();
         for (Student st: studentList) {
             
            lessonDisposition.put(st, createSpecificSchedule(st));

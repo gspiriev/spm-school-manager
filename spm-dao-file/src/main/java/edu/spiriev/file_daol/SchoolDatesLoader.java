@@ -17,12 +17,13 @@ import java.util.Calendar;
 import java.util.Date;
 import edu.spiriev.domain_model.*;
 import edu.spiriev.file_daol.*;
+import edu.spiriev.file_manipulation.*;
 
 /**
  * Loads school dates from the school dates resource file.
  * @author root_spiriev
  */
-public class SchoolDatesLoader {
+public class SchoolDatesLoader implements DatesIO{
 
     private final InputStream deprecatedDatesFile;
 
@@ -34,7 +35,7 @@ public class SchoolDatesLoader {
     private ArrayList<Date> createDatesList(int startYear, Date endDate){
 
         ArrayList<Date> datesInAWeek = new ArrayList<>();
-        ArrayList<Date> noSchoolDatesList = noSchoolDates();
+        ArrayList<Date> noSchoolDatesList = createNoSchoolDatesList();
         Calendar c = Calendar.getInstance();
         c.set(startYear, 8, 15, 00, 00, 00);
         c.set(Calendar.MILLISECOND, 0);
@@ -82,8 +83,9 @@ public class SchoolDatesLoader {
 
         return datesInAWeek;
     }
-
-    private ArrayList<Date> noSchoolDates(){
+    
+    @Override
+    public ArrayList<Date> createNoSchoolDatesList(){
 
         ArrayList<Date> noSchoolDateList = new ArrayList<>();
         DateFormat f = new SimpleDateFormat("dd/MM/yyyy");
