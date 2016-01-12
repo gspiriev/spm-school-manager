@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.spiriev.spm.dao.api;
+package edu.spiriev.spm.application.file;
 
-import java.util.ArrayList;
-import java.util.Date;
+import org.junit.Test;
 
 /**
  *
  * @author root_spiriev
  */
-public interface DatesIO {
-    
-    ArrayList<Date> createNoSchoolDatesList();
-    
+public class AnnualLessonDispositionAppTest {
+    @Test
+    public void test1() {
+        
+    }
 }

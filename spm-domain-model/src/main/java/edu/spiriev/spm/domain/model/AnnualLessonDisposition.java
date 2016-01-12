@@ -3,23 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.spiriev.file_application;
+package edu.spiriev.spm.domain.model;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.net.URLDecoder;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.Scanner;
-import edu.spiriev.domain_model.*;
-import edu.spiriev.file_daol.*;
+
 
 
 
@@ -45,54 +35,18 @@ public class AnnualLessonDisposition {
         endYear = Integer.parseInt(scan.nextLine());
         
     }
-    
-    public static void main(String[] args) throws Exception {
-        AnnualLessonDisposition annualDisposition = new AnnualLessonDisposition();
+  
+    /**
+     * This method creates a specific to a certain student schedule according to
+     * dates and musical pieces.
+     * @param st - a student object
+     * @param studyDatesList - a list of study dates for the specific student's grade
+     * @param mpList - a list of musical pieces with appropriate grade, shuffled
+     * @return 
+     */
+    public WeeklySchedule createSpecificSchedule(Student st, ArrayList<StudyDate> studyDatesList, 
+                                                    ArrayList<MusicalPiece> mpList) {
         
-        annualDisposition.run();
-    }
-    
-    private void run() throws UnsupportedEncodingException{
-        
-        LinkedHashMap<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
-        ArrayList<Student> studentList = new StudentLoader().readAndCreateStudentsList();
-        for (Student st: studentList) {
-            
-           lessonDisposition.put(st, createSpecificSchedule(st));
-        }
-        
-        ClassLoader cl = getClass().getClassLoader();
-        
-        File outFile = new File(this.getProgramPath(), "AnnualLessonDisposition.txt");
-        
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter(outFile))) {
-            
-            while(lessonDisposition.size() > 0) {
-                
-                Map.Entry<Student, WeeklySchedule> dispositionSet =
-                        lessonDisposition.entrySet().iterator().next();
-                
-                lessonDisposition.remove(dispositionSet.getKey());
-                String keySt = dispositionSet.getKey().toString() + "\n" + "\n";
-                String vaSt = dispositionSet.getValue().toString();
-                writer.write(keySt);
-                writer.write(vaSt);
-                writer.flush();
-            }
-           
-        } catch (Exception e) {
-            
-            System.out.println("No output file or path found");
-        }
-        
-        System.out.println("Disposition file created in " + this.getProgramPath());
-        //createSpecificSchedule(studentList.get(0));
-        
-    }
-    
-    public WeeklySchedule createSpecificSchedule(Student st) {
-        
-        Calendar endDate = Calendar.getInstance();
         int index1 = 0; 
         int index2 = 1;
         int index3 = 2;
@@ -106,28 +60,7 @@ public class AnnualLessonDisposition {
         int indexCounter3 = 0;
         
         //study date bounds for the different grades
-        switch(st.getGrade()) {
-            
-            case FIRST:
-            case SECOND:
-            case THIRD: 
-            case FOURTH:
-                endDate.set(endYear, 5, 15);
-                break;
-            case TWELVETH:
-                endDate.set(endYear, 4, 24);
-                break;
-            default:
-                endDate.set(endYear, 5, 30);
-                break;
-        }
-        //a list of study dates for the specific student's grade
-        ArrayList<StudyDate> studyDatesList = new SchoolDatesLoader().
-                                           createStudyDatesList(startYear,
-                                                                endDate);
-        //a list of musical pieces with appropriate grade, shuffled
-        ArrayList<MusicalPiece> mpList = new MusicalPieceLoader().
-                        readAndCreateGradedMusicalPieceList(st.getGrade());
+        
         Collections.shuffle(mpList);
         
         LinkedHashMap<StudyDate, Lesson> schedule = new LinkedHashMap<>();
@@ -178,7 +111,7 @@ public class AnnualLessonDisposition {
     
     //this is the core algorithm for the specific study periods for the different
     //musical pieces depending on their complexity and the student's ability 
-    public int musicalPieceTransitionAlgorithm(ArrayList<MusicalPiece> mpList,
+    private int musicalPieceTransitionAlgorithm(ArrayList<MusicalPiece> mpList,
                                                   Student student,
                                                   int index,
                                                   int count) {
@@ -210,7 +143,7 @@ public class AnnualLessonDisposition {
         }
     }
     
-    public int indexCount(ArrayList<MusicalPiece> mpList,
+    private int indexCount(ArrayList<MusicalPiece> mpList,
                                          Student student,
                                          int index) {
         
@@ -219,7 +152,7 @@ public class AnnualLessonDisposition {
        return count;
     }
     
-    public int indexCounter(int count, int counter) {
+    private int indexCounter(int count, int counter) {
         
         if (counter >= count) {
                 
@@ -229,19 +162,6 @@ public class AnnualLessonDisposition {
         }
         
         return counter;
-    }
-  
-    public String getProgramPath() throws UnsupportedEncodingException {
-        URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
-        String jarPath = URLDecoder.decode(url.getFile(), "UTF-8");
-        String parentPath = new File(jarPath).getParentFile().getPath();
-        return parentPath;
-    }
-    
-    public static <E> void show(Collection<E> coll) {
-        for (E element: coll) {
-            System.out.println(element);
-        }
     }
     
 }

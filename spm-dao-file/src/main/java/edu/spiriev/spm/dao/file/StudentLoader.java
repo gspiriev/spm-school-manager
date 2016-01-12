@@ -3,18 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.spiriev.file_daol;
+package edu.spiriev.spm.dao.file;
 
 
+import edu.spiriev.spm.dao.api.StudentIO;
+import edu.spiriev.spm.domain.model.Grade;
+import edu.spiriev.spm.domain.model.Student;
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import edu.spiriev.domain_model.*;
-import edu.spiriev.file_daol.*;
-import edu.spiriev.file_manipulation.*;
 
 /**
  * Loads a list a students from a resource file

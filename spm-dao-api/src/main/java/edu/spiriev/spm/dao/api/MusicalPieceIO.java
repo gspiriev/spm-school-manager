@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.spiriev.file_manipulation;
+package edu.spiriev.spm.dao.api;
 
-import edu.spiriev.domain_model.Grade;
-import edu.spiriev.domain_model.MusicalPiece;
+import edu.spiriev.spm.domain.model.Grade;
+import edu.spiriev.spm.domain.model.MusicalPiece;
 import java.util.ArrayList;
 
 /**

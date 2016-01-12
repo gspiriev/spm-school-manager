@@ -3,18 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.spiriev.file_daol;
+package edu.spiriev.spm.dao.file;
 
+import edu.spiriev.spm.dao.api.MusicalPieceIO;
+import edu.spiriev.spm.domain.model.Grade;
+import edu.spiriev.spm.domain.model.MusicalPiece;
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import edu.spiriev.domain_model.*;
-import edu.spiriev.file_daol.*;
-import edu.spiriev.file_manipulation.*;
 
 
 
@@ -55,7 +52,7 @@ public class MusicalPieceLoader implements MusicalPieceIO{
         return musicalPieceList;
     }
     
-    private MusicalPiece parse(String unformattedPiece) {
+    public MusicalPiece parse(String unformattedPiece) {
         
         Grade[] grades = Grade.values();
         String[] unformattedPieceArr = unformattedPiece.split("/");

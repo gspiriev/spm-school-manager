@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.spiriev.domain_model;
+package edu.spiriev.spm.domain.model;
 
 /**
  * Grade enumeration for students and musical pieces

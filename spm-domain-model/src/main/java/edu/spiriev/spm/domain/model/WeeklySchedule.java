@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.spiriev.domain_model;
+package edu.spiriev.spm.domain.model;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.NavigableMap;
-import java.util.TreeMap;
+
 
 /**
  *
  * @author root_spiriev
  */
 public class WeeklySchedule {
-    private LinkedHashMap<StudyDate, Lesson> schedule;
+    private final LinkedHashMap<StudyDate, Lesson> schedule;
 
     public WeeklySchedule(LinkedHashMap<StudyDate, Lesson> schedule) {
         this.schedule = schedule;
