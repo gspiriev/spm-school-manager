@@ -9,5 +9,16 @@
     <artifactId>spm-business-logic</artifactId>
     <packaging>jar</packaging>
     
-    <name>spm-business-logic</name>
+    <dependencies>
+        <dependency>
+            <groupId>edu.spiriev.spm</groupId>
+            <artifactId>spm-dao-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.spiriev.spm</groupId>
+            <artifactId>spm-domain-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>
