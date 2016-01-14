@@ -3,19 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.spiriev.spm</groupId>
     <artifactId>spm-school-plan-manager</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1</version>
     <packaging>pom</packaging>
     <name>School Plan Manager</name>
     <scm>
         <connection>scm:git:file:///home/root_spiriev/git-master-repos/spm-school-plan-manager-repo</connection>
+      <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <repository>
-            <uniqueVersion>false</uniqueVersion>
             <id>mvn-local-deployment</id>
-            <name>Maven Deployment Repository</name>
-            <url>file:///home/root_spiriev/MavenProjects/mvn-local-deployment</url>
-            <layout>default</layout>
+            <url>file:///home/root_spiriev/mvn-local-deployment</url>
         </repository>    
     </distributionManagement>
     
@@ -49,6 +47,5 @@
             <scope>test</scope>
         </dependency> 
     </dependencies>
-    
     
 </project>

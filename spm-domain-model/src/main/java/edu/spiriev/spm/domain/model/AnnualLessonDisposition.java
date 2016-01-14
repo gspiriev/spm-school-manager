@@ -23,19 +23,6 @@ import java.util.Scanner;
  */
 public class AnnualLessonDisposition {
     
-    private final Integer startYear;
-    private final Integer endYear;
-    
-
-    public AnnualLessonDisposition() {
-        
-        System.out.println("Enter start and end year, each followed by enter key");
-        Scanner scan = new Scanner(System.in);
-        startYear = Integer.parseInt(scan.nextLine());
-        endYear = Integer.parseInt(scan.nextLine());
-        
-    }
-  
     /**
      * This method creates a specific to a certain student schedule according to
      * dates and musical pieces.
