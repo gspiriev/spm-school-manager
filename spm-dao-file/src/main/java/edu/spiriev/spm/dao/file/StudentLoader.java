@@ -32,7 +32,7 @@ public class StudentLoader implements StudentIO {
     public ArrayList<Student> readAndCreateStudentsList() {
         
         ArrayList<Student> studentList = new ArrayList<>();
-        try(BufferedReader br = new BufferedReader(new InputStreamReader(this.studentsFile))) {
+        try(BufferedReader br = new BufferedReader(getStudentReader())) {
        
             while(br.read() != -1) {
                 String[] unformatted = br.readLine().split("/");
@@ -47,4 +47,11 @@ public class StudentLoader implements StudentIO {
         
         return studentList;
     }
+
+    @Override
+    public InputStreamReader getStudentReader() {
+        InputStreamReader ISR = new InputStreamReader(this.studentsFile);
+        return ISR;
+    }
+    
 }

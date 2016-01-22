@@ -8,15 +8,7 @@
     <format>jar</format>
   </formats>
   <includeBaseDirectory>false</includeBaseDirectory>
-<moduleSets>
-<moduleSet>
-<binaries>
-<outputDirectory>/</outputDirectory>
-<includes>src/main/bin/*</includes>
-<fileMode>0511</fileMode>
-</binaries>
-</moduleSet>
-</moduleSets>
+	
   <dependencySets>
     <dependencySet>
       <outputDirectory>/</outputDirectory>
@@ -25,6 +17,12 @@
       <scope>runtime</scope>
     </dependencySet>
   </dependencySets>
+  <fileSets>
+      <fileSet>
+	<directory>src/main/bin/</directory>
+	<outputDirectory>/</outputDirectory>
+      </fileSet>
+  </fileSets>
 </assembly>
 
 

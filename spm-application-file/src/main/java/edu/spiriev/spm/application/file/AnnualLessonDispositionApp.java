@@ -5,20 +5,18 @@
  */
 package edu.spiriev.spm.application.file;
 
+import edu.spiriev.spm.business.logic.SpmBusinessProcess;
 import edu.spiriev.spm.domain.model.*;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.net.URLDecoder;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 import edu.spiriev.spm.dao.file.*;
-import java.util.Calendar;
+
 
 
 
@@ -53,9 +51,14 @@ public class AnnualLessonDispositionApp {
     
     private void run() throws UnsupportedEncodingException{
         
-        LinkedHashMap<Student, WeeklySchedule> lessonDisposition = createAllStudentDisposition();
+        LinkedHashMap<Student, WeeklySchedule> lessonDisposition = new SpmBusinessProcess().createAllStudentDisposition(
+                                                                                            new StudentLoader(),
+                                                                                            new MusicalPieceLoader(),
+                                                                                            new SchoolDatesLoader(),
+                                                                                            endYear,
+                                                                                            startYear);
         
-        File outFile = new File(this.getProgramPath(), "AnnualLessonDisposition.txt");
+        File outFile = new File(".", "AnnualLessonDisposition.txt");
         
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(outFile))) {
             
@@ -77,53 +80,9 @@ public class AnnualLessonDispositionApp {
             System.out.println("No output file or path found");
         }
         
-        System.out.println("Disposition file created in " + this.getProgramPath());
+        System.out.println("Disposition file created in " + System.getProperty("user.dir"));
         
     }
-    
-    private LinkedHashMap<Student, WeeklySchedule> createAllStudentDisposition() {
-        
-        LinkedHashMap<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
-        ArrayList<Student> studentList = new StudentLoader().readAndCreateStudentsList();
-        ArrayList<StudyDate> studentSpecificDates;
-        ArrayList<MusicalPiece> listOfPieces; 
-        for (Student st: studentList) {
-            
-            Calendar endDate = Calendar.getInstance();
-            switch(st.getGrade()) {
-            
-                case FIRST:
-                case SECOND:
-                case THIRD: 
-                case FOURTH:
-                    endDate.set(endYear, 5, 15);
-                    break;
-                case TWELVETH:
-                    endDate.set(endYear, 4, 24);
-                    break;
-                default:
-                    endDate.set(endYear, 5, 30);
-                    break;
-            }
-            
-           studentSpecificDates = new SchoolDatesLoader().createStudyDatesList(startYear, endDate);
-           listOfPieces = new MusicalPieceLoader().readAndCreateGradedMusicalPieceList(st.getGrade());
-           
-           WeeklySchedule specificSchedule = new AnnualLessonDisposition().createSpecificSchedule(st,
-                                                                            studentSpecificDates,
-                                                                            listOfPieces);
-           lessonDisposition.put(st, specificSchedule);
-        }
-        return lessonDisposition;
-    }
-  
-    private String getProgramPath() throws UnsupportedEncodingException {
-        URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
-        String jarPath = URLDecoder.decode(url.getFile(), "UTF-8");
-        String parentPath = new File(jarPath).getParentFile().getPath();
-        return parentPath;
-    }
-   
     
     public static <E> void show(Collection<E> coll) {
         for (E element: coll) {

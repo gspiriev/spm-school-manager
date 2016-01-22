@@ -6,6 +6,7 @@
 package edu.spiriev.spm.dao.api;
 
 import edu.spiriev.spm.domain.model.Student;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /**
@@ -15,5 +16,5 @@ import java.util.ArrayList;
 public interface StudentIO {
     
     ArrayList<Student> readAndCreateStudentsList();
-    
+    InputStreamReader getStudentReader();
 }
