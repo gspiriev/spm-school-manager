@@ -6,16 +6,14 @@
 package edu.spiriev.spm.domain.model;
 
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
 import java.util.function.BiConsumer;
-import java.util.stream.Collectors;
+
 
 
 
