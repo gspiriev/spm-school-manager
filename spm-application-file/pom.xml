@@ -14,54 +14,22 @@
         <maven.assembly.plugin.version>2.4</maven.assembly.plugin.version>
         <!-- dependencies -->
         <dep.version>1.0-SNAPSHOT</dep.version>
-        
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
     
     <build>
-        
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-            </plugin>
-        </plugins>
-        
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.6</version>
                 <configuration>
                     <archive>
                         <manifest>
-                          <mainClass>edu.spiriev.file_application.AnnualLessonDisposition</mainClass>
+                            <mainClass>edu.spiriev.spm.application.file.AnnualLessonDispositionApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-assembly-plugin</artifactId>
-                    <version>2.4</version>
-                    <configuration>
-                        <descriptor>src/assembly/dep.xml</descriptor>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>make-assembly</id>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>single</goal>
-                            </goals>
-                        </execution>    
-                    </executions>    
-                </plugin>
-            </plugins>
-        </pluginManagement>
-        
+            </plugin>
+        </plugins>
     </build>
     <dependencies>
         <dependency>

@@ -15,6 +15,6 @@ import java.util.ArrayList;
  */
 public interface MusicalPieceIO {
     
-    ArrayList<MusicalPiece> readAndCreateGradedMusicalPieceList(Grade g);
+    ArrayList<MusicalPiece> readAndCreateAllMusicalPieceList();
     
 }

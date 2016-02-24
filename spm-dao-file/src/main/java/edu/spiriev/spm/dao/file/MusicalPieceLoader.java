@@ -29,7 +29,7 @@ public class MusicalPieceLoader implements MusicalPieceIO{
     }
     
     @Override
-    public ArrayList<MusicalPiece> readAndCreateGradedMusicalPieceList(Grade g){
+    public ArrayList<MusicalPiece> readAndCreateAllMusicalPieceList(){
         
        ArrayList<MusicalPiece> musicalPieceList = new ArrayList<>();
         
@@ -40,11 +40,7 @@ public class MusicalPieceLoader implements MusicalPieceIO{
             while(reader.ready()) {
                 
                 MusicalPiece piece = parse(reader.readLine());
-                
-                if (g.equals(piece.getGrade())) {
-                    
-                    musicalPieceList.add(piece);
-                }
+                musicalPieceList.add(piece);
             }
         } catch (Exception e) {
             System.err.println("Musical piece file not found");

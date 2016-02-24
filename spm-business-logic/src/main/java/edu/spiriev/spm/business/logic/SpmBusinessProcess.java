@@ -28,7 +28,7 @@ public class SpmBusinessProcess {
         LinkedHashMap<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
         ArrayList<Student> studentList = stLoader.readAndCreateStudentsList();
         ArrayList<StudyDate> studentSpecificDates;
-        ArrayList<MusicalPiece> listOfPieces; 
+        ArrayList<MusicalPiece> listOfPieces = mpLoader.readAndCreateAllMusicalPieceList();
         for (Student st: studentList) {
             
             Calendar endDate = Calendar.getInstance();
@@ -49,7 +49,7 @@ public class SpmBusinessProcess {
             }
             
            studentSpecificDates = createStudyDatesList(startYear, endDate, dLoader);
-           listOfPieces = mpLoader.readAndCreateGradedMusicalPieceList(st.getGrade());
+           
            
            WeeklySchedule specificSchedule = new AnnualLessonDisposition().createSpecificSchedule(st,
                                                                             studentSpecificDates,

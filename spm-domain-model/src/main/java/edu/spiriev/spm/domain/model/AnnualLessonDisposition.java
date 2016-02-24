@@ -5,10 +5,17 @@
  */
 package edu.spiriev.spm.domain.model;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.function.BiConsumer;
+import java.util.stream.Collectors;
 
 
 
@@ -26,69 +33,33 @@ public class AnnualLessonDisposition {
     /**
      * This method creates a specific to a certain student schedule according to
      * dates and musical pieces.
-     * @param st - a student object
+     * @param student - a student object
      * @param studyDatesList - a list of study dates for the specific student's grade
-     * @param mpList - a list of musical pieces with appropriate grade, shuffled
+     * @param musicalPieces - a list of musical pieces with appropriate grade, shuffled
      * @return 
      */
-    public WeeklySchedule createSpecificSchedule(Student st, ArrayList<StudyDate> studyDatesList, 
-                                                    ArrayList<MusicalPiece> mpList) {
+    public WeeklySchedule createSpecificSchedule(
+            Student student, 
+            List<StudyDate> studyDates, 
+            List<MusicalPiece> musicalPieces
+        ) {
         
-        int index1 = 0; 
-        int index2 = 1;
-        int index3 = 2;
-       
-        int index1Count;
-        int index2Count;
-        int index3Count;
-        
-        int indexCounter1 = 0;
-        int indexCounter2 = 0;
-        int indexCounter3 = 0;
-        
-        //study date bounds for the different grades
-        
-        Collections.shuffle(mpList);
+        List<MusicalPiece> studentMusicalPieces = makeStudentMusicalPieces(musicalPieces, student);
         
         LinkedHashMap<StudyDate, Lesson> schedule = new LinkedHashMap<>();
-        //create an annual schedule by weeks for this student
-        for (int index = 0; index < studyDatesList.size(); index++) {
+        for (StudyDate studyDate: studyDates) {
             
-            if (index1 == -1 || index2 == -1 || index3 == -1) {
-                
-                System.out.println("It seems that the ability of student " +
-                                    st.getName() + " is too low or some pieces "
-                                    + "have inapropriate complexity.");
-                break;
-            }
-            if (index1 >= studyDatesList.size()) {
-                index1 = studyDatesList.size() - 1;
-            }
-            if (index2 >= studyDatesList.size()) {
-                index2 = studyDatesList.size() - 1;
-            }
-            if (index3 >= studyDatesList.size()) {
-                index3 = studyDatesList.size() - 1;
-            }
+            schedule.put(studyDate, new Lesson(null, null, null));
+        }
+        try{
             
-            index1Count = indexCount(mpList, st, index1);
-            index2Count = indexCount(mpList, st, index2);
-            index3Count = indexCount(mpList, st, index3);
-            
-            schedule.put(studyDatesList.get(index),
-                         new Lesson(mpList.get(index1),
-                                    mpList.get(index2),
-                                    mpList.get(index3)));
-            
-            index1 = musicalPieceTransitionAlgorithm(mpList, st, index1, indexCounter1);
-            indexCounter1 = indexCounter(index1Count, indexCounter1);
-            
-            index2 = musicalPieceTransitionAlgorithm(mpList, st, index2, indexCounter2);
-            indexCounter2 = indexCounter(index2Count, indexCounter2);
-            
-            index3 = musicalPieceTransitionAlgorithm(mpList, st, index3, indexCounter3);
-            indexCounter3 = indexCounter(index3Count, indexCounter3);
-            
+            initializeSchedule(schedule, studentMusicalPieces, student);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
         }
         
         WeeklySchedule specificSchedule = new WeeklySchedule(schedule);
@@ -96,59 +67,66 @@ public class AnnualLessonDisposition {
         return specificSchedule;
     }
     
-    //this is the core algorithm for the specific study periods for the different
-    //musical pieces depending on their complexity and the student's ability 
-    private int musicalPieceTransitionAlgorithm(ArrayList<MusicalPiece> mpList,
-                                                  Student student,
-                                                  int index,
-                                                  int count) {
-        int learningCapability = 
-                student.getAbility() - mpList.get(index).getComplexity();
-        
-        if(learningCapability < 0 &&
-           index < mpList.size()) {
-            
-            index+=3;
-            return -1;
-        }
-        if (index >= mpList.size() &&
-            learningCapability < 0) {
-            
-            return -1;
-        }
-        if (index >= mpList.size()) {
-            
-            return index;
-        }
-        if (10 - learningCapability == count) {
-            
-            index+=3;
-            return index;
-        } else {
-            
-            return index;
-        }
-    }
     
-    private int indexCount(ArrayList<MusicalPiece> mpList,
-                                         Student student,
-                                         int index) {
+    private List<MusicalPiece> makeStudentMusicalPieces(List<MusicalPiece> mPieces, Student student) {
         
-       int count = 10 - (student.getAbility() - mpList.get(index).getComplexity());
+        List<MusicalPiece> studentMusicalPieces = new ArrayList<>();
         
-       return count;
-    }
-    
-    private int indexCounter(int count, int counter) {
-        
-        if (counter >= count) {
+        for (MusicalPiece piece: mPieces) {
+            
+            if (student.getGrade().equals(piece.getGrade()) 
+                    && student.getAbility() >= piece.getComplexity()) {
                 
-                counter = 0;
-            } else {
-                counter++;
+                studentMusicalPieces.add(piece);
+            }
         }
         
-        return counter;
+//        studentMusicalPieces = mPieces
+//                .stream()
+//                .filter(
+//                        (MusicalPiece piece) -> student.getGrade().equals(piece.getGrade()) && student.getAbility() >= piece.getComplexity() 
+//                )
+//                .collect(Collectors.toList());
+        Collections.shuffle(studentMusicalPieces);
+        
+        return studentMusicalPieces;
+    }
+    
+    private void initializeSchedule(Map<StudyDate, Lesson> schedule,
+                                          List<MusicalPiece> studentMusicalPieces,
+                                          Student student) throws NoSuchMethodException, 
+                                                                          IllegalAccessException, 
+                                                                          InvocationTargetException {
+        BiConsumer<Lesson, MusicalPiece>[] lessonPieceSetters = new BiConsumer[]{
+            
+            (Object l, Object m) -> {((Lesson)l).setPiece1((MusicalPiece)m);},
+            (Object l, Object m) -> {((Lesson)l).setPiece2((MusicalPiece)m);},
+            (Object l, Object m) -> {((Lesson)l).setPiece3((MusicalPiece)m);},
+            
+        };
+        
+        MusicalPieceStudyCalculator calc = new MusicalPieceStudyCalculator(10);
+       
+        
+        int lessonPieceSetterNameIndex = 1;
+        Iterator<MusicalPiece> musicalPieceSequence = studentMusicalPieces.iterator();
+        //need method refactoring
+        for (BiConsumer<Lesson, MusicalPiece> lessonPieceSetter: lessonPieceSetters) {
+            
+            MusicalPiece mp = musicalPieceSequence.next();
+            int mpStudyWeeks = calc.calculateStudyWeeks(student, mp);
+            
+            for (Lesson lesson: schedule.values()) {
+                
+                if (lessonPieceSetterNameIndex == mpStudyWeeks) {
+                    
+                    lessonPieceSetterNameIndex = 1;
+                    mp = musicalPieceSequence.next();
+                }
+                lessonPieceSetter.accept(lesson, mp);
+                lessonPieceSetterNameIndex++;
+            }
+        }
     }
     
 }
