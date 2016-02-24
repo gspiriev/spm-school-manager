@@ -3,10 +3,14 @@
 /spm-dao-file/target/**
 /spm-business-logic/target/**
 /spm-application-file/target/**
+<<<<<<< HEAD
 /spm-dao-api/nbactions.xml
 /spm-domain-model/nbactions.xml
 /spm-dao-file/nbactions.xml
 /spm-business-logic/nbactions.xml
 /spm-application-file/nbactions.xml
+=======
+/**/nbactions.xml
+>>>>>>> 5d86d2f48ebf0a6b0b83a8fe4e046c5566397aec
 *~
 /target/
