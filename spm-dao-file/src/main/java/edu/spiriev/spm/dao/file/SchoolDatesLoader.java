@@ -5,9 +5,11 @@
  */
 package edu.spiriev.spm.dao.file;
 
-import edu.spiriev.spm.dao.api.DatesIO;
+import edu.spiriev.spm.dao.api.SchoolHolidaysDao;
 import edu.spiriev.spm.domain.model.StudyDate;
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.text.DateFormat;
@@ -15,29 +17,31 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Loads school dates from the school dates resource file.
  * @author root_spiriev
  */
-public class SchoolDatesLoader implements DatesIO{
+public class SchoolDatesLoader implements SchoolHolidaysDao{
 
-    private final InputStream deprecatedDatesFile;
+    private final File datesFile;
 
-    public SchoolDatesLoader() {
-        ClassLoader cl = getClass().getClassLoader();
-        this.deprecatedDatesFile = cl.getResourceAsStream("deprecatedDatesFirst.txt");
+    public SchoolDatesLoader(File datesFile) {
+//        ClassLoader cl = getClass().getClassLoader();
+//        this.deprecatedDatesFile = cl.getResourceAsStream("deprecatedDatesFirst.txt");
+        this.datesFile = datesFile;
     }
 
     
     
     @Override
-    public ArrayList<Date> createNoSchoolDatesList(){
+    public List<Date> loadDates(){
 
         ArrayList<Date> noSchoolDateList = new ArrayList<>();
         DateFormat f = new SimpleDateFormat("dd/MM/yyyy");
 
-        try (BufferedReader datesReader = new BufferedReader(new InputStreamReader(deprecatedDatesFile))) {
+        try (BufferedReader datesReader = new BufferedReader(new FileReader(datesFile))) {
 
             while (datesReader.ready()) {
                 noSchoolDateList.add(f.parse(datesReader.readLine()));

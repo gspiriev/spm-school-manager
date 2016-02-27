@@ -15,6 +15,8 @@ import edu.spiriev.spm.domain.model.WeeklySchedule;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -23,12 +25,14 @@ import java.util.LinkedHashMap;
  */
 public class SpmBusinessProcess {
     
-    public LinkedHashMap<Student, WeeklySchedule> createAllStudentDisposition(StudentIO stLoader, MusicalPieceIO mpLoader, DatesIO dLoader, Integer endYear, Integer startYear) {
+    public static final SpmBusinessProcess instance = new SpmBusinessProcess();
+    
+    public Map<Student, WeeklySchedule> createAllStudentDisposition(StudentDao stLoader, MusicalPieceDao mpLoader, SchoolHolidaysDao dLoader, Integer endYear, Integer startYear) {
         
-        LinkedHashMap<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
-        ArrayList<Student> studentList = stLoader.readAndCreateStudentsList();
-        ArrayList<StudyDate> studentSpecificDates;
-        ArrayList<MusicalPiece> listOfPieces = mpLoader.readAndCreateAllMusicalPieceList();
+        Map<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
+        List<Student> studentList = stLoader.loadStudents();
+        List<StudyDate> studentSpecificDates;
+        List<MusicalPiece> listOfPieces = mpLoader.loadMusicalPieces();
         for (Student st: studentList) {
             
             Calendar endDate = Calendar.getInstance();
@@ -59,11 +63,11 @@ public class SpmBusinessProcess {
         return lessonDisposition;
     }
     
-    public ArrayList<StudyDate> createStudyDatesList(int startYear,
-                                                            Calendar endDate, DatesIO dLoader){
+    public List<StudyDate> createStudyDatesList(int startYear,
+                                                            Calendar endDate, SchoolHolidaysDao dLoader){
 
-        ArrayList<StudyDate> studyDatesList = new ArrayList<>();
-        ArrayList<Date> allDates = createDatesList(startYear, endDate.getTime(), dLoader);
+        List<StudyDate> studyDatesList = new ArrayList<>();
+        List<Date> allDates = createDatesList(startYear, endDate.getTime(), dLoader);
 
         for (int index = 1; index < allDates.size(); index += 2) {
 
@@ -74,10 +78,10 @@ public class SpmBusinessProcess {
         return studyDatesList;
     }
     
-    private ArrayList<Date> createDatesList(int startYear, Date endDate, DatesIO dLoader){
+    private List<Date> createDatesList(int startYear, Date endDate, SchoolHolidaysDao dLoader){
 
-        ArrayList<Date> datesInAWeek = new ArrayList<>();
-        ArrayList<Date> noSchoolDatesList = dLoader.createNoSchoolDatesList();
+        List<Date> datesInAWeek = new ArrayList<>();
+        List<Date> noSchoolDatesList = dLoader.loadDates();
         Calendar c = Calendar.getInstance();
         c.set(startYear, 8, 15, 00, 00, 00);
         c.set(Calendar.MILLISECOND, 0);

@@ -14,71 +14,60 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.BiConsumer;
 
-
-
-
-
 /**
  * The main class which creates an annual disposition list, for all the students
- * in the Student resource file. When adding information about a student or 
+ * in the Student resource file. When adding information about a student or
  * school dates in the resource files, use "/"(forth slash) for delimiter
  * between tokens (tokens are grades, student names, ability, musical piece
  * names, complexity etc.)
+ *
  * @author root_spiriev
  */
 public class AnnualLessonDisposition {
-    
+
     /**
      * This method creates a specific to a certain student schedule according to
      * dates and musical pieces.
+     *
      * @param student - a student object
-     * @param studyDatesList - a list of study dates for the specific student's grade
-     * @param musicalPieces - a list of musical pieces with appropriate grade, shuffled
-     * @return 
+     * @param studyDatesList - a list of study dates for the specific student's
+     * grade
+     * @param musicalPieces - a list of musical pieces with appropriate grade,
+     * shuffled
+     * @return
      */
     public WeeklySchedule createSpecificSchedule(
-            Student student, 
-            List<StudyDate> studyDates, 
+            Student student,
+            List<StudyDate> studyDates,
             List<MusicalPiece> musicalPieces
-        ) {
-        
+    ) {
+
         List<MusicalPiece> studentMusicalPieces = makeStudentMusicalPieces(musicalPieces, student);
-        
+
         LinkedHashMap<StudyDate, Lesson> schedule = new LinkedHashMap<>();
-        for (StudyDate studyDate: studyDates) {
-            
+        for (StudyDate studyDate : studyDates) {
+
             schedule.put(studyDate, new Lesson(null, null, null));
         }
-        try{
-            
-            initializeSchedule(schedule, studentMusicalPieces, student);
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        }
-        
+        initializeSchedule(schedule, studentMusicalPieces, student);
         WeeklySchedule specificSchedule = new WeeklySchedule(schedule);
-        
+
         return specificSchedule;
     }
-    
-    
+
     private List<MusicalPiece> makeStudentMusicalPieces(List<MusicalPiece> mPieces, Student student) {
-        
+
         List<MusicalPiece> studentMusicalPieces = new ArrayList<>();
-        
-        for (MusicalPiece piece: mPieces) {
-            
-            if (student.getGrade().equals(piece.getGrade()) 
+
+        for (MusicalPiece piece : mPieces) {
+
+            if (student.getGrade().equals(piece.getGrade())
                     && student.getAbility() >= piece.getComplexity()) {
-                
+
                 studentMusicalPieces.add(piece);
             }
         }
-        
+
 //        studentMusicalPieces = mPieces
 //                .stream()
 //                .filter(
@@ -86,45 +75,45 @@ public class AnnualLessonDisposition {
 //                )
 //                .collect(Collectors.toList());
         Collections.shuffle(studentMusicalPieces);
-        
+
         return studentMusicalPieces;
     }
-    
+
     private void initializeSchedule(Map<StudyDate, Lesson> schedule,
-                                          List<MusicalPiece> studentMusicalPieces,
-                                          Student student) throws NoSuchMethodException, 
-                                                                          IllegalAccessException, 
-                                                                          InvocationTargetException {
+            List<MusicalPiece> studentMusicalPieces,
+            Student student) {
         BiConsumer<Lesson, MusicalPiece>[] lessonPieceSetters = new BiConsumer[]{
-            
-            (Object l, Object m) -> {((Lesson)l).setPiece1((MusicalPiece)m);},
-            (Object l, Object m) -> {((Lesson)l).setPiece2((MusicalPiece)m);},
-            (Object l, Object m) -> {((Lesson)l).setPiece3((MusicalPiece)m);},
-            
-        };
-        
+            (Object l, Object m) -> {
+                ((Lesson) l).setPiece1((MusicalPiece) m);
+            },
+            (Object l, Object m) -> {
+                ((Lesson) l).setPiece2((MusicalPiece) m);
+            },
+            (Object l, Object m) -> {
+                ((Lesson) l).setPiece3((MusicalPiece) m);
+            },};
+
         MusicalPieceStudyCalculator calc = new MusicalPieceStudyCalculator(10);
-       
-        
-        int lessonPieceSetterNameIndex = 1;
+
         Iterator<MusicalPiece> musicalPieceSequence = studentMusicalPieces.iterator();
         //need method refactoring
-        for (BiConsumer<Lesson, MusicalPiece> lessonPieceSetter: lessonPieceSetters) {
-            
+        for (BiConsumer<Lesson, MusicalPiece> lessonPieceSetter : lessonPieceSetters) {
+
+            int studiedWeeks = 1;
             MusicalPiece mp = musicalPieceSequence.next();
             int mpStudyWeeks = calc.calculateStudyWeeks(student, mp);
-            
-            for (Lesson lesson: schedule.values()) {
-                
-                if (lessonPieceSetterNameIndex == mpStudyWeeks) {
-                    
-                    lessonPieceSetterNameIndex = 1;
+
+            for (Lesson lesson : schedule.values()) {
+
+                if (studiedWeeks == mpStudyWeeks) {
+
+                    studiedWeeks = 1;
                     mp = musicalPieceSequence.next();
                 }
                 lessonPieceSetter.accept(lesson, mp);
-                lessonPieceSetterNameIndex++;
+                studiedWeeks++;
             }
         }
     }
-    
+
 }

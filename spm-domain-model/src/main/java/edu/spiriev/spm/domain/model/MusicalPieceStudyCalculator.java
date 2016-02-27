@@ -19,7 +19,8 @@ public class MusicalPieceStudyCalculator {
     
     public int calculateStudyWeeks(Student student, MusicalPiece mPiece) {
         
-        if (mPiece.getComplexity() > 10 ^ mPiece.getComplexity() < 1) {
+        if ((mPiece.getComplexity() > 10 ^ mPiece.getComplexity() < 1) ||
+             student.getAbility() > 10 ^ student.getAbility() < 1) {
             
             throw new IllegalArgumentException();
         }
@@ -31,7 +32,8 @@ public class MusicalPieceStudyCalculator {
             weeks = maximumStudyPeriodInWeeks - learningCapability;
         } catch (IllegalArgumentException e) {
             
-            System.err.println("Musical pieces must have maximum 10 complexity");
+            System.err.println("Student ability and musical piece complexity " +
+                                "must numbers between 1 and 10 ");
         }
         
         return weeks;

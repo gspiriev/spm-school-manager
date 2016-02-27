@@ -14,14 +14,6 @@ import edu.spiriev.spm.domain.model.*;
  */
 
 public class MusicalPieceLoaderTest {
-    
-    @Test
-    public void parseTest() {
-        
-        MusicalPieceLoader testLoader = new MusicalPieceLoader();
-        String testStr = "0/1/Kabalevsky/Waltz";
-        MusicalPiece testPiece = testLoader.parse(testStr);
-        Assert.assertTrue(testPiece instanceof MusicalPiece);
-    }
+   
     
 }

@@ -5,16 +5,15 @@
  */
 package edu.spiriev.spm.dao.api;
 
-import edu.spiriev.spm.domain.model.Student;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
+import edu.spiriev.spm.domain.model.MusicalPiece;
+import java.util.List;
 
 /**
  *
  * @author root_spiriev
  */
-public interface StudentIO {
+public interface MusicalPieceDao {
     
-    ArrayList<Student> readAndCreateStudentsList();
-    InputStreamReader getStudentReader();
+    List<MusicalPiece> loadMusicalPieces();
+    
 }

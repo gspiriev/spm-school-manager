@@ -5,15 +5,15 @@
  */
 package edu.spiriev.spm.dao.api;
 
-import java.util.ArrayList;
-import java.util.Date;
+import edu.spiriev.spm.domain.model.Student;
+import java.util.List;
 
 /**
  *
  * @author root_spiriev
  */
-public interface DatesIO {
+public interface StudentDao {
     
-    ArrayList<Date> createNoSchoolDatesList();
+    List<Student> loadStudents();
     
 }

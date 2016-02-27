@@ -5,16 +5,15 @@
  */
 package edu.spiriev.spm.dao.api;
 
-import edu.spiriev.spm.domain.model.Grade;
-import edu.spiriev.spm.domain.model.MusicalPiece;
-import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  *
  * @author root_spiriev
  */
-public interface MusicalPieceIO {
+public interface SchoolHolidaysDao {
     
-    ArrayList<MusicalPiece> readAndCreateAllMusicalPieceList();
+    List<Date> loadDates();
     
 }

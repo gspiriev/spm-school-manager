@@ -5,13 +5,16 @@
  */
 package edu.spiriev.spm.dao.file;
 
-import edu.spiriev.spm.dao.api.MusicalPieceIO;
+import edu.spiriev.spm.dao.api.MusicalPieceDao;
 import edu.spiriev.spm.domain.model.Grade;
 import edu.spiriev.spm.domain.model.MusicalPiece;
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 
 
 
@@ -19,22 +22,22 @@ import java.util.ArrayList;
  * Loads and creates a musical piece list from a file with musical pieces
  * @author root_spiriev
  */
-public class MusicalPieceLoader implements MusicalPieceIO{
+public class MusicalPieceLoader implements MusicalPieceDao{
     
-    private final InputStream musicalPiecesFile;
+    private final File musicalPiecesFile;
 
-    public MusicalPieceLoader() {
-        ClassLoader cl = getClass().getClassLoader();
-        this.musicalPiecesFile = cl.getResourceAsStream("Graded_Pieces_All_CSV.csv");
+    public MusicalPieceLoader(File musicalPieces) {
+
+        musicalPiecesFile = musicalPieces;
     }
     
     @Override
-    public ArrayList<MusicalPiece> readAndCreateAllMusicalPieceList(){
+    public List<MusicalPiece> loadMusicalPieces(){
         
        ArrayList<MusicalPiece> musicalPieceList = new ArrayList<>();
         
         try(
-        BufferedReader reader = new BufferedReader(new InputStreamReader(this.musicalPiecesFile)))
+        BufferedReader reader = new BufferedReader(new FileReader(this.musicalPiecesFile)))
         {
             
             while(reader.ready()) {
