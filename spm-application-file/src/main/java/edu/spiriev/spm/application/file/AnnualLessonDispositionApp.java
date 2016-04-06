@@ -5,6 +5,10 @@
  */
 package edu.spiriev.spm.application.file;
 
+import edu.spiriev.spm.dao.database.StudentLoader;
+import edu.spiriev.spm.dao.database.MusicalPieceLoader;
+import edu.spiriev.spm.dao.database.DatabaseConnection;
+import edu.spiriev.spm.dao.database.SchoolDatesLoader;
 import edu.spiriev.spm.business.logic.SpmBusinessProcess;
 import edu.spiriev.spm.domain.model.*;
 import java.io.BufferedWriter;
@@ -13,8 +17,11 @@ import java.io.FileWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
 import java.util.Scanner;
-import edu.spiriev.spm.dao.file.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.AbstractMap;
+import java.util.List;
 
 /**
  * The main class which creates an annual disposition list, for all the students
@@ -36,17 +43,13 @@ public class AnnualLessonDispositionApp {
     private void run() throws UnsupportedEncodingException {
 
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
+     
+        MusicalPieceLoader mpLoader = new MusicalPieceLoader();
         
-       
-        MusicalPieceLoader mpLoader = new MusicalPieceLoader(new File(
-                getClass().getResource("/Graded_Pieces_All_CSV.csv").getFile()
-        ));
+        SchoolDatesLoader sdLoader = new SchoolDatesLoader();
         
-        SchoolDatesLoader sdLoader = new SchoolDatesLoader(new File(
-                    getClass().getResource("/deprecatedDatesFirst.txt").getFile()));
+        StudentLoader stLoader = new StudentLoader();
         
-        StudentLoader stLoader = new StudentLoader(new File(
-                    getClass().getResource("/Students.txt").getFile()));
 
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(
@@ -94,6 +97,51 @@ public class AnnualLessonDispositionApp {
         } catch (Exception e) {
 
             System.out.println("No output file or path found");
+        }
+    }
+    
+    private void insertStudentDataFromFileToDb (StudentLoader stLoader) {
+        
+        try (Connection conn = new DatabaseConnection().getConnection()){
+            
+            conn.setAutoCommit(false);
+            List<Student> studentListForDbInsertion = stLoader.loadStudents();
+            int studentId = 1;
+            
+            for (Student st: studentListForDbInsertion) {
+                
+                
+                String name = st.getName();
+                int ability = st.getAbility();
+                Grade grade = st.getGrade();
+                
+                String sql = "INSERT INTO Student (student_name, ability) " +
+                             "VALUES (?, ?)";
+                PreparedStatement stmt = conn.prepareStatement(sql);
+               
+                stmt.setString(1, name);
+                stmt.setInt(2, ability);
+                
+                stmt.executeUpdate();
+                
+                String gradeInsertionSql = "INSERT INTO student_grade (student_id, grade_id) " +
+                                           "VALUES (?, ?)";
+                PreparedStatement gradeInsertionStmt = conn.prepareStatement(gradeInsertionSql);
+                gradeInsertionStmt.setInt(1, studentId);
+                gradeInsertionStmt.setInt(2, (Grade.valueOf(grade.toString()).ordinal()) + 1);
+                
+                gradeInsertionStmt.executeUpdate();
+                
+                conn.commit();
+                studentId++;
+            }
+        } catch (SQLException e) {
+            
+            System.err.println("Invalid SQL query ");
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            
+            System.err.println("No sqlite driver found");
         }
     }
 

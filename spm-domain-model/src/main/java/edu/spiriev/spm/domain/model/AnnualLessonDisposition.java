@@ -5,7 +5,6 @@
  */
 package edu.spiriev.spm.domain.model;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -30,7 +29,7 @@ public class AnnualLessonDisposition {
      * dates and musical pieces.
      *
      * @param student - a student object
-     * @param studyDatesList - a list of study dates for the specific student's
+     * @param studyDates - a list of study dates for the specific student's
      * grade
      * @param musicalPieces - a list of musical pieces with appropriate grade,
      * shuffled

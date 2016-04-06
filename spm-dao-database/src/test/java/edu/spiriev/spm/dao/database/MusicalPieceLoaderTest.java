@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.spiriev.spm.dao.file;
+package edu.spiriev.spm.dao.database;
 
 import org.junit.Assert;
 import org.junit.Test;

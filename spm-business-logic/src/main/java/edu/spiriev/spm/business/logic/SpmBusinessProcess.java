@@ -33,6 +33,7 @@ public class SpmBusinessProcess {
         List<Student> studentList = stLoader.loadStudents();
         List<StudyDate> studentSpecificDates;
         List<MusicalPiece> listOfPieces = mpLoader.loadMusicalPieces();
+        
         for (Student st: studentList) {
             
             Calendar endDate = Calendar.getInstance();

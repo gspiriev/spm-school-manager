@@ -6,7 +6,7 @@
         <artifactId>spm-school-plan-manager</artifactId>
         <version>1.1</version>
     </parent>
-    <artifactId>spm-dao-file</artifactId>
+    <artifactId>spm-dao-database</artifactId>
     <packaging>jar</packaging>
     
     <dependencies>
@@ -24,5 +24,10 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+        </dependency>
     </dependencies>
+    <name>spm-dao-database</name>
 </project>
