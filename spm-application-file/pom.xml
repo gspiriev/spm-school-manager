@@ -44,6 +44,11 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
+            <artifactId>spm-dao-database</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
             <artifactId>spm-business-logic</artifactId>
             <version>${project.version}</version>
         </dependency>

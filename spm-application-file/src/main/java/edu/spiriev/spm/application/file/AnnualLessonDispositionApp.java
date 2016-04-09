@@ -5,11 +5,11 @@
  */
 package edu.spiriev.spm.application.file;
 
-import edu.spiriev.spm.dao.database.StudentLoader;
-import edu.spiriev.spm.dao.database.MusicalPieceLoader;
-import edu.spiriev.spm.dao.database.DatabaseConnection;
-import edu.spiriev.spm.dao.database.SchoolDatesLoader;
+
 import edu.spiriev.spm.business.logic.SpmBusinessProcess;
+import edu.spiriev.spm.dao.file.MusicalPieceLoader;
+import edu.spiriev.spm.dao.file.SchoolDatesLoader;
+import edu.spiriev.spm.dao.file.StudentLoader;
 import edu.spiriev.spm.domain.model.*;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -17,11 +17,7 @@ import java.io.FileWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
 import java.util.Scanner;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.AbstractMap;
-import java.util.List;
 
 /**
  * The main class which creates an annual disposition list, for all the students
@@ -100,49 +96,49 @@ public class AnnualLessonDispositionApp {
         }
     }
     
-    private void insertStudentDataFromFileToDb (StudentLoader stLoader) {
-        
-        try (Connection conn = new DatabaseConnection().getConnection()){
-            
-            conn.setAutoCommit(false);
-            List<Student> studentListForDbInsertion = stLoader.loadStudents();
-            int studentId = 1;
-            
-            for (Student st: studentListForDbInsertion) {
-                
-                
-                String name = st.getName();
-                int ability = st.getAbility();
-                Grade grade = st.getGrade();
-                
-                String sql = "INSERT INTO Student (student_name, ability) " +
-                             "VALUES (?, ?)";
-                PreparedStatement stmt = conn.prepareStatement(sql);
-               
-                stmt.setString(1, name);
-                stmt.setInt(2, ability);
-                
-                stmt.executeUpdate();
-                
-                String gradeInsertionSql = "INSERT INTO student_grade (student_id, grade_id) " +
-                                           "VALUES (?, ?)";
-                PreparedStatement gradeInsertionStmt = conn.prepareStatement(gradeInsertionSql);
-                gradeInsertionStmt.setInt(1, studentId);
-                gradeInsertionStmt.setInt(2, (Grade.valueOf(grade.toString()).ordinal()) + 1);
-                
-                gradeInsertionStmt.executeUpdate();
-                
-                conn.commit();
-                studentId++;
-            }
-        } catch (SQLException e) {
-            
-            System.err.println("Invalid SQL query ");
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            
-            System.err.println("No sqlite driver found");
-        }
-    }
+//    private void insertStudentDataFromFileToDb (StudentLoader stLoader) {
+//        
+//        try (Connection conn = new DatabaseConnection().getConnection()){
+//            
+//            conn.setAutoCommit(false);
+//            List<Student> studentListForDbInsertion = stLoader.loadStudents();
+//            int studentId = 1;
+//            
+//            for (Student st: studentListForDbInsertion) {
+//                
+//                
+//                String name = st.getName();
+//                int ability = st.getAbility();
+//                Grade grade = st.getGrade();
+//                
+//                String sql = "INSERT INTO Student (student_name, ability) " +
+//                             "VALUES (?, ?)";
+//                PreparedStatement stmt = conn.prepareStatement(sql);
+//               
+//                stmt.setString(1, name);
+//                stmt.setInt(2, ability);
+//                
+//                stmt.executeUpdate();
+//                
+//                String gradeInsertionSql = "INSERT INTO student_grade (student_id, grade_id) " +
+//                                           "VALUES (?, ?)";
+//                PreparedStatement gradeInsertionStmt = conn.prepareStatement(gradeInsertionSql);
+//                gradeInsertionStmt.setInt(1, studentId);
+//                gradeInsertionStmt.setInt(2, (Grade.valueOf(grade.toString()).ordinal()) + 1);
+//                
+//                gradeInsertionStmt.executeUpdate();
+//                
+//                conn.commit();
+//                studentId++;
+//            }
+//        } catch (SQLException e) {
+//            
+//            System.err.println("Invalid SQL query ");
+//            e.printStackTrace();
+//        } catch (ClassNotFoundException e) {
+//            
+//            System.err.println("No sqlite driver found");
+//        }
+//    }
 
 }

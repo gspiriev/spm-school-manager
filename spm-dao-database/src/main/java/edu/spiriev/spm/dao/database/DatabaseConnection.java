@@ -26,7 +26,10 @@ public class DatabaseConnection {
         connProperties.put("user: ", "spiriev");
         connProperties.put("password: ", "spiriev_pass");
         
-        conn = DriverManager.getConnection("jdbc:sqlite:/home/root_spiriev/mySQLiteDB/spmDB", connProperties);
+        ClassLoader cLoader = this.getClass().getClassLoader();
+        String databaseUrl = cLoader.getResource("/spmDB").toString();
+        
+        conn = DriverManager.getConnection("jdbc:sqlite:" + databaseUrl, connProperties);
         
         System.out.println("Connected to database");
         
