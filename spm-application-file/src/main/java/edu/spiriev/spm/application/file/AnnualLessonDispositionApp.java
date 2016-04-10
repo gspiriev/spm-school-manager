@@ -7,9 +7,9 @@ package edu.spiriev.spm.application.file;
 
 
 import edu.spiriev.spm.business.logic.SpmBusinessProcess;
-import edu.spiriev.spm.dao.file.MusicalPieceLoader;
-import edu.spiriev.spm.dao.file.SchoolDatesLoader;
-import edu.spiriev.spm.dao.file.StudentLoader;
+import edu.spiriev.spm.dao.database.MusicalPieceDatabaseLoader;
+import edu.spiriev.spm.dao.database.SchoolDatesDatabaseLoader;
+import edu.spiriev.spm.dao.database.StudentDatabaseLoader;
 import edu.spiriev.spm.domain.model.*;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -40,11 +40,11 @@ public class AnnualLessonDispositionApp {
 
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
      
-        MusicalPieceLoader mpLoader = new MusicalPieceLoader();
+        MusicalPieceDatabaseLoader mpLoader = new MusicalPieceDatabaseLoader();
         
-        SchoolDatesLoader sdLoader = new SchoolDatesLoader();
+        SchoolDatesDatabaseLoader sdLoader = new SchoolDatesDatabaseLoader();
         
-        StudentLoader stLoader = new StudentLoader();
+        StudentDatabaseLoader stLoader = new StudentDatabaseLoader();
         
 
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance

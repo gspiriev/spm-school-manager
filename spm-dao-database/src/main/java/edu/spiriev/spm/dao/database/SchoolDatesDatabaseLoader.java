@@ -21,7 +21,7 @@ import java.util.List;
  * Loads school dates from the school dates resource file.
  * @author root_spiriev
  */
-public class SchoolDatesLoader implements SchoolHolidaysDao{
+public class SchoolDatesDatabaseLoader implements SchoolHolidaysDao{
 
     @Override
     public List<Date> loadDates(){

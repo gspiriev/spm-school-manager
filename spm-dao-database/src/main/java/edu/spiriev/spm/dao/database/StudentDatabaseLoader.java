@@ -5,9 +5,10 @@
  */
 package edu.spiriev.spm.dao.database;
 
-import edu.spiriev.spm.dao.api.MusicalPieceDao;
+
+import edu.spiriev.spm.dao.api.StudentDao;
 import edu.spiriev.spm.domain.model.Grade;
-import edu.spiriev.spm.domain.model.MusicalPiece;
+import edu.spiriev.spm.domain.model.Student;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,42 +16,40 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 /**
- * Loads and creates a musical piece list from a file with musical pieces
+ * Loads a list a students from a resource file
  * @author root_spiriev
  */
-public class MusicalPieceLoader implements MusicalPieceDao{
+public class StudentDatabaseLoader implements StudentDao {
     
     
     @Override
-    public List<MusicalPiece> loadMusicalPieces(){
-        
-        List<MusicalPiece> musicalPieces = new ArrayList<>();
+    public List<Student> loadStudents() {
+       
+        List<Student> students = new ArrayList<>();
         
         try(Connection connection = new DatabaseConnection().getConnection()) {
             
             connection.setAutoCommit(false);
             
-            String sql = "SELECT MusicalPieces.composer, MusicalPieces.piece_name, MusicalPieces.complexity, grade.grade_name " +
-                         "FROM MusicalPieces " +
-                         "JOIN musicalPiece_grade ON MusicalPieces.musicalPiece_id = musicalPiece_grade.musicalPiece_id " +
-                         "JOIN grade ON musicalPiece_grade.grade_id = grade.grade_id" ;
+            String sql = "SELECT Student.student_name, Student.ability, grade.grade_name " +
+                         "FROM Student " +
+                         "JOIN student_grade ON Student.student_id = student_grade.student_grade_id " +
+                         "JOIN grade ON student_grade.grade_id = grade.grade_id" ;
             Statement stmt = connection.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             connection.commit();
             
             while(rs.next()) {
                 
-                MusicalPiece mPiece = null;
-                String composer = rs.getString(1);
-                String pieceName = rs.getString(2);
-                int complexity = rs.getInt(3);
-                Grade grade = Grade.valueOf(rs.getString(4));
+                Student student = null;
                 
-                mPiece = new MusicalPiece(pieceName, composer, complexity, grade);
-                musicalPieces.add(mPiece);
+                String stName = rs.getString(1);
+                int ability = rs.getInt(2);
+                Grade grade = Grade.valueOf(rs.getString(3));
+                
+                student = new Student(stName, grade, ability);
+                students.add(student);
             }
             
                     
@@ -63,7 +62,7 @@ public class MusicalPieceLoader implements MusicalPieceDao{
             System.err.println("No suitable SQLite driver found");
         }
         
-        return musicalPieces;
+        return students;
     }
 
 }
