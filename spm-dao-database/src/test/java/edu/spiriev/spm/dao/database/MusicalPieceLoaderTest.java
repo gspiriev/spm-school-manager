@@ -4,10 +4,6 @@
  * and open the template in the editor.
  */
 package edu.spiriev.spm.dao.database;
-
-import org.junit.Assert;
-import org.junit.Test;
-import edu.spiriev.spm.domain.model.*;
 /**
  *
  * @author root_spiriev

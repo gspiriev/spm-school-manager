@@ -34,7 +34,7 @@ public class AnnualLessonDispositionApp {
     }
 
     private void run() throws UnsupportedEncodingException {
-
+        
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
      
         MusicalPieceDatabaseLoader mpLoader = new MusicalPieceDatabaseLoader();

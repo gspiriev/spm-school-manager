@@ -26,10 +26,9 @@ public class DatabaseConnection {
         connProperties.put("user: ", "spiriev");
         connProperties.put("password: ", "spiriev_pass");
         
-        ClassLoader cLoader = this.getClass().getClassLoader();
-        String databaseUrl = cLoader.getResource("/spmDB").toString();
-        
-        conn = DriverManager.getConnection("jdbc:sqlite:" + databaseUrl, connProperties);
+        String databaseFile = this.getClass().getClassLoader().getResource("spmDB").getFile();
+                
+        conn = DriverManager.getConnection("jdbc:sqlite:" + databaseFile , connProperties);
         
         System.out.println("Connected to database");
         
