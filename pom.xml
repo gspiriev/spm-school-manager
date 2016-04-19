@@ -27,6 +27,7 @@
         <module>spm-business-logic</module>
         <module>spm-application-file</module>
         <module>spm-dao-database</module>
+        <module>spm-dao-file</module>
     </modules>
     
     <build>
