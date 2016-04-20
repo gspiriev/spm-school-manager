@@ -6,7 +6,6 @@
 package edu.spiriev.spm.dao.api;
 
 import edu.spiriev.spm.domain.model.MusicalPiece;
-import java.sql.ResultSet;
 import java.util.List;
 
 /**
