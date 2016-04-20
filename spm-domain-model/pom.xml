@@ -4,10 +4,10 @@
     <parent>
         <groupId>edu.spiriev.spm</groupId>
         <artifactId>spm-school-plan-manager</artifactId>
-        <version>1.3-SNAPSHOT</version>
+        <version>1.4-SNAPSHOT</version>
     </parent>
     <artifactId>spm-domain-model</artifactId>
-  <version>1.3-SNAPSHOT</version>
+  <version>1.4-SNAPSHOT</version>
     <packaging>jar</packaging>
     
     <dependencies>

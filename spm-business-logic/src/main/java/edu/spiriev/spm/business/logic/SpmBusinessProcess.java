@@ -31,7 +31,7 @@ public class SpmBusinessProcess {
         
         Map<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
         List<Student> studentList = stLoader.loadStudents();
-        List<StudyDate> studentSpecificDates;
+        List<Date> allDates = dLoader.loadDates();
         List<MusicalPiece> listOfPieces = mpLoader.loadMusicalPieces();
         
         for (Student st: studentList) {
@@ -53,7 +53,7 @@ public class SpmBusinessProcess {
                     break;
             }
             
-           studentSpecificDates = createStudyDatesList(startYear, endDate, dLoader);
+           List<StudyDate> studentSpecificDates = createStudyDatesList(startYear, endDate, allDates);
            
            
            WeeklySchedule specificSchedule = new AnnualLessonDisposition().createSpecificSchedule(st,
@@ -65,24 +65,23 @@ public class SpmBusinessProcess {
     }
     
     public List<StudyDate> createStudyDatesList(int startYear,
-                                                            Calendar endDate, SchoolHolidaysDao dLoader){
+                                                            Calendar endDate, List<Date> allDates){
 
         List<StudyDate> studyDatesList = new ArrayList<>();
-        List<Date> allDates = createDatesList(startYear, endDate.getTime(), dLoader);
+        List<Date> specificDates = createDatesList(startYear, endDate.getTime(), allDates);
 
-        for (int index = 1; index < allDates.size(); index += 2) {
+        for (int index = 1; index < specificDates.size(); index += 2) {
 
-            studyDatesList.add(new StudyDate(allDates.get(index - 1),
-                  allDates.get(index)));
+            studyDatesList.add(new StudyDate(specificDates.get(index - 1),
+                  specificDates.get(index)));
         }
 
         return studyDatesList;
     }
     
-    private List<Date> createDatesList(int startYear, Date endDate, SchoolHolidaysDao dLoader){
+    private List<Date> createDatesList(int startYear, Date endDate, List<Date> allDates){
 
         List<Date> datesInAWeek = new ArrayList<>();
-        List<Date> noSchoolDatesList = dLoader.loadDates();
         Calendar c = Calendar.getInstance();
         c.set(startYear, 8, 15, 00, 00, 00);
         c.set(Calendar.MILLISECOND, 0);
@@ -95,7 +94,7 @@ public class SpmBusinessProcess {
 
                     c.add(Calendar.DAY_OF_MONTH, 1);
                 } else {
-                    for (Date deprecated : noSchoolDatesList) {
+                    for (Date deprecated : allDates) {
                         if (c.getTime().compareTo(deprecated) == 0) {
                             c.add(Calendar.DAY_OF_MONTH, 1);
                         }
@@ -114,7 +113,7 @@ public class SpmBusinessProcess {
                 }
                 
                 if (c.get(Calendar.DAY_OF_WEEK) == (Calendar.FRIDAY)) {
-                    for (Date deprecated : noSchoolDatesList) {
+                    for (Date deprecated : allDates) {
                         if (c.getTime().compareTo(deprecated) == 0) {
                             c.add(Calendar.DAY_OF_MONTH, -1);
                         }

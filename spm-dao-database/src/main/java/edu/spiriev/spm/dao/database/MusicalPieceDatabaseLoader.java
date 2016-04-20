@@ -18,7 +18,7 @@ import java.util.List;
 
 
 /**
- * Loads and creates a musical piece list from a file with musical pieces
+ * Loads and creates a musical piece list from a database
  * @author root_spiriev
  */
 public class MusicalPieceDatabaseLoader implements MusicalPieceDao{

@@ -36,19 +36,12 @@ public class AnnualLessonDispositionApp {
     private void run() throws UnsupportedEncodingException {
         
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
-     
-        MusicalPieceDatabaseLoader mpLoader = new MusicalPieceDatabaseLoader();
-        
-        SchoolDatesDatabaseLoader sdLoader = new SchoolDatesDatabaseLoader();
-        
-        StudentDatabaseLoader stLoader = new StudentDatabaseLoader();
-        
 
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(
-                        stLoader,
-                        mpLoader,
-                        sdLoader,
+                        new StudentDatabaseLoader(),
+                        new MusicalPieceDatabaseLoader(),
+                        new SchoolDatesDatabaseLoader(),
                         startEndYear.getValue(),
                         startEndYear.getKey());
 
