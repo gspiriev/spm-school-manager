@@ -4,6 +4,7 @@
 /spm-business-logic/target/**
 /spm-application-file/target/**
 /spm-application-file/AnnualLessonDisposition.txt
+/spm-dao-database/target/**
 <<<<<<< HEAD
 /spm-dao-api/nbactions.xml
 /spm-domain-model/nbactions.xml
