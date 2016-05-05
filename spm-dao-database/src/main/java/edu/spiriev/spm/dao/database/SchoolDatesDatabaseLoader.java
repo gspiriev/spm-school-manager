@@ -6,6 +6,7 @@
 package edu.spiriev.spm.dao.database;
 
 import edu.spiriev.spm.dao.api.SchoolHolidaysDao;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
