@@ -102,7 +102,7 @@ public class DatesEntity implements Serializable {
 
     @Override
     public String toString() {
-        return "edu.spiriev.spm.persistence.DatesEntity[ dateId=" + dateId + " ]";
+        return dateDay + "/" + dateMonth + "/" + dateYear;
     }
     
 }

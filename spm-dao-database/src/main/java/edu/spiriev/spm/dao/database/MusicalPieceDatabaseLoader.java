@@ -8,7 +8,6 @@ package edu.spiriev.spm.dao.database;
 import edu.spiriev.spm.dao.api.MusicalPieceDao;
 import edu.spiriev.spm.domain.model.Grade;
 import edu.spiriev.spm.domain.model.MusicalPiece;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;

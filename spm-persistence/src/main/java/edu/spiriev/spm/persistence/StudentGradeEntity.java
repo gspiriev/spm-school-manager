@@ -15,6 +15,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -38,7 +39,7 @@ public class StudentGradeEntity implements Serializable {
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private GradeEntity gradeId;
     @JoinColumn(name = "student_id", referencedColumnName = "student_id")
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @OneToOne(optional = false, fetch = FetchType.LAZY)
     private StudentEntity studentId;
 
     public StudentGradeEntity() {
@@ -94,7 +95,7 @@ public class StudentGradeEntity implements Serializable {
 
     @Override
     public String toString() {
-        return "edu.spiriev.spm.persistence.StudentGradeEntity[ studentGradeId=" + studentGradeId + " ]";
+        return "edu.spiriev.spm.persistence.StudentGradeEntity[ studentGradeId=" + studentGradeId + " gradeId=" + gradeId + " ]";
     }
     
 }

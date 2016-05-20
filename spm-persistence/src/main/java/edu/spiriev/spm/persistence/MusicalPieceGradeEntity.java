@@ -13,8 +13,10 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
+import org.hibernate.annotations.NamedQuery;
 
 /**
  *
@@ -23,19 +25,19 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Entity
 @XmlRootElement
 @Table(name = "musicalPiece_grade")
-
+@NamedQuery(name = "MusicalPieceGradeEntity.findAll", query = "SELECT mg FROM MusicalPieceGradeEntity mg")
 public class MusicalPieceGradeEntity implements Serializable {
     
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "musicalPiece_grade_id")
+    @Column(name = "id")
     private Integer musicalPieceGradeId;
     @JoinColumn(name = "grade_id", referencedColumnName = "grade_id")
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private GradeEntity gradeId;
     @JoinColumn(name = "musicalPiece_id", referencedColumnName = "musicalPiece_id")
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @OneToOne(optional = false, fetch = FetchType.LAZY)
     private MusicalPiecesEntity musicalPieceId;
 
     public MusicalPieceGradeEntity(Integer musicalPieceGradeId) {
@@ -95,7 +97,7 @@ public class MusicalPieceGradeEntity implements Serializable {
 
     @Override
     public String toString() {
-        return "edu.spiriev.spm.persistence.MusicalPieceGradeEntity[ id=" + musicalPieceGradeId + " ]";
+        return "edu.spiriev.spm.persistence.MusicalPieceGradeEntity[ id=" + musicalPieceGradeId + " gradeId=" + gradeId + " ]";
     }
     
 }

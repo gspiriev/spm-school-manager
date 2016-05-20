@@ -6,7 +6,6 @@
 package edu.spiriev.spm.persistence;
 
 import java.io.Serializable;
-import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -15,7 +14,7 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
@@ -42,8 +41,8 @@ public class StudentEntity implements Serializable {
     private String studentName;
     @Column(name = "ability")
     private Integer ability;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "studentId", fetch = FetchType.LAZY)
-    private Collection<StudentGradeEntity> studentGradeEntityCollection;
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "studentId", fetch = FetchType.LAZY)
+    private StudentGradeEntity studentGradeEntity;
 
     public StudentEntity() {
     }
@@ -77,12 +76,12 @@ public class StudentEntity implements Serializable {
     }
 
     @XmlTransient
-    public Collection<StudentGradeEntity> getStudentGradeEntityCollection() {
-        return studentGradeEntityCollection;
+    public StudentGradeEntity getStudentGradeEntity() {
+        return studentGradeEntity;
     }
 
-    public void setStudentGradeEntityCollection(Collection<StudentGradeEntity> studentGradeEntityCollection) {
-        this.studentGradeEntityCollection = studentGradeEntityCollection;
+    public void setStudentGradeEntity(StudentGradeEntity studentGradeEntity) {
+        this.studentGradeEntity = studentGradeEntity;
     }
 
     @Override
@@ -107,7 +106,7 @@ public class StudentEntity implements Serializable {
 
     @Override
     public String toString() {
-        return "edu.spiriev.spm.persistence.StudentEntity[ studentId=" + studentId + " ]";
+        return "edu.spiriev.spm.persistence.StudentEntity[ studentId=" + studentId + ", " + studentName + ", studentGradeEntity=" + studentGradeEntity +" ]";
     }
     
 }

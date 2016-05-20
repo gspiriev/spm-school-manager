@@ -6,7 +6,6 @@
 package edu.spiriev.spm.persistence;
 
 import java.io.Serializable;
-import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -15,7 +14,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
@@ -29,7 +28,7 @@ import javax.xml.bind.annotation.XmlTransient;
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "MusicalPiecesEntity.findAll", query = "SELECT m FROM MusicalPiecesEntity m"),
-    @NamedQuery(name = "MusicalPiecesEntity.findByMusicalPieceid", query = "SELECT m FROM MusicalPiecesEntity m WHERE m.musicalPieceid = :musicalPieceid"),
+    @NamedQuery(name = "MusicalPiecesEntity.findByMusicalPieceid", query = "SELECT m FROM MusicalPiecesEntity m WHERE m.musicalPieceId = :musicalPieceId"),
     @NamedQuery(name = "MusicalPiecesEntity.findByComposer", query = "SELECT m FROM MusicalPiecesEntity m WHERE m.composer = :composer"),
     @NamedQuery(name = "MusicalPiecesEntity.findByPieceName", query = "SELECT m FROM MusicalPiecesEntity m WHERE m.pieceName = :pieceName"),
     @NamedQuery(name = "MusicalPiecesEntity.findByComplexity", query = "SELECT m FROM MusicalPiecesEntity m WHERE m.complexity = :complexity")})
@@ -39,34 +38,31 @@ public class MusicalPiecesEntity implements Serializable {
     @Id
     @Basic(optional = false)
     @Column(name = "musicalPiece_id")
-    private int musicalPieceid;
+    private int musicalPieceId;
     @Column(name = "composer")
     private String composer;
     @Column(name = "piece_name")
     private String pieceName;
     @Column(name = "complexity")
     private Integer complexity;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "musicalPiece_id", fetch = FetchType.LAZY)
-    protected Collection<MusicalPieceGradeEntity> musicalPiecesGradeEntityCollection;
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "musicalPieceId", fetch = FetchType.LAZY)
+    protected MusicalPieceGradeEntity musicalPiecesGradeEntity;
 
     public MusicalPiecesEntity() {
     }
 
     @XmlTransient
-    public Collection<MusicalPieceGradeEntity> getMusicalPieceGradeEntityCollection() {
-        return this.musicalPiecesGradeEntityCollection;
+    public MusicalPieceGradeEntity getMusicalPieceGradeEntity() {
+        return this.musicalPiecesGradeEntity;
     }
-    
-    public void setMusicalPieceGradeEntityCollection(Collection<MusicalPieceGradeEntity> musicalPiecesGradeEntityCollection) {
-        this.musicalPiecesGradeEntityCollection = musicalPiecesGradeEntityCollection;
-    }
+   
     
     public int getMusicalPieceid() {
-        return musicalPieceid;
+        return musicalPieceId;
     }
 
     public void setMusicalPieceid(int musicalPieceid) {
-        this.musicalPieceid = musicalPieceid;
+        this.musicalPieceId = musicalPieceid;
     }
 
     public String getComposer() {
@@ -96,7 +92,7 @@ public class MusicalPiecesEntity implements Serializable {
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (musicalPiecesGradeEntityCollection != null ? musicalPiecesGradeEntityCollection.hashCode() : 0);
+        hash += (musicalPiecesGradeEntity != null ? musicalPiecesGradeEntity.hashCode() : 0);
         return hash;
     }
 
@@ -107,7 +103,7 @@ public class MusicalPiecesEntity implements Serializable {
             return false;
         }
         MusicalPiecesEntity other = (MusicalPiecesEntity) object;
-        if ((this.musicalPiecesGradeEntityCollection == null && other.musicalPiecesGradeEntityCollection != null) || (this.musicalPiecesGradeEntityCollection != null && !this.musicalPiecesGradeEntityCollection.equals(other.musicalPiecesGradeEntityCollection))) {
+        if ((this.musicalPiecesGradeEntity == null && other.musicalPiecesGradeEntity != null) || (this.musicalPiecesGradeEntity != null && !this.musicalPiecesGradeEntity.equals(other.musicalPiecesGradeEntity))) {
             return false;
         }
         return true;
@@ -115,7 +111,7 @@ public class MusicalPiecesEntity implements Serializable {
 
     @Override
     public String toString() {
-        return "edu.spiriev.spm.persistence.MusicalPiecesEntity[ musicalPieceId=" + musicalPieceid + " ]";
+        return "edu.spiriev.spm.persistence.MusicalPiecesEntity[ musicalPieceId=" + musicalPieceId + " musicalPieceName=" + pieceName + " grade=" + musicalPiecesGradeEntity + " ]";
     }
     
 }

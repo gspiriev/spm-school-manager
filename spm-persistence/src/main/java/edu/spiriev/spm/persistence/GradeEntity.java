@@ -6,19 +6,14 @@
 package edu.spiriev.spm.persistence;
 
 import java.io.Serializable;
-import java.util.Collection;
 import javax.persistence.Basic;
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
@@ -39,8 +34,6 @@ public class GradeEntity implements Serializable {
     private Integer gradeId;
     @Column(name = "grade_name")
     private String gradeName;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "gradeId", fetch = FetchType.LAZY)
-    private Collection<StudentGradeEntity> studentGradeEntityCollection;
 
     public GradeEntity() {
     }
@@ -65,14 +58,7 @@ public class GradeEntity implements Serializable {
         this.gradeName = gradeName;
     }
 
-    @XmlTransient
-    public Collection<StudentGradeEntity> getStudentGradeEntityCollection() {
-        return studentGradeEntityCollection;
-    }
-
-    public void setStudentGradeEntityCollection(Collection<StudentGradeEntity> studentGradeEntityCollection) {
-        this.studentGradeEntityCollection = studentGradeEntityCollection;
-    }
+    
 
     @Override
     public int hashCode() {
@@ -96,7 +82,7 @@ public class GradeEntity implements Serializable {
 
     @Override
     public String toString() {
-        return "edu.spiriev.spm.persistence.GradeEntity[ gradeId=" + gradeId + " ]";
+        return "edu.spiriev.spm.persistence.GradeEntity[ gradeId=" + gradeId + "gradeName=" + gradeName + " ]";
     }
     
 }
