@@ -17,9 +17,9 @@ import java.util.List;
  */
 public class DatesHibernateLoader implements SchoolHolidaysDao  {
     
-    protected final SQLiteLoader loadFromSQLite;
+    protected final DBLoader loadFromSQLite;
     
-    public DatesHibernateLoader(SQLiteLoader loadFromSQLite1) {
+    public DatesHibernateLoader(DBLoader loadFromSQLite1) {
         
         this.loadFromSQLite = loadFromSQLite1;
     }

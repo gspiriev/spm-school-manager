@@ -15,29 +15,28 @@ import java.io.FileWriter;
 import java.util.AbstractMap;
 import java.util.Map;
 import java.util.Scanner;
+
 /**
  *
  * @author root_spiriev
  */
 public class AnnualLessonDispositionAppOrm {
-    
+
     public static void main(String[] args) throws Exception {
         AnnualLessonDispositionAppOrm annualDisposition = new AnnualLessonDispositionAppOrm();
 
         annualDisposition.run();
     }
-    
+
     private void run() {
-        
-        SQLiteLoader loader = new SQLiteLoader(new ArrayList<>(),
-                                                   new ArrayList<>(),
-                                                   new ArrayList<>(),
-                                                   new ArrayList<>(),
-                                                   new ArrayList<>(),
-                                                   new ArrayList<>());
-        loader.loadFromSQLite();
-        
-        
+
+        DBLoader loader = new DBLoader(new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>());
+        loader.loadFromDB("manager2");
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
 
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
@@ -49,10 +48,9 @@ public class AnnualLessonDispositionAppOrm {
                         startEndYear.getKey());
 
         writeOutput(lessonDisposition);
-        
-        
+
     }
-    
+
     private Map.Entry<Integer, Integer> readUserInput() {
 
         System.out.println("Enter start and end year, each followed by enter key");
@@ -89,5 +87,5 @@ public class AnnualLessonDispositionAppOrm {
             System.out.println("No output file or path found");
         }
     }
-    
+
 }

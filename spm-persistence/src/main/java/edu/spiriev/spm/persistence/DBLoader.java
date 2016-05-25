@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
@@ -16,7 +17,7 @@ import javax.persistence.TypedQuery;
  *
  * @author root_spiriev
  */
-public class SQLiteLoader {
+public class DBLoader {
     
     protected List<DatesEntity> datesEntities;
     protected List<GradeEntity> gradeEntities;
@@ -25,7 +26,7 @@ public class SQLiteLoader {
     protected List<MusicalPieceGradeEntity> musicalPieceGradeEntities;
     protected List<StudentGradeEntity> studentGradeEntities;
 
-    public SQLiteLoader(ArrayList<DatesEntity> datesEntities, ArrayList<GradeEntity> gradeEntities, 
+    public DBLoader(ArrayList<DatesEntity> datesEntities, ArrayList<GradeEntity> gradeEntities, 
                           ArrayList<MusicalPiecesEntity> musicalPieceEntities,
                           ArrayList<StudentEntity> studentEntities, ArrayList<MusicalPieceGradeEntity> musicalPieceGradeEntities,
                           ArrayList<StudentGradeEntity> studentGradeEntities) {
@@ -61,9 +62,9 @@ public class SQLiteLoader {
         return studentGradeEntities;
     }
     
-    public void loadFromSQLite() {
+    public void loadFromDB(String manager) {
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("manager1");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory(manager);
         EntityManager em = emf.createEntityManager();
         
         TypedQuery<DatesEntity> datesQuery = em.createNamedQuery("DatesEntity.findAll", DatesEntity.class);

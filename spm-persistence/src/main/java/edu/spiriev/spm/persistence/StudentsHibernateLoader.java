@@ -17,9 +17,9 @@ import java.util.List;/**
  */
 public class StudentsHibernateLoader implements StudentDao{
     
-    protected final SQLiteLoader loadFromSQLite;
+    protected final DBLoader loadFromSQLite;
 
-    public StudentsHibernateLoader(SQLiteLoader loadFromSQLite) {
+    public StudentsHibernateLoader(DBLoader loadFromSQLite) {
         this.loadFromSQLite = loadFromSQLite;
     }
     

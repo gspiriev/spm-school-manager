@@ -16,9 +16,9 @@ import java.util.List;
  */
 public class MusicalPieceHibernateLoader implements MusicalPieceDao{
     
-    protected final SQLiteLoader loadFromSQLite;
+    protected final DBLoader loadFromSQLite;
 
-    public MusicalPieceHibernateLoader(SQLiteLoader loadFromSQLite) {
+    public MusicalPieceHibernateLoader(DBLoader loadFromSQLite) {
         this.loadFromSQLite = loadFromSQLite;
     }
     

@@ -56,7 +56,6 @@ public class StudentDatabaseLoader implements StudentDao {
         } catch (SQLException e) {
             
             System.err.println("Invalid SQL query");
-            e.printStackTrace();
         } catch (ClassNotFoundException e) {
             
             System.err.println("No suitable SQLite driver found");
