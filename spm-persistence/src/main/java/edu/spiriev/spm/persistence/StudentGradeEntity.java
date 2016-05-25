@@ -10,6 +10,8 @@ import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -33,6 +35,7 @@ public class StudentGradeEntity implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "student_grade_id")
     private Integer studentGradeId;
     @JoinColumn(name = "grade_id", referencedColumnName = "grade_id")
@@ -49,6 +52,11 @@ public class StudentGradeEntity implements Serializable {
         this.studentGradeId = studentGradeId;
     }
 
+    public StudentGradeEntity(GradeEntity gradeId) {
+        this.gradeId = gradeId;
+    }
+    
+    
     public Integer getStudentGradeId() {
         return studentGradeId;
     }

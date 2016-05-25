@@ -16,4 +16,6 @@ public interface StudentDao {
     
     List<Student> loadStudents();
     
+    //void insertStudent(Student student);
+    
 }

@@ -22,23 +22,28 @@ import java.util.List;
  */
 public class StudentDatabaseLoader implements StudentDao {
     
+    private final Connection conn;
+
+    public StudentDatabaseLoader(Connection conn) {
+        this.conn = conn;
+    }
+    
+    
     
     @Override
     public List<Student> loadStudents() {
        
         List<Student> students = new ArrayList<>();
         
-        try(Connection connection = new DatabaseConnection().getConnection()) {
+        try {
             
-            connection.setAutoCommit(false);
             
             String sql = "SELECT Student.student_name, Student.ability, grade.grade_name " +
                          "FROM Student " +
                          "JOIN student_grade ON Student.student_id = student_grade.student_grade_id " +
                          "JOIN grade ON student_grade.grade_id = grade.grade_id" ;
-            Statement stmt = connection.createStatement();
+            Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
-            connection.commit();
             
             while(rs.next()) {
                 
@@ -56,12 +61,7 @@ public class StudentDatabaseLoader implements StudentDao {
         } catch (SQLException e) {
             
             System.err.println("Invalid SQL query");
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            
-            System.err.println("No suitable SQLite driver found");
         }
-        
         return students;
     }
 

@@ -6,6 +6,8 @@
 package edu.spiriev.spm.application.file;
 
 import edu.spiriev.spm.business.logic.SpmBusinessProcess;
+import edu.spiriev.spm.dao.file.AbstractDaoFileImpl;
+import edu.spiriev.spm.dao.file.GetFiles;
 import edu.spiriev.spm.dao.file.MusicalPieceLoader;
 import edu.spiriev.spm.dao.file.SchoolDatesLoader;
 import edu.spiriev.spm.dao.file.StudentLoader;
@@ -34,17 +36,16 @@ public class AnnualLessonDispositionAppFileReading {
     private void run() throws UnsupportedEncodingException {
         
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
-     
-        ClassLoader cl = AnnualLessonDispositionAppFileReading.class.getClassLoader();
-        File[] resources = {new File(cl.getResource("Students.txt").getFile()),
-                            new File(cl.getResource("Graded_Pieces_All_CSV.csv").getFile()),
-                            new File(cl.getResource("deprecatedDatesFirst.txt").getFile())};
+        String[] props = new String[] {
+        "Students", "Graded_Pieces_All_CSV.csv", "deprecatedDatesFirst.txt"};
+        GetFiles getFiles = new GetFiles();
+        getFiles.makeConnection(props);
+        File[] resources = getFiles.getResources();
+        
 
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(
-                        new StudentLoader(resources[0]),
-                        new MusicalPieceLoader(resources[1]),
-                        new SchoolDatesLoader(resources[2]),
+                        new AbstractDaoFileImpl(resources),
                         startEndYear.getValue(),
                         startEndYear.getKey());
 
@@ -52,13 +53,12 @@ public class AnnualLessonDispositionAppFileReading {
         
     }
 
-    private Map.Entry<Integer, Integer> readUserInput() {
+ private Map.Entry<Integer, Integer> readUserInput() {
 
-        System.out.println("Enter start and end year, each followed by enter key");
+        System.out.println("Enter start year for the disposition,followed by enter key");
         Scanner scan = new Scanner(System.in);
         final Integer startYear = Integer.parseInt(scan.nextLine());
-        final Integer endYear = Integer.parseInt(scan.nextLine());
-
+        final Integer endYear = startYear + 1;
         return new AbstractMap.SimpleEntry<Integer, Integer>(startYear, endYear);
 
     }

@@ -13,4 +13,6 @@ public interface BusinessConnection {
     
     void commitTransaction();
     
+    void makeConnection(String[] props);
+    
 }

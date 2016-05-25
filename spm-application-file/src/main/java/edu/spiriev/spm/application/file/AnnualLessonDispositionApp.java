@@ -10,11 +10,17 @@ import edu.spiriev.spm.business.logic.SpmBusinessProcess;
 import edu.spiriev.spm.domain.model.*;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.AbstractMap;
+import java.util.Properties;
 
 /**
  * The main class which creates an annual disposition list, for all the students
@@ -33,29 +39,40 @@ public class AnnualLessonDispositionApp {
         annualDisposition.run();
     }
 
-    private void run() throws UnsupportedEncodingException {
+    private void run() throws UnsupportedEncodingException, SQLException {
         
-        Map.Entry<Integer, Integer> startEndYear = readUserInput();
+        try {
+            Map.Entry<Integer, Integer> startEndYear = readUserInput();
 
-        Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
-                .createAllStudentDisposition(
-                        new StudentDatabaseLoader(),
-                        new MusicalPieceDatabaseLoader(),
-                        new SchoolDatesDatabaseLoader(),
-                        startEndYear.getValue(),
-                        startEndYear.getKey());
 
-        writeOutput(lessonDisposition);
+            JdbcConnection jdbcConn = new JdbcConnection();
+            jdbcConn.makeConnection(getProperties());
+            
+            Connection conn = jdbcConn.getConn();
+
+            Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
+                    .createAllStudentDisposition(
+                            new AbstractDaoJdbcImpl(conn),
+                            startEndYear.getValue(),
+                            startEndYear.getKey());
+            
+            jdbcConn.commitTransaction();
+            
+            writeOutput(lessonDisposition);
+        
+        } catch (Exception e) {
+            
+            throw new SQLException(e);
+        }
         
     }
 
     private Map.Entry<Integer, Integer> readUserInput() {
 
-        System.out.println("Enter start and end year, each followed by enter key");
+        System.out.println("Enter start year for the disposition,followed by enter key");
         Scanner scan = new Scanner(System.in);
         final Integer startYear = Integer.parseInt(scan.nextLine());
-        final Integer endYear = Integer.parseInt(scan.nextLine());
-
+        final Integer endYear = startYear + 1;
         return new AbstractMap.SimpleEntry<Integer, Integer>(startYear, endYear);
 
     }
@@ -84,6 +101,39 @@ public class AnnualLessonDispositionApp {
 
             System.out.println("No output file or path found");
         }
+    }
+    
+    private String[] getProperties() {
+        
+        String[] resultString = new String[3];
+        
+        try {
+            InputStream inputStream = null;
+
+            Properties props = new Properties();
+            String propFileName = "application.properties";
+
+            inputStream = this.getClass().getClassLoader().getResourceAsStream(propFileName);
+        
+       
+            if(inputStream != null) {
+
+                props.load(inputStream);
+            } else {
+
+                throw new FileNotFoundException("Properties file " + propFileName + "is not on the classpath");
+            }
+
+            resultString[0] = props.getProperty("driverName");
+            resultString[1] = props.getProperty("dbName");
+            resultString[2] = props.getProperty("connAndEngine");
+            
+            inputStream.close();
+        } catch(IOException e) {
+            System.err.println("Exception: " + e);
+        } 
+        
+        return resultString;
     }
     
 //    private void insertStudentDataFromFileToDb (StudentLoader stLoader) {

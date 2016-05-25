@@ -11,23 +11,27 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 /**
  *
  * @author root_spiriev
  */
 public class DatesHibernateLoader implements SchoolHolidaysDao  {
     
-    protected final SQLiteLoader loadFromSQLite;
-    
-    public DatesHibernateLoader(SQLiteLoader loadFromSQLite1) {
-        
-        this.loadFromSQLite = loadFromSQLite1;
+    private final EntityManager em;
+
+    public DatesHibernateLoader(EntityManager em) {
+        this.em = em;
     }
     
     @Override
     public List<Date> loadDates() {
+        
+        TypedQuery<DatesEntity> datesQuery = this.em.createNamedQuery("DatesEntity.findAll", DatesEntity.class);
+        List<DatesEntity> datesEntities = datesQuery.getResultList();
+        
         List<Date> datesList = new ArrayList<>();
-        List<DatesEntity> datesEntities = this.loadFromSQLite.getDatesEntities();
         
         DateFormat dFormat = new SimpleDateFormat("dd/MM/yyyy");
         Date nextDate = null;

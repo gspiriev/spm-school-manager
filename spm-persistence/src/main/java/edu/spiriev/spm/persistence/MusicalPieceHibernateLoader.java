@@ -10,22 +10,30 @@ import edu.spiriev.spm.domain.model.Grade;
 import edu.spiriev.spm.domain.model.MusicalPiece;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 /**
  *
  * @author root_spiriev
  */
 public class MusicalPieceHibernateLoader implements MusicalPieceDao{
     
-    protected final SQLiteLoader loadFromSQLite;
+    private final EntityManager em;
 
-    public MusicalPieceHibernateLoader(SQLiteLoader loadFromSQLite) {
-        this.loadFromSQLite = loadFromSQLite;
+    public MusicalPieceHibernateLoader(EntityManager em) {
+        this.em = em;
     }
+    
+    
     
     @Override
     public List<MusicalPiece> loadMusicalPieces() {
+        
+        TypedQuery<MusicalPiecesEntity> musicalPiecesQuery = em.createNamedQuery("MusicalPiecesEntity.findAll", MusicalPiecesEntity.class);
+        List<MusicalPiecesEntity> musicalPieceEntities = musicalPiecesQuery.getResultList();
+        
         List<MusicalPiece> musicalPieces = new ArrayList<>();
-        List<MusicalPiecesEntity> musicalPieceEntities = this.loadFromSQLite.getMusicalPieceEntities();
+        
         
         MusicalPiece nextPiece = null;
         for (MusicalPiecesEntity musicalPieceEntity: musicalPieceEntities) {

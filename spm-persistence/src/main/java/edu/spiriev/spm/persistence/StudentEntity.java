@@ -11,6 +11,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
@@ -35,6 +37,7 @@ public class StudentEntity implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "student_id")
     private Integer studentId;
     @Column(name = "student_name")
@@ -50,6 +53,14 @@ public class StudentEntity implements Serializable {
     public StudentEntity(Integer studentId) {
         this.studentId = studentId;
     }
+
+    public StudentEntity(String studentName, Integer ability) {
+        
+        this.studentName = studentName;
+        this.ability = ability;
+    }
+    
+    
 
     public Integer getStudentId() {
         return studentId;

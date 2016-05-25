@@ -12,6 +12,8 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
@@ -37,6 +39,7 @@ public class MusicalPiecesEntity implements Serializable {
     
     @Id
     @Basic(optional = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "musicalPiece_id")
     private int musicalPieceId;
     @Column(name = "composer")

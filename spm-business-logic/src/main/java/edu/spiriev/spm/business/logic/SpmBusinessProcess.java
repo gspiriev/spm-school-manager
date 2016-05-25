@@ -27,12 +27,13 @@ public class SpmBusinessProcess {
     
     public static final SpmBusinessProcess instance = new SpmBusinessProcess();
     
-    public Map<Student, WeeklySchedule> createAllStudentDisposition(StudentDao stLoader, MusicalPieceDao mpLoader, SchoolHolidaysDao dLoader, Integer endYear, Integer startYear) {
+    public Map<Student, WeeklySchedule> createAllStudentDisposition(AbstractDao aDao, Integer endYear, Integer startYear) {
         
         Map<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
-        List<Student> studentList = stLoader.loadStudents();
-        List<Date> allDates = dLoader.loadDates();
-        List<MusicalPiece> listOfPieces = mpLoader.loadMusicalPieces();
+        aDao.loadAll();
+        List<Student> studentList = aDao.getStudents();
+        List<Date> allDates = aDao.getDates();
+        List<MusicalPiece> listOfPieces = aDao.getMusicalPieces();
         
         for (Student st: studentList) {
             

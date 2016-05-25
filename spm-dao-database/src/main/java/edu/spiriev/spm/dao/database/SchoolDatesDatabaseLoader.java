@@ -22,21 +22,25 @@ import java.util.List;
  * @author root_spiriev
  */
 public class SchoolDatesDatabaseLoader implements SchoolHolidaysDao{
+    
+    private final Connection conn;
 
+    public SchoolDatesDatabaseLoader(Connection conn) {
+        this.conn = conn;
+    }
+    
+    
     @Override
     public List<Date> loadDates(){
 
         ArrayList<Date> noSchoolDateList = new ArrayList<>();
         
-        try(Connection conn = new DatabaseConnection().getConnection()) {
-            
-            conn.setAutoCommit(false);
+        try {
             
             Statement stmt = conn.createStatement();
             String sql = "SELECT date_day, date_month, date_year FROM dates";
             ResultSet rs = stmt.executeQuery(sql);
-            conn.commit();
-            
+          
             while(rs.next()) {
                
                 String dateString = rs.getString(1) + "/" + rs.getString(2) + "/" + rs.getString(3);
@@ -58,9 +62,6 @@ public class SchoolDatesDatabaseLoader implements SchoolHolidaysDao{
             
             System.err.println("Invalid SQL query");
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            
-            System.err.println("No suitable driver for sqlite found.");
         }
         
         return noSchoolDateList;

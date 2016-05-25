@@ -23,23 +23,27 @@ import java.util.List;
  */
 public class MusicalPieceDatabaseLoader implements MusicalPieceDao{
     
+    private final Connection conn;
+
+    public MusicalPieceDatabaseLoader(Connection conn) {
+        this.conn = conn;
+    }
+    
+    
     
     @Override
     public List<MusicalPiece> loadMusicalPieces(){
         
         List<MusicalPiece> musicalPieces = new ArrayList<>();
         
-        try(Connection connection = new DatabaseConnection().getConnection()) {
-            
-            connection.setAutoCommit(false);
+        try {
             
             String sql = "SELECT MusicalPieces.composer, MusicalPieces.piece_name, MusicalPieces.complexity, grade.grade_name " +
                          "FROM MusicalPieces " +
                          "JOIN musicalPiece_grade ON MusicalPieces.musicalPiece_id = musicalPiece_grade.musicalPiece_id " +
                          "JOIN grade ON musicalPiece_grade.grade_id = grade.grade_id" ;
-            Statement stmt = connection.createStatement();
+            Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
-            connection.commit();
             
             while(rs.next()) {
                 
@@ -53,14 +57,10 @@ public class MusicalPieceDatabaseLoader implements MusicalPieceDao{
                 musicalPieces.add(mPiece);
             }
             
-                    
         } catch (SQLException e) {
             
             System.err.println("Invalid SQL query");
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            
-            System.err.println("No suitable SQLite driver found");
         }
         
         return musicalPieces;

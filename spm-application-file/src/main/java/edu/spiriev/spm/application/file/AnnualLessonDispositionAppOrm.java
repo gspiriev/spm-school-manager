@@ -7,7 +7,6 @@ package edu.spiriev.spm.application.file;
 
 import edu.spiriev.spm.business.logic.SpmBusinessProcess;
 import edu.spiriev.spm.persistence.*;
-import java.util.ArrayList;
 import edu.spiriev.spm.domain.model.*;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -15,51 +14,43 @@ import java.io.FileWriter;
 import java.util.AbstractMap;
 import java.util.Map;
 import java.util.Scanner;
+
 /**
  *
  * @author root_spiriev
  */
 public class AnnualLessonDispositionAppOrm {
-    
+
     public static void main(String[] args) throws Exception {
         AnnualLessonDispositionAppOrm annualDisposition = new AnnualLessonDispositionAppOrm();
 
         annualDisposition.run();
     }
-    
+
     private void run() {
         
-        SQLiteLoader loader = new SQLiteLoader(new ArrayList<>(),
-                                                   new ArrayList<>(),
-                                                   new ArrayList<>(),
-                                                   new ArrayList<>(),
-                                                   new ArrayList<>(),
-                                                   new ArrayList<>());
-        loader.loadFromSQLite();
-        
-        
+        JpaDatabaseConnection hDbConn = new JpaDatabaseConnection("manager1");
+        hDbConn.makeConnection(new String[]{"Properties in persistence.xml"});
+
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
 
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(
-                        new StudentsHibernateLoader(loader),
-                        new MusicalPieceHibernateLoader(loader),
-                        new DatesHibernateLoader(loader),
+                        new AbstractDaoImpl(hDbConn.getEm()),
                         startEndYear.getValue(),
                         startEndYear.getKey());
-
+        
+        hDbConn.commitTransaction();
         writeOutput(lessonDisposition);
-        
-        
+
     }
-    
+
     private Map.Entry<Integer, Integer> readUserInput() {
 
-        System.out.println("Enter start and end year, each followed by enter key");
+        System.out.println("Enter start year for the disposition,followed by enter key");
         Scanner scan = new Scanner(System.in);
         final Integer startYear = Integer.parseInt(scan.nextLine());
-        final Integer endYear = Integer.parseInt(scan.nextLine());
-
+        final Integer endYear = startYear + 1;
         return new AbstractMap.SimpleEntry<Integer, Integer>(startYear, endYear);
 
     }
@@ -89,5 +80,5 @@ public class AnnualLessonDispositionAppOrm {
             System.out.println("No output file or path found");
         }
     }
-    
+
 }

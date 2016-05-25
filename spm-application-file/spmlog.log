@@ -1,0 +1,309 @@
+08:58:09,889 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@341b80b2
+08:58:09,889 DEBUG BasicTypeRegistry:135 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@55a1c291
+08:58:09,889 DEBUG BasicTypeRegistry:135 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@2145433b
+08:58:09,894  WARN connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+08:58:09,898  INFO connections:127 - HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:../spm-application-file/src/main/resources/spmDB]
+08:58:09,898  INFO connections:136 - HHH10001001: Connection properties: {}
+08:58:09,898  INFO connections:141 - HHH10001003: Autocommit mode: false
+08:58:09,902  INFO DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+08:58:09,979  INFO Dialect:156 - HHH000400: Using dialect: edu.spiriev.spm.persistence.SQLiteDialect
+08:58:09,996  INFO LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+08:58:10,163 TRACE TypeFactory:58 - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@68746f22
+08:58:10,282  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+08:58:14,425 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [1]
+08:58:14,432 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [6]
+08:58:14,433 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Мия Канариева]
+08:58:14,435 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [2]
+08:58:14,435 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [8]
+08:58:14,435 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Симона Симеонова]
+08:58:14,436 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [3]
+08:58:14,436 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [6]
+08:58:14,436 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Христо Ризов]
+08:58:14,436 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [4]
+08:58:14,437 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [9]
+08:58:14,437 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Доротея Калинова]
+08:58:14,437 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [5]
+08:58:14,438 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [7]
+08:58:14,438 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Хайг Ованезов]
+08:58:14,438 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [6]
+08:58:14,439 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [6]
+08:58:14,439 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Яна Димова]
+08:58:14,440 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [7]
+08:58:14,441 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [9]
+08:58:14,441 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Виктория Атанасова]
+08:58:14,441 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [8]
+08:58:14,442 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [8]
+08:58:14,442 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Ема Сиракова]
+08:58:14,442 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [9]
+08:58:14,443 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [10]
+08:58:14,443 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Симона Зографова]
+08:58:14,443 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [10]
+08:58:14,443 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [8]
+08:58:14,444 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Елизар Ставрев]
+08:58:14,444 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [11]
+08:58:14,444 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [9]
+08:58:14,444 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Мирослав Цветков]
+08:58:14,449 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
+08:58:14,449 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [1]
+08:58:14,450 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [1]
+08:58:14,450 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [1]
+08:58:14,457 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [2]
+08:58:14,462 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [2]
+08:58:14,463 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [1]
+08:58:14,463 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [2]
+08:58:14,464 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [3]
+08:58:14,464 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [3]
+08:58:14,464 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [2]
+08:58:14,464 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [3]
+08:58:14,465 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [4]
+08:58:14,465 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [4]
+08:58:14,465 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [3]
+08:58:14,465 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [4]
+08:58:14,466 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [5]
+08:58:14,466 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [5]
+08:58:14,466 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [3]
+08:58:14,466 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [5]
+08:58:14,467 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [6]
+08:58:14,467 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [6]
+08:58:14,467 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [3]
+08:58:14,467 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [6]
+08:58:14,468 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [7]
+08:58:14,468 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [7]
+08:58:14,468 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [4]
+08:58:14,468 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [7]
+08:58:14,469 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [8]
+08:58:14,469 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [8]
+08:58:14,469 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [4]
+08:58:14,469 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [8]
+08:58:14,470 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [9]
+08:58:14,470 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [9]
+08:58:14,470 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [5]
+08:58:14,470 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [9]
+08:58:14,471 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [10]
+08:58:14,471 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [10]
+08:58:14,471 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [6]
+08:58:14,471 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [10]
+08:58:14,471 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [11]
+08:58:14,472 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [11]
+08:58:14,472 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [6]
+08:58:14,472 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [11]
+08:58:14,474 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
+08:58:14,476 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [FIRST]
+08:58:14,477 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [2]
+08:58:14,478 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [SECOND]
+08:58:14,478 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [3]
+08:58:14,478 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [THIRD]
+08:58:14,479 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [4]
+08:58:14,479 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [FOURTH]
+08:58:14,479 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [5]
+08:58:14,480 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [FIFTH]
+08:58:14,480 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [6]
+08:58:14,481 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [SIXTH]
+08:58:14,482 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [7]
+08:58:14,482 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [SEVENTH]
+08:58:14,489  WARN UnresolvedEntityInsertActions:145 - HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([edu.spiriev.spm.persistence.StudentEntity#<null>])
+	Dependent entities: ([[edu.spiriev.spm.persistence.StudentGradeEntity#<null>]])
+	Non-nullable association(s): ([edu.spiriev.spm.persistence.StudentGradeEntity.studentId])
+09:00:55,110  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: manager1
+	...]
+09:00:55,176  INFO Version:37 - HHH000412: Hibernate Core {5.1.0.Final}
+09:00:55,178  INFO Environment:213 - HHH000206: hibernate.properties not found
+09:00:55,180  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+09:00:55,207  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+09:00:55,271 DEBUG BasicTypeRegistry:135 - Adding type registration boolean -> org.hibernate.type.BooleanType@5579bb86
+09:00:55,272 DEBUG BasicTypeRegistry:135 - Adding type registration boolean -> org.hibernate.type.BooleanType@5579bb86
+09:00:55,272 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@5579bb86
+09:00:55,272 DEBUG BasicTypeRegistry:135 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5d11346a
+09:00:55,273 DEBUG BasicTypeRegistry:135 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@6fb0d3ed
+09:00:55,274 DEBUG BasicTypeRegistry:135 - Adding type registration yes_no -> org.hibernate.type.YesNoType@52525845
+09:00:55,274 DEBUG BasicTypeRegistry:135 - Adding type registration byte -> org.hibernate.type.ByteType@103f852
+09:00:55,275 DEBUG BasicTypeRegistry:135 - Adding type registration byte -> org.hibernate.type.ByteType@103f852
+09:00:55,275 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@103f852
+09:00:55,275 DEBUG BasicTypeRegistry:135 - Adding type registration character -> org.hibernate.type.CharacterType@6d3af739
+09:00:55,276 DEBUG BasicTypeRegistry:135 - Adding type registration char -> org.hibernate.type.CharacterType@6d3af739
+09:00:55,277 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6d3af739
+09:00:55,278 DEBUG BasicTypeRegistry:135 - Adding type registration short -> org.hibernate.type.ShortType@134593bf
+09:00:55,278 DEBUG BasicTypeRegistry:135 - Adding type registration short -> org.hibernate.type.ShortType@134593bf
+09:00:55,278 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@134593bf
+09:00:55,279 DEBUG BasicTypeRegistry:135 - Adding type registration integer -> org.hibernate.type.IntegerType@7dc222ae
+09:00:55,279 DEBUG BasicTypeRegistry:135 - Adding type registration int -> org.hibernate.type.IntegerType@7dc222ae
+09:00:55,279 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@7dc222ae
+09:00:55,280 DEBUG BasicTypeRegistry:135 - Adding type registration long -> org.hibernate.type.LongType@73d4cc9e
+09:00:55,280 DEBUG BasicTypeRegistry:135 - Adding type registration long -> org.hibernate.type.LongType@73d4cc9e
+09:00:55,280 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@73d4cc9e
+09:00:55,281 DEBUG BasicTypeRegistry:135 - Adding type registration float -> org.hibernate.type.FloatType@2698dc7
+09:00:55,281 DEBUG BasicTypeRegistry:135 - Adding type registration float -> org.hibernate.type.FloatType@2698dc7
+09:00:55,281 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2698dc7
+09:00:55,282 DEBUG BasicTypeRegistry:135 - Adding type registration double -> org.hibernate.type.DoubleType@48a242ce
+09:00:55,282 DEBUG BasicTypeRegistry:135 - Adding type registration double -> org.hibernate.type.DoubleType@48a242ce
+09:00:55,283 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@48a242ce
+09:00:55,284 DEBUG BasicTypeRegistry:135 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1cab0bfb
+09:00:55,284 DEBUG BasicTypeRegistry:135 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1cab0bfb
+09:00:55,285 DEBUG BasicTypeRegistry:135 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@140e5a13
+09:00:55,285 DEBUG BasicTypeRegistry:135 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@140e5a13
+09:00:55,286 DEBUG BasicTypeRegistry:135 - Adding type registration string -> org.hibernate.type.StringType@6c9f5c0d
+09:00:55,286 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.String -> org.hibernate.type.StringType@6c9f5c0d
+09:00:55,286 DEBUG BasicTypeRegistry:135 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2df32bf7
+09:00:55,287 DEBUG BasicTypeRegistry:135 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@58a90037
+09:00:55,287 DEBUG BasicTypeRegistry:135 - Adding type registration url -> org.hibernate.type.UrlType@2f490758
+09:00:55,288 DEBUG BasicTypeRegistry:135 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@2f490758
+09:00:55,289 DEBUG BasicTypeRegistry:135 - Adding type registration date -> org.hibernate.type.DateType@46238e3f
+09:00:55,289 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@46238e3f
+09:00:55,290 DEBUG BasicTypeRegistry:135 - Adding type registration time -> org.hibernate.type.TimeType@76a4d6c
+09:00:55,290 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@76a4d6c
+09:00:55,291 DEBUG BasicTypeRegistry:135 - Adding type registration timestamp -> org.hibernate.type.TimestampType@45afc369
+09:00:55,291 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@45afc369
+09:00:55,291 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@45afc369
+09:00:55,292 DEBUG BasicTypeRegistry:135 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@290dbf45
+09:00:55,293 DEBUG BasicTypeRegistry:135 - Adding type registration calendar -> org.hibernate.type.CalendarType@2bbaf4f0
+09:00:55,293 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2bbaf4f0
+09:00:55,293 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2bbaf4f0
+09:00:55,293 DEBUG BasicTypeRegistry:135 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4e41089d
+09:00:55,294 DEBUG BasicTypeRegistry:135 - Adding type registration locale -> org.hibernate.type.LocaleType@4148db48
+09:00:55,294 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4148db48
+09:00:55,295 DEBUG BasicTypeRegistry:135 - Adding type registration currency -> org.hibernate.type.CurrencyType@5e25a92e
+09:00:55,295 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5e25a92e
+09:00:55,295 DEBUG BasicTypeRegistry:135 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1dd02175
+09:00:55,296 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1dd02175
+09:00:55,296 DEBUG BasicTypeRegistry:135 - Adding type registration class -> org.hibernate.type.ClassType@1176dcec
+09:00:55,296 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1176dcec
+09:00:55,297 DEBUG BasicTypeRegistry:135 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5606c0b
+09:00:55,297 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5606c0b
+09:00:55,298 DEBUG BasicTypeRegistry:135 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6a396c1e
+09:00:55,298 DEBUG BasicTypeRegistry:135 - Adding type registration binary -> org.hibernate.type.BinaryType@6b67034
+09:00:55,299 DEBUG BasicTypeRegistry:135 - Adding type registration byte[] -> org.hibernate.type.BinaryType@6b67034
+09:00:55,299 DEBUG BasicTypeRegistry:135 - Adding type registration [B -> org.hibernate.type.BinaryType@6b67034
+09:00:55,299 DEBUG BasicTypeRegistry:135 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@6166e06f
+09:00:55,299 DEBUG BasicTypeRegistry:135 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@6166e06f
+09:00:55,300 DEBUG BasicTypeRegistry:135 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@6166e06f
+09:00:55,300 DEBUG BasicTypeRegistry:135 - Adding type registration image -> org.hibernate.type.ImageType@641147d0
+09:00:55,300 DEBUG BasicTypeRegistry:135 - Adding type registration characters -> org.hibernate.type.CharArrayType@6385cb26
+09:00:55,301 DEBUG BasicTypeRegistry:135 - Adding type registration char[] -> org.hibernate.type.CharArrayType@6385cb26
+09:00:55,301 DEBUG BasicTypeRegistry:135 - Adding type registration [C -> org.hibernate.type.CharArrayType@6385cb26
+09:00:55,301 DEBUG BasicTypeRegistry:135 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@1e9e725a
+09:00:55,301 DEBUG BasicTypeRegistry:135 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@1e9e725a
+09:00:55,301 DEBUG BasicTypeRegistry:135 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@1e9e725a
+09:00:55,302 DEBUG BasicTypeRegistry:135 - Adding type registration text -> org.hibernate.type.TextType@646be2c3
+09:00:55,302 DEBUG BasicTypeRegistry:135 - Adding type registration ntext -> org.hibernate.type.NTextType@62bd765
+09:00:55,304 DEBUG BasicTypeRegistry:135 - Adding type registration blob -> org.hibernate.type.BlobType@429bd883
+09:00:55,304 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@429bd883
+09:00:55,304 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@58134517
+09:00:55,306 DEBUG BasicTypeRegistry:135 - Adding type registration clob -> org.hibernate.type.ClobType@c8e4bb0
+09:00:55,307 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@c8e4bb0
+09:00:55,308 DEBUG BasicTypeRegistry:135 - Adding type registration nclob -> org.hibernate.type.NClobType@8b96fde
+09:00:55,308 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@8b96fde
+09:00:55,309 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2ea6137
+09:00:55,309 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@57d5872c
+09:00:55,310 DEBUG BasicTypeRegistry:135 - Adding type registration serializable -> org.hibernate.type.SerializableType@55040f2f
+09:00:55,311 DEBUG BasicTypeRegistry:135 - Adding type registration object -> org.hibernate.type.ObjectType@ca263c2
+09:00:55,311 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@ca263c2
+09:00:55,312 DEBUG BasicTypeRegistry:135 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4c6e276e
+09:00:55,312 DEBUG BasicTypeRegistry:135 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@534df152
+09:00:55,312 DEBUG BasicTypeRegistry:135 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@52e677af
+09:00:55,312 DEBUG BasicTypeRegistry:135 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@35083305
+09:00:55,312 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@8e0379d
+09:00:55,312 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@341b80b2
+09:00:55,312 DEBUG BasicTypeRegistry:135 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@55a1c291
+09:00:55,312 DEBUG BasicTypeRegistry:135 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@2145433b
+09:00:55,317  WARN connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+09:00:55,320  INFO connections:127 - HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:../spm-application-file/src/main/resources/spmDB]
+09:00:55,321  INFO connections:136 - HHH10001001: Connection properties: {}
+09:00:55,321  INFO connections:141 - HHH10001003: Autocommit mode: false
+09:00:55,325  INFO DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+09:00:55,402  INFO Dialect:156 - HHH000400: Using dialect: edu.spiriev.spm.persistence.SQLiteDialect
+09:00:55,419  INFO LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+09:00:55,583 TRACE TypeFactory:58 - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@68746f22
+09:00:55,706  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+09:00:59,132 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [1]
+09:00:59,138 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [6]
+09:00:59,138 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Мия Канариева]
+09:00:59,139 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [2]
+09:00:59,140 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [8]
+09:00:59,140 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Симона Симеонова]
+09:00:59,140 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [3]
+09:00:59,140 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [6]
+09:00:59,141 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Христо Ризов]
+09:00:59,141 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [4]
+09:00:59,141 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [9]
+09:00:59,141 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Доротея Калинова]
+09:00:59,142 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [5]
+09:00:59,142 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [7]
+09:00:59,142 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Хайг Ованезов]
+09:00:59,143 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [6]
+09:00:59,143 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [6]
+09:00:59,143 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Яна Димова]
+09:00:59,144 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [7]
+09:00:59,144 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [9]
+09:00:59,144 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Виктория Атанасова]
+09:00:59,144 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [8]
+09:00:59,145 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [8]
+09:00:59,145 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Ема Сиракова]
+09:00:59,145 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [9]
+09:00:59,145 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [10]
+09:00:59,146 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Симона Зографова]
+09:00:59,146 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [10]
+09:00:59,146 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [8]
+09:00:59,146 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Елизар Ставрев]
+09:00:59,147 TRACE BasicExtractor:61 - extracted value ([student_1_4_] : [INTEGER]) - [11]
+09:00:59,147 TRACE BasicExtractor:61 - extracted value ([ability2_4_] : [INTEGER]) - [9]
+09:00:59,147 TRACE BasicExtractor:61 - extracted value ([student_3_4_] : [VARCHAR]) - [Мирослав Цветков]
+09:00:59,150 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
+09:00:59,151 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [1]
+09:00:59,151 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [1]
+09:00:59,152 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [1]
+09:00:59,158 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [2]
+09:00:59,163 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [2]
+09:00:59,163 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [1]
+09:00:59,163 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [2]
+09:00:59,164 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [3]
+09:00:59,164 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [3]
+09:00:59,164 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [2]
+09:00:59,164 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [3]
+09:00:59,165 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [4]
+09:00:59,165 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [4]
+09:00:59,165 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [3]
+09:00:59,165 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [4]
+09:00:59,165 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [5]
+09:00:59,166 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [5]
+09:00:59,166 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [3]
+09:00:59,166 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [5]
+09:00:59,166 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [6]
+09:00:59,166 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [6]
+09:00:59,167 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [3]
+09:00:59,167 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [6]
+09:00:59,167 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [7]
+09:00:59,167 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [7]
+09:00:59,167 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [4]
+09:00:59,167 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [7]
+09:00:59,168 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [8]
+09:00:59,168 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [8]
+09:00:59,168 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [4]
+09:00:59,168 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [8]
+09:00:59,169 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [9]
+09:00:59,169 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [9]
+09:00:59,169 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [5]
+09:00:59,169 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [9]
+09:00:59,170 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [10]
+09:00:59,170 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [10]
+09:00:59,170 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [6]
+09:00:59,170 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [10]
+09:00:59,170 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [11]
+09:00:59,171 TRACE BasicExtractor:61 - extracted value ([student_1_5_0_] : [INTEGER]) - [11]
+09:00:59,171 TRACE BasicExtractor:61 - extracted value ([grade_id2_5_0_] : [INTEGER]) - [6]
+09:00:59,171 TRACE BasicExtractor:61 - extracted value ([student_3_5_0_] : [INTEGER]) - [11]
+09:00:59,172 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
+09:00:59,174 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [FIRST]
+09:00:59,176 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [2]
+09:00:59,176 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [SECOND]
+09:00:59,177 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [3]
+09:00:59,177 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [THIRD]
+09:00:59,177 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [4]
+09:00:59,177 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [FOURTH]
+09:00:59,178 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [5]
+09:00:59,178 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [FIFTH]
+09:00:59,178 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [6]
+09:00:59,178 TRACE BasicExtractor:61 - extracted value ([grade_na2_1_0_] : [VARCHAR]) - [SIXTH]
+09:00:59,184 TRACE BasicBinder:53 - binding parameter [1] as [INTEGER] - [null]
+09:00:59,184 TRACE BasicBinder:53 - binding parameter [2] as [VARCHAR] - [null]
