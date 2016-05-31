@@ -29,6 +29,8 @@
         <module>spm-dao-database</module>
         <module>spm-dao-file</module>
         <module>spm-persistence</module>
+
+        <module>spm-android-final</module>
     </modules>
     
     <build>
@@ -72,7 +74,19 @@
                             </goals>
                         </execution>    
                     </executions>    
-                </plugin>    
+                </plugin> 
+                <plugin>
+        			<groupId>com.simpligility.maven.plugins</groupId>
+        			<artifactId>android-maven-plugin</artifactId>
+        			<version>4.4.2</version>
+        			<configuration>
+        				<androidManifestFile>${project.basedir}/spm-android-final/AndroidManifest.xml</androidManifestFile>
+        				<android.sdk.path>${env.ANDROID_HOME}</android.sdk.path>
+        				<platform>23</platform>
+        				<undeployBeforeDeploy>true</undeployBeforeDeploy>
+        			</configuration>
+        			<extensions>true</extensions>
+      			</plugin>   
             </plugins>
         </pluginManagement>
     </build>
@@ -115,6 +129,11 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.21</version>
+        </dependency>
+	<dependency>
+        	<groupId>com.google.android</groupId>
+        	<artifactId>android</artifactId>
+        	<version>4.1.1.4</version>
         </dependency>
         </dependencies>
     </dependencyManagement>

@@ -5,11 +5,6 @@
  */
 package edu.spiriev.spm.persistence;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import org.junit.Test;
-
 /**
  *
  * @author root_spiriev

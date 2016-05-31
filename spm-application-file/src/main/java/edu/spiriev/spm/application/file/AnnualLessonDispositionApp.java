@@ -55,7 +55,7 @@ public class AnnualLessonDispositionApp {
         Scanner scan = new Scanner(System.in);
         final Integer startYear = Integer.parseInt(scan.nextLine());
         final Integer endYear = Integer.parseInt(scan.nextLine());
-
+        scan.close();
         return new AbstractMap.SimpleEntry<Integer, Integer>(startYear, endYear);
 
     }
