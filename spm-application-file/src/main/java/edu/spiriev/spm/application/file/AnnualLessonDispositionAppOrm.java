@@ -29,18 +29,17 @@ public class AnnualLessonDispositionAppOrm {
 
     private void run() {
         
-        JpaDatabaseConnection hDbConn = new JpaDatabaseConnection("manager1");
-        hDbConn.makeConnection(new String[]{"Properties in persistence.xml"});
-
+        
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
+        String[] props = {"Properties in persistence.xml"};
 
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(
-                        new AbstractDaoImpl(hDbConn.getEm()),
+                        new JpaDatabaseConnection("manager1"),
+                        props,
                         startEndYear.getValue(),
                         startEndYear.getKey());
         
-        hDbConn.commitTransaction();
         writeOutput(lessonDisposition);
 
     }
@@ -55,7 +54,7 @@ public class AnnualLessonDispositionAppOrm {
 
     }
 
-    private void writeOutput(Map<Student, WeeklySchedule> lessonDisposition) {
+    public void writeOutput(Map<Student, WeeklySchedule> lessonDisposition) {
 
         File outFile = new File(".", "AnnualLessonDisposition.txt");
 

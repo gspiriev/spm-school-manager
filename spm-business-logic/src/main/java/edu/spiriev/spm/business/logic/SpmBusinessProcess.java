@@ -6,12 +6,14 @@
 package edu.spiriev.spm.business.logic;
 
 import edu.spiriev.spm.domain.model.Student;
+
 import java.util.ArrayList;
+
 import edu.spiriev.spm.dao.api.*;
 import edu.spiriev.spm.domain.model.AnnualLessonDisposition;
-import edu.spiriev.spm.domain.model.MusicalPiece;
 import edu.spiriev.spm.domain.model.StudyDate;
 import edu.spiriev.spm.domain.model.WeeklySchedule;
+
 import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedHashMap;
@@ -27,15 +29,15 @@ public class SpmBusinessProcess {
     
     public static final SpmBusinessProcess instance = new SpmBusinessProcess();
     
-    public Map<Student, WeeklySchedule> createAllStudentDisposition(AbstractDao aDao, Integer endYear, Integer startYear) {
+    public Map<Student, WeeklySchedule> createAllStudentDisposition(BusinessConnection bc, String[] props, Integer endYear, Integer startYear) {
         
         Map<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
-        aDao.loadAll();
-        List<Student> studentList = aDao.getStudents();
-        List<Date> allDates = aDao.getDates();
-        List<MusicalPiece> listOfPieces = aDao.getMusicalPieces();
         
-        for (Student st: studentList) {
+        bc.makeConnection(props);
+        
+        bc.commitTransaction();
+        
+        for (Student st: bc.getStudentList()) {
             
             Calendar endDate = Calendar.getInstance();
             switch(st.getGrade()) {
@@ -54,12 +56,12 @@ public class SpmBusinessProcess {
                     break;
             }
             
-           List<StudyDate> studentSpecificDates = createStudyDatesList(startYear, endDate, allDates);
+           List<StudyDate> studentSpecificDates = createStudyDatesList(startYear, endDate, bc.getAllDates());
            
            
            WeeklySchedule specificSchedule = new AnnualLessonDisposition().createSpecificSchedule(st,
                                                                             studentSpecificDates,
-                                                                            listOfPieces);
+                                                                            bc.getListOfPieces());
            lessonDisposition.put(st, specificSchedule);
         }
         return lessonDisposition;

@@ -7,10 +7,7 @@ package edu.spiriev.spm.application.file;
 
 import edu.spiriev.spm.business.logic.SpmBusinessProcess;
 import edu.spiriev.spm.dao.file.AbstractDaoFileImpl;
-import edu.spiriev.spm.dao.file.GetFiles;
-import edu.spiriev.spm.dao.file.MusicalPieceLoader;
-import edu.spiriev.spm.dao.file.SchoolDatesLoader;
-import edu.spiriev.spm.dao.file.StudentLoader;
+import edu.spiriev.spm.dao.file.GetDataFromFiles;
 import edu.spiriev.spm.domain.model.Student;
 import edu.spiriev.spm.domain.model.WeeklySchedule;
 import java.io.BufferedWriter;
@@ -38,14 +35,11 @@ public class AnnualLessonDispositionAppFileReading {
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
         String[] props = new String[] {
         "Students", "Graded_Pieces_All_CSV.csv", "deprecatedDatesFirst.txt"};
-        GetFiles getFiles = new GetFiles();
-        getFiles.makeConnection(props);
-        File[] resources = getFiles.getResources();
         
-
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(
-                        new AbstractDaoFileImpl(resources),
+                        new GetDataFromFiles(),
+                        props,
                         startEndYear.getValue(),
                         startEndYear.getKey());
 

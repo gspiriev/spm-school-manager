@@ -5,15 +5,14 @@
  */
 package edu.spiriev.spm.dao.api;
 
-import java.util.Date;
-import java.util.List;
-
 /**
  *
  * @author root_spiriev
  */
-public interface SchoolHolidaysDao {
+public interface Parser<T, E> {
     
-    List<Date> loadDates();
+     T parse(String stringToParse);
+     
+     T parse(E entity);
     
 }

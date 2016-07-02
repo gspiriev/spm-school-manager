@@ -5,6 +5,7 @@
  */
 package edu.spiriev.spm.persistence;
 
+import edu.spiriev.spm.dao.api.EntityMarker;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
@@ -34,7 +35,7 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "MusicalPiecesEntity.findByComposer", query = "SELECT m FROM MusicalPiecesEntity m WHERE m.composer = :composer"),
     @NamedQuery(name = "MusicalPiecesEntity.findByPieceName", query = "SELECT m FROM MusicalPiecesEntity m WHERE m.pieceName = :pieceName"),
     @NamedQuery(name = "MusicalPiecesEntity.findByComplexity", query = "SELECT m FROM MusicalPiecesEntity m WHERE m.complexity = :complexity")})
-public class MusicalPiecesEntity implements Serializable {
+public class MusicalPiecesEntity implements Serializable, EntityMarker {
     private static final long serialVersionUID = 1L;
     
     @Id

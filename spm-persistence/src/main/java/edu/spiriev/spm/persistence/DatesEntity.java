@@ -5,6 +5,7 @@
  */
 package edu.spiriev.spm.persistence;
 
+import edu.spiriev.spm.dao.api.EntityMarker;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -30,7 +31,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "DatesEntity.findByDateDay", query = "SELECT d FROM DatesEntity d WHERE d.dateDay = :dateDay"),
     @NamedQuery(name = "DatesEntity.findByDateMonth", query = "SELECT d FROM DatesEntity d WHERE d.dateMonth = :dateMonth"),
     @NamedQuery(name = "DatesEntity.findByDateYear", query = "SELECT d FROM DatesEntity d WHERE d.dateYear = :dateYear")})
-public class DatesEntity implements Serializable {
+public class DatesEntity implements Serializable, EntityMarker{
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)

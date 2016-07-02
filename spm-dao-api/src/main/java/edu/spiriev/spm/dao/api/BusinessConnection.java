@@ -5,14 +5,23 @@
  */
 package edu.spiriev.spm.dao.api;
 
+import edu.spiriev.spm.domain.model.MusicalPiece;
+import edu.spiriev.spm.domain.model.Student;
+import java.util.Date;
+import java.util.List;
+
 /**
  *
  * @author root_spiriev
  */
-public interface BusinessConnection {
+public interface BusinessConnection extends AutoCloseable{
     
     void commitTransaction();
     
-    void makeConnection(String[] props);
+    AbstractDao<Student> getStudentDao();
+    
+    AbstractDao<Date> getDatesDao();
+    
+    AbstractDao<MusicalPiece> getMusicalPiecesDao();
     
 }
