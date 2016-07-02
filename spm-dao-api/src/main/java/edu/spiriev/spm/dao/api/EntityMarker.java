@@ -5,16 +5,11 @@
  */
 package edu.spiriev.spm.dao.api;
 
-import edu.spiriev.spm.domain.model.MusicalPiece;
-import java.util.List;
-
 /**
  *
  * @author root_spiriev
  */
-public interface MusicalPieceDao {
-    
-    List<MusicalPiece> loadMusicalPieces();
-    
+
+public interface EntityMarker {
     
 }

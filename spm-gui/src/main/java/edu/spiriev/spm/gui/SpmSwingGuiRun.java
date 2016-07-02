@@ -5,8 +5,6 @@
  */
 package edu.spiriev.spm.gui;
 
-import javax.swing.SwingUtilities;
-
 /**
  *
  * @author root_spiriev
@@ -15,10 +13,9 @@ public class SpmSwingGuiRun {
     
     public static void main(String[] args) {
         
-        SwingUtilities.invokeLater(() -> {
-            View view = new View();
-            view.addButtonEvents();
-        });
+        StartYearController ctrl = new StartYearController();
+        ctrl.start();
+        
         
     }
     

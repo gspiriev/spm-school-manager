@@ -6,7 +6,7 @@
 package edu.spiriev.spm.dao.database;
 
 
-import edu.spiriev.spm.dao.api.StudentDao;
+
 import edu.spiriev.spm.domain.model.Grade;
 import edu.spiriev.spm.domain.model.Student;
 import java.sql.Connection;
@@ -20,49 +20,49 @@ import java.util.List;
  * Loads a list a students from a resource file
  * @author root_spiriev
  */
-public class StudentDatabaseLoader implements StudentDao {
-    
-    private final Connection conn;
-
-    public StudentDatabaseLoader(Connection conn) {
-        this.conn = conn;
-    }
-    
-    
-    
-    @Override
-    public List<Student> loadStudents() {
-       
-        List<Student> students = new ArrayList<>();
-        
-        try {
-            
-            
-            String sql = "SELECT Student.student_name, Student.ability, grade.grade_name " +
-                         "FROM Student " +
-                         "JOIN student_grade ON Student.student_id = student_grade.student_grade_id " +
-                         "JOIN grade ON student_grade.grade_id = grade.grade_id" ;
-            Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery(sql);
-            
-            while(rs.next()) {
-                
-                Student student = null;
-                
-                String stName = rs.getString(1);
-                int ability = rs.getInt(2);
-                Grade grade = Grade.valueOf(rs.getString(3));
-                
-                student = new Student(stName, grade, ability);
-                students.add(student);
-            }
-            
-                    
-        } catch (SQLException e) {
-            
-            System.err.println("Invalid SQL query");
-        }
-        return students;
-    }
+public class StudentDatabaseLoader{
+//    
+//    private final Connection conn;
+//
+//    public StudentDatabaseLoader(Connection conn) {
+//        this.conn = conn;
+//    }
+//    
+//    
+//    
+//    @Override
+//    public List<Student> loadStudents() {
+//       
+//        List<Student> students = new ArrayList<>();
+//        
+//        try {
+//            
+//            
+//            String sql = "SELECT Student.student_name, Student.ability, grade.grade_name " +
+//                         "FROM Student " +
+//                         "JOIN student_grade ON Student.student_id = student_grade.student_grade_id " +
+//                         "JOIN grade ON student_grade.grade_id = grade.grade_id" ;
+//            Statement stmt = conn.createStatement();
+//            ResultSet rs = stmt.executeQuery(sql);
+//            
+//            while(rs.next()) {
+//                
+//                Student student = null;
+//                
+//                String stName = rs.getString(1);
+//                int ability = rs.getInt(2);
+//                Grade grade = Grade.valueOf(rs.getString(3));
+//                
+//                student = new Student(stName, grade, ability);
+//                students.add(student);
+//            }
+//            
+//                    
+//        } catch (SQLException e) {
+//            
+//            System.err.println("Invalid SQL query");
+//        }
+//        return students;
+//    }
 
 }

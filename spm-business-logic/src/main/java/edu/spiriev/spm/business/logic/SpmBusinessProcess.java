@@ -17,6 +17,7 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 
 /**
@@ -27,15 +28,15 @@ public class SpmBusinessProcess {
     
     public static final SpmBusinessProcess instance = new SpmBusinessProcess();
     
-    public Map<Student, WeeklySchedule> createAllStudentDisposition(AbstractDao aDao, Integer endYear, Integer startYear) {
+    public Map<Student, WeeklySchedule> createAllStudentDisposition(BusinessConnection bc, String[] props, Integer endYear, Integer startYear) {
         
         Map<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
-        aDao.loadAll();
-        List<Student> studentList = aDao.getStudents();
-        List<Date> allDates = aDao.getDates();
-        List<MusicalPiece> listOfPieces = aDao.getMusicalPieces();
         
-        for (Student st: studentList) {
+        bc.makeConnection(props);
+        
+        bc.commitTransaction();
+        
+        for (Student st: bc.getStudentList()) {
             
             Calendar endDate = Calendar.getInstance();
             switch(st.getGrade()) {
@@ -54,12 +55,12 @@ public class SpmBusinessProcess {
                     break;
             }
             
-           List<StudyDate> studentSpecificDates = createStudyDatesList(startYear, endDate, allDates);
+           List<StudyDate> studentSpecificDates = createStudyDatesList(startYear, endDate, bc.getAllDates());
            
            
            WeeklySchedule specificSchedule = new AnnualLessonDisposition().createSpecificSchedule(st,
                                                                             studentSpecificDates,
-                                                                            listOfPieces);
+                                                                            bc.getListOfPieces());
            lessonDisposition.put(st, specificSchedule);
         }
         return lessonDisposition;

@@ -11,7 +11,7 @@ package edu.spiriev.spm.domain.model;
  *
  * @author root_spiriev
  */
-public class Student implements Comparable<Student>{
+public class Student implements Comparable<Student> {
     private String name;
     private Grade grade;
     private int ability;

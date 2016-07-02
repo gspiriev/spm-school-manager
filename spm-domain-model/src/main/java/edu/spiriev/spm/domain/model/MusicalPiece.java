@@ -5,11 +5,13 @@
  */
 package edu.spiriev.spm.domain.model;
 
+import java.util.Objects;
+
 /**
  *
  * @author root_spiriev
  */
-public class MusicalPiece {
+public class MusicalPiece implements Comparable<MusicalPiece> {
     private String name;
     private String composer;
     private int complexity;
@@ -60,7 +62,40 @@ public class MusicalPiece {
     public void setGrade(Grade grade) {
         this.grade = grade;
     }
-    //work here on the algorithm
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 41 * hash + Objects.hashCode(this.name);
+        hash = 41 * hash + Objects.hashCode(this.composer);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final MusicalPiece other = (MusicalPiece) obj;
+        if (!Objects.equals(this.name, other.name)) {
+            return false;
+        }
+        if (!Objects.equals(this.composer, other.composer)) {
+            return false;
+        }
+        return true;
+    }
+    
+    
+    @Override
+    public int compareTo(MusicalPiece o) {
+        return new Integer(this.hashCode()).compareTo(this.hashCode());
+    }
+    
+    
     
     
 }

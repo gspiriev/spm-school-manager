@@ -5,54 +5,49 @@
  */
 package edu.spiriev.spm.persistence;
 
+import edu.spiriev.spm.dao.api.EntityMarker;
 import edu.spiriev.spm.dao.api.AbstractDao;
-import edu.spiriev.spm.domain.model.Grade;
-import edu.spiriev.spm.domain.model.MusicalPiece;
-import edu.spiriev.spm.domain.model.Student;
-import java.util.Date;
+import edu.spiriev.spm.dao.api.Parser;
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
 /**
  *
  * @author root_spiriev
  */
-public class AbstractDaoImpl implements AbstractDao{
+public class AbstractDaoImpl<T extends Comparable<T>, E extends EntityMarker> implements AbstractDao{
     
-    private List<Student> students;
-    private List<MusicalPiece> mPieces;
-    private List<Date> dates;
     private final EntityManager em;
+    private Parser<T, E> parser;
+    private String className;
 
     public AbstractDaoImpl(EntityManager em) {
         this.em = em;
     }
-    
-    
-    @Override
-    public List<Student> getStudents() {
-        return students;
-    }
-    
-    @Override
-    public List<MusicalPiece> getMusicalPieces() {
-        return mPieces;
-    }
-    
-    @Override
-    public List<Date> getDates() {
-        return dates;
-    }
-    
-    
-    @Override
-    public void loadAll() {
-        this.students = new StudentsHibernateLoader(this.em).loadStudents();
-        this.dates = new DatesHibernateLoader(this.em).loadDates();
-        this.mPieces = new MusicalPieceHibernateLoader(this.em).loadMusicalPieces();
-        
-    }
-    
-    
 
+    public void setParser(Parser<T, E> parser) {
+        this.parser = parser;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+    
+    @Override
+    public List<T> loadAll() {
+        
+        Query query = em.createNamedQuery(className + ".findAll");
+        List<E> entities = query.getResultList();
+        
+        List<T> data = new ArrayList<>();
+        
+        entities.stream().forEach((entity) -> {
+            data.add(parser.parse(entity));
+        });
+        
+        return data;
+    }
+    
 }

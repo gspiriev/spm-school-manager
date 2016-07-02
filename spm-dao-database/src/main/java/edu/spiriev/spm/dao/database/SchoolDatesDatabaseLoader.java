@@ -5,7 +5,7 @@
  */
 package edu.spiriev.spm.dao.database;
 
-import edu.spiriev.spm.dao.api.SchoolHolidaysDao;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,51 +21,51 @@ import java.util.List;
  * Loads school dates from the school dates resource file.
  * @author root_spiriev
  */
-public class SchoolDatesDatabaseLoader implements SchoolHolidaysDao{
-    
-    private final Connection conn;
-
-    public SchoolDatesDatabaseLoader(Connection conn) {
-        this.conn = conn;
-    }
-    
-    
-    @Override
-    public List<Date> loadDates(){
-
-        ArrayList<Date> noSchoolDateList = new ArrayList<>();
-        
-        try {
-            
-            Statement stmt = conn.createStatement();
-            String sql = "SELECT date_day, date_month, date_year FROM dates";
-            ResultSet rs = stmt.executeQuery(sql);
-          
-            while(rs.next()) {
-               
-                String dateString = rs.getString(1) + "/" + rs.getString(2) + "/" + rs.getString(3);
-                
-                DateFormat dFormat = new SimpleDateFormat("dd/MM/yyyy");
-                
-                try{
-                    
-                    Date date = dFormat.parse(dateString);
-                    noSchoolDateList.add(date);
-                } catch (ParseException e) {
-                    
-                    e.printStackTrace();
-                }
-                
-            }
-            
-        } catch (SQLException e) {
-            
-            System.err.println("Invalid SQL query");
-            e.printStackTrace();
-        }
-        
-        return noSchoolDateList;
-    }
+public class SchoolDatesDatabaseLoader{
+//    
+//    private final Connection conn;
+//
+//    public SchoolDatesDatabaseLoader(Connection conn) {
+//        this.conn = conn;
+//    }
+//    
+//    
+//    @Override
+//    public List<Date> loadDates(){
+//
+//        ArrayList<Date> noSchoolDateList = new ArrayList<>();
+//        
+//        try {
+//            
+//            Statement stmt = conn.createStatement();
+//            String sql = "SELECT date_day, date_month, date_year FROM dates";
+//            ResultSet rs = stmt.executeQuery(sql);
+//          
+//            while(rs.next()) {
+//               
+//                String dateString = rs.getString(1) + "/" + rs.getString(2) + "/" + rs.getString(3);
+//                
+//                DateFormat dFormat = new SimpleDateFormat("dd/MM/yyyy");
+//                
+//                try{
+//                    
+//                    Date date = dFormat.parse(dateString);
+//                    noSchoolDateList.add(date);
+//                } catch (ParseException e) {
+//                    
+//                    e.printStackTrace();
+//                }
+//                
+//            }
+//            
+//        } catch (SQLException e) {
+//            
+//            System.err.println("Invalid SQL query");
+//            e.printStackTrace();
+//        }
+//        
+//        return noSchoolDateList;
+//    }
 
     
 }
