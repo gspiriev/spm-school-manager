@@ -33,109 +33,102 @@ import java.util.Properties;
  */
 public class AnnualLessonDispositionApp {
 
-//    public static void main(String[] args) throws Exception {
-//        AnnualLessonDispositionApp annualDisposition = new AnnualLessonDispositionApp();
-//
-//        annualDisposition.run();
-//    }
-//
-//    private void run() throws UnsupportedEncodingException, SQLException {
-//        
-//        try {
-//            Map.Entry<Integer, Integer> startEndYear = readUserInput();
-//
-//
-//            JdbcConnection jdbcConn = new JdbcConnection();
-//            jdbcConn.makeConnection(getProperties());
-//            
-//            Connection conn = jdbcConn.getConn();
-//
-//            Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
-//                    .createAllStudentDisposition(
-//                            new AbstractDaoJdbcImpl(conn),
-//                            startEndYear.getValue(),
-//                            startEndYear.getKey());
-//            
-//            jdbcConn.commitTransaction();
-//            
-//            writeOutput(lessonDisposition);
-//        
-//        } catch (Exception e) {
-//            
-//            throw new SQLException(e);
-//        }
-//        
-//    }
-//
-//    private Map.Entry<Integer, Integer> readUserInput() {
-//
-//        System.out.println("Enter start year for the disposition,followed by enter key");
-//        Scanner scan = new Scanner(System.in);
-//        final Integer startYear = Integer.parseInt(scan.nextLine());
-//        final Integer endYear = startYear + 1;
-//        return new AbstractMap.SimpleEntry<Integer, Integer>(startYear, endYear);
-//
-//    }
-//
-//    private void writeOutput(Map<Student, WeeklySchedule> lessonDisposition) {
-//
-//        File outFile = new File(".", "AnnualLessonDisposition.txt");
-//
-//        try (BufferedWriter writer = new BufferedWriter(new FileWriter(outFile))) {
-//
-//            while (lessonDisposition.size() > 0) {
-//
-//                Map.Entry<Student, WeeklySchedule> dispositionSetEntry
-//                        = lessonDisposition.entrySet().iterator().next();
-//
-//                lessonDisposition.remove(dispositionSetEntry.getKey());
-//                String keySt = dispositionSetEntry.getKey().toString() + "\n" + "\n";
-//                String vaSt = dispositionSetEntry.getValue().toString();
-//                writer.write(keySt);
-//                writer.write(vaSt);
-//                writer.flush();
-//            }
-//
-//            System.out.println("Disposition file created in " + System.getProperty("user.dir"));
-//        } catch (Exception e) {
-//
-//            System.out.println("No output file or path found");
-//        }
-//    }
-//    
-//    private String[] getProperties() {
-//        
-//        String[] resultString = new String[3];
-//        
-//        try {
-//            InputStream inputStream = null;
-//
-//            Properties props = new Properties();
-//            String propFileName = "application.properties";
-//
-//            inputStream = this.getClass().getClassLoader().getResourceAsStream(propFileName);
-//        
-//       
-//            if(inputStream != null) {
-//
-//                props.load(inputStream);
-//            } else {
-//
-//                throw new FileNotFoundException("Properties file " + propFileName + "is not on the classpath");
-//            }
-//
-//            resultString[0] = props.getProperty("driverName");
-//            resultString[1] = props.getProperty("dbName");
-//            resultString[2] = props.getProperty("connAndEngine");
-//            
-//            inputStream.close();
-//        } catch(IOException e) {
-//            System.err.println("Exception: " + e);
-//        } 
-//        
-//        return resultString;
-//    }
+    public static void main(String[] args) throws Exception {
+        AnnualLessonDispositionApp annualDisposition = new AnnualLessonDispositionApp();
+
+        annualDisposition.run();
+    }
+
+    private void run() throws UnsupportedEncodingException, SQLException {
+        
+        try {
+            Map.Entry<Integer, Integer> startEndYear = readUserInput();
+            String[] props = getProperties();
+
+            Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
+                    .createAllStudentDisposition(
+                            new JdbcConnection(),
+                            props,
+                            startEndYear.getValue(),
+                            startEndYear.getKey());
+            
+            writeOutput(lessonDisposition);
+        
+        } catch (Exception e) {
+            
+            throw new SQLException(e);
+        }
+        
+    }
+
+    private Map.Entry<Integer, Integer> readUserInput() {
+
+        System.out.println("Enter start year for the disposition,followed by enter key");
+        Scanner scan = new Scanner(System.in);
+        final Integer startYear = Integer.parseInt(scan.nextLine());
+        final Integer endYear = startYear + 1;
+        return new AbstractMap.SimpleEntry<Integer, Integer>(startYear, endYear);
+
+    }
+
+    private void writeOutput(Map<Student, WeeklySchedule> lessonDisposition) {
+
+        File outFile = new File(".", "AnnualLessonDisposition.txt");
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(outFile))) {
+
+            while (lessonDisposition.size() > 0) {
+
+                Map.Entry<Student, WeeklySchedule> dispositionSetEntry
+                        = lessonDisposition.entrySet().iterator().next();
+
+                lessonDisposition.remove(dispositionSetEntry.getKey());
+                String keySt = dispositionSetEntry.getKey().toString() + "\n" + "\n";
+                String vaSt = dispositionSetEntry.getValue().toString();
+                writer.write(keySt);
+                writer.write(vaSt);
+                writer.flush();
+            }
+
+            System.out.println("Disposition file created in " + System.getProperty("user.dir"));
+        } catch (Exception e) {
+
+            System.out.println("No output file or path found");
+        }
+    }
     
+    private String[] getProperties() {
+        
+        String[] resultString = new String[3];
+        
+        try {
+            InputStream inputStream = null;
+
+            Properties props = new Properties();
+            String propFileName = "application.properties";
+
+            inputStream = this.getClass().getClassLoader().getResourceAsStream(propFileName);
+        
+       
+            if(inputStream != null) {
+
+                props.load(inputStream);
+            } else {
+
+                throw new FileNotFoundException("Properties file " + propFileName + "is not on the classpath");
+            }
+
+            resultString[0] = props.getProperty("driverName");
+            resultString[1] = props.getProperty("dbName");
+            resultString[2] = props.getProperty("connAndEngine");
+            
+            inputStream.close();
+        } catch(IOException e) {
+            System.err.println("Exception: " + e);
+        } 
+        
+        return resultString;
+    }
 //    private void insertStudentDataFromFileToDb (StudentLoader stLoader) {
 //        
 //        try (Connection conn = new DatabaseConnection().getConnection()){

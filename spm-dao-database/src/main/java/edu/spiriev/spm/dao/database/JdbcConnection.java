@@ -19,87 +19,73 @@ import java.util.List;
  * @author root_spiriev
  */
 public class JdbcConnection implements BusinessConnection {
+    
+    private List<Student> students;
+    
+    private List<MusicalPiece> pieces;
+    
+    private List<Date> dates;
+    
+    private Connection conn;
 
     @Override
     public void commitTransaction() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            if(conn != null) {
+                    conn.commit();
+                    conn.close();
+                    
+                    System.out.println("Disconnected from database");
+                } else {
+                conn.rollback();
+            }
+         } catch(SQLException e) {
+                
+            System.err.println("Invalid operation or missing database file: " + e);
+        }
     }
 
     @Override
     public void makeConnection(String[] props) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        try {
+            
+            Class.forName(props[0]);
+
+            String databaseFile = this.getClass().getClassLoader().getResource(props[1]).getFile();
+
+            conn = DriverManager.getConnection(props[2] + databaseFile);
+            
+            conn.setAutoCommit(false);
+            
+            System.out.println("Connected to database");
+            
+            AbstractDaoJdbcImpl aDao = new AbstractDaoJdbcImpl();
+            students = aDao.loadAll();
+            dates = aDao.loadAll();
+            pieces = aDao.loadAll();
+        
+        } catch (ClassNotFoundException e) {
+            System.err.println("Driver not found :" + e);
+            
+        } catch (SQLException e) {
+            System.err.println("Database file may not be present: " + e);
+            
+        }
     }
 
     @Override
     public List<Student> getStudentList() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return students;
     }
 
     @Override
     public List<Date> getAllDates() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return dates;
     }
 
     @Override
     public List<MusicalPiece> getListOfPieces() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return pieces;
     }
-//    
-//    private Connection conn;
-//
-//    public Connection getConn() {
-//        
-//        return conn;
-//    }
-//    
-//    
-//    
-//    @Override
-//    public void makeConnection (String[] props) {
-//        
-//        
-//        try {
-//         
-//            Class.forName(props[0]);
-//
-//
-//            String databaseFile = this.getClass().getClassLoader().getResource(props[1]).getFile();
-//
-//            this.conn = DriverManager.getConnection(props[2] + databaseFile);
-//            
-//            conn.setAutoCommit(false);
-//            
-//            System.out.println("Connected to database");
-//        
-//        } catch (ClassNotFoundException e) {
-//            System.err.println("Driver not found :" + e);
-//            
-//        } catch (SQLException e) {
-//            System.err.println("Database file may not be present: " + e);
-//            
-//        }
-//       
-//    }
-//
-//    @Override
-//    public void commitTransaction() {
-//        
-//        try {
-//            if(this.conn != null) {
-//                    conn.commit();
-//                    conn.close();
-//                    
-//                    System.out.println("Disconnected from database");
-//                } else {
-//                conn.rollback();
-//            }
-//         } catch(SQLException e) {
-//                
-//            System.err.println("Invalid operation or missing database file: " + e);
-//        }
-//        
-//    }
-//    
-//    
-//    
 }
