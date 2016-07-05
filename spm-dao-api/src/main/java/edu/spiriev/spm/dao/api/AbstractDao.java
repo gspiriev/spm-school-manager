@@ -11,8 +11,8 @@ import java.util.List;
  *
  * @author root_spiriev
  */
-public interface AbstractDao {
+public interface AbstractDao<T> {
     
-    <T extends Comparable<T>> List<T> loadAll();
+    List<T> loadAll();
      
 }

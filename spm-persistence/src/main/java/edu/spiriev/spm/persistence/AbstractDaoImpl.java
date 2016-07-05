@@ -5,7 +5,7 @@
  */
 package edu.spiriev.spm.persistence;
 
-import edu.spiriev.spm.dao.api.EntityMarker;
+
 import edu.spiriev.spm.dao.api.AbstractDao;
 import edu.spiriev.spm.dao.api.Parser;
 import java.util.ArrayList;
@@ -17,28 +17,22 @@ import javax.persistence.Query;
  *
  * @author root_spiriev
  */
-public class AbstractDaoImpl<T extends Comparable<T>, E extends EntityMarker> implements AbstractDao{
+public class AbstractDaoImpl<T, E> implements AbstractDao{
     
     private final EntityManager em;
-    private Parser<T, E> parser;
-    private String className;
+    private final Parser<T, E> parser;
+    private final Class<E> entityType;
 
-    public AbstractDaoImpl(EntityManager em) {
-        this.em = em;
+    public AbstractDaoImpl(EntityManager em, Parser<T, E> parser, Class<E> entityType) {
+            this.em = em;
+            this.parser = parser;
+            this.entityType = entityType;
     }
-
-    public void setParser(Parser<T, E> parser) {
-        this.parser = parser;
-    }
-
-    public void setClassName(String className) {
-        this.className = className;
-    }
-    
+ 
     @Override
     public List<T> loadAll() {
         
-        Query query = em.createNamedQuery(className + ".findAll");
+        Query query = em.createNamedQuery(entityType.getSimpleName() + ".findAll");
         List<E> entities = query.getResultList();
         
         List<T> data = new ArrayList<>();

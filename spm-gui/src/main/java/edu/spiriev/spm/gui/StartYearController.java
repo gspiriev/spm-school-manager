@@ -43,11 +43,9 @@ public class StartYearController {
                 @Override
                 protected Void doInBackground() throws Exception {
                     Map.Entry<Integer, Integer> startEndYear = new AbstractMap.SimpleEntry<>(startYearInt, startYearInt + 1);
-                    String[] props = {"Properties in persistence.xml"};
                     Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                             .createAllStudentDisposition(
                                     new JpaDatabaseConnection("manager1"),
-                                    props,
                                     startEndYear.getValue(),
                                     startEndYear.getKey());
 

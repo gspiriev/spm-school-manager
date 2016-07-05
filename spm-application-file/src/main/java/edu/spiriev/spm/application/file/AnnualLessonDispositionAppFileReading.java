@@ -35,11 +35,15 @@ public class AnnualLessonDispositionAppFileReading {
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
         String[] props = new String[] {
         "Students", "Graded_Pieces_All_CSV.csv", "deprecatedDatesFirst.txt"};
+        ClassLoader cl = this.getClass().getClassLoader();
+        
+        File[] resources = new File[] {new File(cl.getResource(props[0]).getFile()),
+                    new File(cl.getResource(props[1]).getFile()),
+                    new File(cl.getResource(props[2]).getFile())};
         
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(
-                        new GetDataFromFiles(),
-                        props,
+                        new GetDataFromFiles(props),
                         startEndYear.getValue(),
                         startEndYear.getKey());
 

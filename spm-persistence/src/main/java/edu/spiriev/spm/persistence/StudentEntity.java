@@ -5,7 +5,6 @@
  */
 package edu.spiriev.spm.persistence;
 
-import edu.spiriev.spm.dao.api.EntityMarker;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
@@ -34,7 +33,7 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "StudentEntity.findByStudentId", query = "SELECT s FROM StudentEntity s WHERE s.studentId = :studentId"),
     @NamedQuery(name = "StudentEntity.findByStudentName", query = "SELECT s FROM StudentEntity s WHERE s.studentName = :studentName"),
     @NamedQuery(name = "StudentEntity.findByAbility", query = "SELECT s FROM StudentEntity s WHERE s.ability = :ability")})
-public class StudentEntity implements Serializable, EntityMarker{
+public class StudentEntity implements Serializable{
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)

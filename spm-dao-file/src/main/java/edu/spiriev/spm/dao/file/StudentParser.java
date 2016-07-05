@@ -5,7 +5,6 @@
  */
 package edu.spiriev.spm.dao.file;
 
-import edu.spiriev.spm.dao.api.EntityMarker;
 import edu.spiriev.spm.dao.api.Parser;
 import edu.spiriev.spm.domain.model.Grade;
 import edu.spiriev.spm.domain.model.Student;
@@ -14,7 +13,7 @@ import edu.spiriev.spm.domain.model.Student;
  *
  * @author root_spiriev
  */
-public class StudentParser implements Parser<Student, EntityMarker>{
+public class StudentParser implements Parser<Student, Student>{
 
     @Override
     public Student parse(String stringToParse) {
@@ -28,7 +27,7 @@ public class StudentParser implements Parser<Student, EntityMarker>{
     }
 
     @Override
-    public Student parse(EntityMarker entity) {
+    public Student parse(Student entity) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

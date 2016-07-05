@@ -6,7 +6,7 @@
 package edu.spiriev.spm.dao.database;
 
 
-import edu.spiriev.spm.dao.api.EntityMarker;
+
 import edu.spiriev.spm.dao.api.Parser;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -23,19 +23,19 @@ import java.util.List;
  * Loads school dates from the school dates resource file.
  * @author root_spiriev
  */
-public class SchoolDatesDatabaseParser implements Parser<Date, EntityMarker>{
-
-    @Override
-    public Date parse(String stringToParse) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Date parse(EntityMarker entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
+//public class SchoolDatesDatabaseParser implements Parser<Date, EntityMarker>{
+//
+//    @Override
+//    public Date parse(String stringToParse) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+//
+//    @Override
+//    public Date parse(EntityMarker entity) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+//    
+//    
 //    
 //    private final Connection conn;
 //
@@ -80,6 +80,6 @@ public class SchoolDatesDatabaseParser implements Parser<Date, EntityMarker>{
 //        
 //        return noSchoolDateList;
 //    }
-
-    
-}
+//
+//    
+//}

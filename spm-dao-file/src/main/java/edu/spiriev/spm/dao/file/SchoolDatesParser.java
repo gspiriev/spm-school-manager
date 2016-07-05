@@ -5,7 +5,6 @@
  */
 package edu.spiriev.spm.dao.file;
 
-import edu.spiriev.spm.dao.api.EntityMarker;
 import edu.spiriev.spm.dao.api.Parser;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -16,7 +15,7 @@ import java.util.Date;
  *
  * @author root_spiriev
  */
-public class SchoolDatesParser implements Parser<Date, EntityMarker>{
+public class SchoolDatesParser implements Parser<Date, Date>{
 
     @Override
     public Date parse(String stringToParse) {
@@ -35,7 +34,7 @@ public class SchoolDatesParser implements Parser<Date, EntityMarker>{
     }
 
     @Override
-    public Date parse(EntityMarker entity) {
+    public Date parse(Date entity) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

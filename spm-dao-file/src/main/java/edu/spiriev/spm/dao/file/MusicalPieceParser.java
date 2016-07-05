@@ -5,7 +5,6 @@
  */
 package edu.spiriev.spm.dao.file;
 
-import edu.spiriev.spm.dao.api.EntityMarker;
 import edu.spiriev.spm.dao.api.Parser;
 import edu.spiriev.spm.domain.model.Grade;
 import edu.spiriev.spm.domain.model.MusicalPiece;
@@ -14,7 +13,7 @@ import edu.spiriev.spm.domain.model.MusicalPiece;
  *
  * @author root_spiriev
  */
-public class MusicalPieceParser implements Parser<MusicalPiece, EntityMarker>{
+public class MusicalPieceParser implements Parser<MusicalPiece, MusicalPiece>{
 
     @Override
     public MusicalPiece parse(String stringToParse) {
@@ -30,7 +29,7 @@ public class MusicalPieceParser implements Parser<MusicalPiece, EntityMarker>{
     }
 
     @Override
-    public MusicalPiece parse(EntityMarker entity) {
+    public MusicalPiece parse(MusicalPiece entity) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

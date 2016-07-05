@@ -5,12 +5,12 @@
  */
 package edu.spiriev.spm.dao.file;
 
+import edu.spiriev.spm.dao.api.AbstractDao;
 import edu.spiriev.spm.dao.api.BusinessConnection;
 import edu.spiriev.spm.domain.model.MusicalPiece;
 import edu.spiriev.spm.domain.model.Student;
 import java.io.File;
 import java.util.Date;
-import java.util.List;
 
 /**
  *
@@ -18,27 +18,22 @@ import java.util.List;
  */
 public class GetDataFromFiles implements BusinessConnection {
     
-    private File[] resources;
-    
-    private List<Student> students;
-    
-    private List<MusicalPiece> musicalPieces;
-    
-    private List<Date> dates;
+    private final File[] resources;
+    private final String[] props;
+    private final AbstractDao<Student> studentDao;
+    private final AbstractDao<MusicalPiece> musicalPiecesDao;
+    private final AbstractDao<Date> datesDao;
 
-    @Override
-    public List<Student> getStudentList() {
-        return students;
-    }
-
-    @Override
-    public List<Date> getAllDates() {
-        return dates;
-    }
-
-    @Override
-    public List<MusicalPiece> getListOfPieces() {
-        return musicalPieces;
+    public GetDataFromFiles(String[] props) {
+        ClassLoader cl = this.getClass().getClassLoader();
+        
+        this.resources = new File[] {new File(cl.getResource(props[0]).getFile()),
+                    new File(cl.getResource(props[1]).getFile()),
+                    new File(cl.getResource(props[2]).getFile())};
+        this.props = props;
+        this.studentDao = new AbstractDaoFileImpl<>(resources[0], new StudentParser());                
+        this.musicalPiecesDao = new AbstractDaoFileImpl<>(resources[1], new MusicalPieceParser()); 
+        this.datesDao = new AbstractDaoFileImpl<>(resources[2], new SchoolDatesParser()); 
     }
 
     public File[] getResources() {
@@ -52,26 +47,22 @@ public class GetDataFromFiles implements BusinessConnection {
     }
 
     @Override
-    public void makeConnection(String[] props) {
-        
-        ClassLoader cl = this.getClass().getClassLoader();
-        
-        this.resources = new File[] {new File(cl.getResource(props[0]).getFile()),
-                    new File(cl.getResource(props[1]).getFile()),
-                    new File(cl.getResource(props[2]).getFile())};
-  
-        AbstractDaoFileImpl aDao = new AbstractDaoFileImpl();
-        aDao.setInputFile(resources[0]);
-        aDao.setParser(new StudentParser());
-        students = aDao.loadAll();
-        aDao.setInputFile(resources[1]);
-        aDao.setParser(new MusicalPieceParser());
-        musicalPieces = aDao.loadAll();
-        aDao.setInputFile(resources[2]);
-        aDao.setParser(new SchoolDatesParser());
-        dates = aDao.loadAll();
+    public AbstractDao<Student> getStudentDao() {
+        return studentDao;
     }
-    
-    
+
+    @Override
+    public AbstractDao<Date> getDatesDao() {
+        return datesDao;
+    }
+
+    @Override
+    public AbstractDao<MusicalPiece> getMusicalPiecesDao() {
+        return  musicalPiecesDao;
+    }
+
+    @Override
+    public void close() throws Exception {
+    }
     
 }

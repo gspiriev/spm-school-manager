@@ -14,6 +14,7 @@ import java.io.FileWriter;
 import java.util.AbstractMap;
 import java.util.Map;
 import java.util.Scanner;
+import javax.persistence.Persistence;
 
 /**
  *
@@ -36,7 +37,6 @@ public class AnnualLessonDispositionAppOrm {
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(
                         new JpaDatabaseConnection("manager1"),
-                        props,
                         startEndYear.getValue(),
                         startEndYear.getKey());
         

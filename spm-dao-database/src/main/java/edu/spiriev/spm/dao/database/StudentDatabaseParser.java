@@ -7,7 +7,6 @@ package edu.spiriev.spm.dao.database;
 
 
 
-import edu.spiriev.spm.dao.api.EntityMarker;
 import edu.spiriev.spm.dao.api.Parser;
 import edu.spiriev.spm.domain.model.Grade;
 import edu.spiriev.spm.domain.model.Student;
@@ -22,19 +21,19 @@ import java.util.List;
  * Loads a list a students from a resource file
  * @author root_spiriev
  */
-public class StudentDatabaseParser implements Parser<Student, EntityMarker>{
-
-    @Override
-    public Student parse(String stringToParse) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Student parse(EntityMarker entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
+//public class StudentDatabaseParser implements Parser<Student, EntityMarker>{
+//
+//    @Override
+//    public Student parse(String stringToParse) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+//
+//    @Override
+//    public Student parse(EntityMarker entity) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+//    
+//    
 //    
 //    private final Connection conn;
 //
@@ -78,5 +77,5 @@ public class StudentDatabaseParser implements Parser<Student, EntityMarker>{
 //        }
 //        return students;
 //    }
-
-}
+//
+//}

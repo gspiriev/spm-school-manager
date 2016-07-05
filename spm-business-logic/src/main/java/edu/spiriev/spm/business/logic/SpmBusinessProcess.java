@@ -6,18 +6,20 @@
 package edu.spiriev.spm.business.logic;
 
 import edu.spiriev.spm.domain.model.Student;
+
 import java.util.ArrayList;
+
 import edu.spiriev.spm.dao.api.*;
 import edu.spiriev.spm.domain.model.AnnualLessonDisposition;
 import edu.spiriev.spm.domain.model.MusicalPiece;
 import edu.spiriev.spm.domain.model.StudyDate;
 import edu.spiriev.spm.domain.model.WeeklySchedule;
+
 import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Properties;
 
 
 /**
@@ -28,15 +30,22 @@ public class SpmBusinessProcess {
     
     public static final SpmBusinessProcess instance = new SpmBusinessProcess();
     
-    public Map<Student, WeeklySchedule> createAllStudentDisposition(BusinessConnection bc, String[] props, Integer endYear, Integer startYear) {
+    public Map<Student, WeeklySchedule> createAllStudentDisposition(BusinessConnection bc, Integer endYear, Integer startYear) {
         
         Map<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
         
-        bc.makeConnection(props);
+        List<Date> dates = bc.getDatesDao().loadAll();
+        List<MusicalPiece> musicalPieces = bc.getMusicalPiecesDao().loadAll();
+        List<Student> students = bc.getStudentDao().loadAll();
         
-        bc.commitTransaction();
+        try {
+            bc.close();
+        } catch(Exception e) {
+            System.out.println("Manager factory closed");
+        }
         
-        for (Student st: bc.getStudentList()) {
+        
+        for (Student st: students) {
             
             Calendar endDate = Calendar.getInstance();
             switch(st.getGrade()) {
@@ -55,12 +64,12 @@ public class SpmBusinessProcess {
                     break;
             }
             
-           List<StudyDate> studentSpecificDates = createStudyDatesList(startYear, endDate, bc.getAllDates());
+           List<StudyDate> studentSpecificDates = createStudyDatesList(startYear, endDate, dates);
            
            
            WeeklySchedule specificSchedule = new AnnualLessonDisposition().createSpecificSchedule(st,
                                                                             studentSpecificDates,
-                                                                            bc.getListOfPieces());
+                                                                            musicalPieces);
            lessonDisposition.put(st, specificSchedule);
         }
         return lessonDisposition;

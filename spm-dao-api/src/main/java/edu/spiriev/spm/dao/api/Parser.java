@@ -9,7 +9,7 @@ package edu.spiriev.spm.dao.api;
  *
  * @author root_spiriev
  */
-public interface Parser<T extends Comparable<T>, E extends EntityMarker> {
+public interface Parser<T, E> {
     
      T parse(String stringToParse);
      

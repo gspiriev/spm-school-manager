@@ -8,11 +8,15 @@ package edu.spiriev.spm.persistence;
 import edu.spiriev.spm.dao.api.BusinessConnection;
 import edu.spiriev.spm.domain.model.MusicalPiece;
 import edu.spiriev.spm.domain.model.Student;
+
 import java.util.Date;
 import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+
+import edu.spiriev.spm.dao.api.AbstractDao;
 
 /**
  *
@@ -23,39 +27,44 @@ public class JpaDatabaseConnection implements BusinessConnection {
     private final String managerName;
     private EntityManagerFactory emf;
     private EntityManager em;
-    private List<Student> students;
-    private List<MusicalPiece> musicalPieces;
-    private List<Date> dates;
     
+    private final AbstractDao<Student> studentDao;
+    private final AbstractDao<MusicalPiece> musicalPiecesDao;
+    private final AbstractDao<Date> datesDao;
+
     public JpaDatabaseConnection(String managerName) {
-        this.managerName = managerName;
+            this.managerName = managerName;
+            this.emf = Persistence.createEntityManagerFactory(managerName);
+            em = emf.createEntityManager();
+            studentDao = new AbstractDaoImpl<>(em, new StudentsHibernateParser(), StudentEntity.class);
+            musicalPiecesDao = new AbstractDaoImpl<>(em, new MusicalPieceHibernateParser(), MusicalPiecesEntity.class);
+            datesDao = new AbstractDaoImpl<>(em, new DatesHibernateParser(), DatesEntity.class);
     }
-    
+	
     public EntityManager getEm() {
         return em;
     }
 
     @Override
-    public List<Student> getStudentList() {
-        return students;
+    public AbstractDao<Student> getStudentDao() {
+            return studentDao;
     }
 
     @Override
-    public List<Date> getAllDates() {
-        return dates;
+    public AbstractDao<Date> getDatesDao() {
+            return datesDao;
     }
 
     @Override
-    public List<MusicalPiece> getListOfPieces() {
-        return musicalPieces;
+    public AbstractDao<MusicalPiece> getMusicalPiecesDao() {
+            return musicalPiecesDao;
     }
-    
+	
     @Override
     public void commitTransaction() {
         
         if (em.isOpen()) {
             em.getTransaction().commit();
-            em.close();
             System.out.println("Entity Manager is now closed");
         } else {
           
@@ -63,28 +72,13 @@ public class JpaDatabaseConnection implements BusinessConnection {
     }
 
     @Override
-    public void makeConnection(String[] props) {
-        
-        this.emf = Persistence.createEntityManagerFactory(this.managerName);
-        if(emf.isOpen()) {
-            this.em = emf.createEntityManager();
-            em.getTransaction().begin();
-            AbstractDaoImpl aDao = new AbstractDaoImpl(em);
-            
-            aDao.setParser(new StudentsHibernateParser());
-            aDao.setClassName("StudentEntity");
-            this.students = aDao.loadAll();
-            aDao.setParser(new MusicalPieceHibernateParser());
-            aDao.setClassName("MusicalPiecesEntity");
-            this.musicalPieces = aDao.loadAll();
-            aDao.setParser(new DatesHibernateParser());
-            aDao.setClassName("DatesEntity");
-            this.dates = aDao.loadAll();
-        } else {
-            throw new IllegalArgumentException("Manager with given name does not exist or there are invalid connection properties." +
-                                                "Check persistence.xml");
+    public void close() {
+        try {
+            em.close();
+            emf.close();
+            System.out.println("Manager factory closed");
+        } catch (Exception e) {
+            System.err.println("Exception: " + e);
         }
-        
     }
-    
 }

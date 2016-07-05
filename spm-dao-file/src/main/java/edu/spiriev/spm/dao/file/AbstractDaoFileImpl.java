@@ -6,7 +6,6 @@
 package edu.spiriev.spm.dao.file;
 
 import edu.spiriev.spm.dao.api.AbstractDao;
-import edu.spiriev.spm.dao.api.EntityMarker;
 import edu.spiriev.spm.dao.api.Parser;
 import java.io.BufferedReader;
 import java.io.File;
@@ -18,19 +17,16 @@ import java.util.List;
  *
  * @author root_spiriev
  */
-public class AbstractDaoFileImpl<T extends Comparable<T>> implements AbstractDao{
+public class AbstractDaoFileImpl<T, E> implements AbstractDao{
     
-    private File inputFile;
-    private Parser<T, EntityMarker> parser;
+    private final File inputFile;
+    private final Parser<T, E> parser;
 
-    public void setInputFile(File inputFile) {
+    public AbstractDaoFileImpl(File inputFile, Parser<T, E> parser) {
         this.inputFile = inputFile;
-    }
-
-    public void setParser(Parser<T, EntityMarker> parser) {
         this.parser = parser;
     }
-    
+
     @Override
     public List<T> loadAll() {
         
@@ -51,7 +47,5 @@ public class AbstractDaoFileImpl<T extends Comparable<T>> implements AbstractDao
         return dataList;
         
     }
-    
-       
     
 }
