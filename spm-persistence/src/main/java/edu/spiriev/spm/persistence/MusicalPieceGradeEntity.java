@@ -42,6 +42,7 @@ public class MusicalPieceGradeEntity implements Serializable {
     @JoinColumn(name = "musicalPiece_id", referencedColumnName = "musicalPiece_id")
     @OneToOne(optional = false, fetch = FetchType.LAZY)
     private MusicalPiecesEntity musicalPieceId;
+   
 
     public MusicalPieceGradeEntity(Integer musicalPieceGradeId) {
         this.musicalPieceGradeId = musicalPieceGradeId;

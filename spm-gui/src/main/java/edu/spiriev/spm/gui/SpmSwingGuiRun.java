@@ -5,6 +5,8 @@
  */
 package edu.spiriev.spm.gui;
 
+import edu.spiriev.spm.application.file.AnnualLessonDispositionAppOrm;
+
 /**
  *
  * @author root_spiriev
@@ -13,9 +15,13 @@ public class SpmSwingGuiRun {
     
     public static void main(String[] args) {
         
-        StartYearController ctrl = new StartYearController();
-        ctrl.start();
+        new SpmSwingGuiRun().run();
+    }
+    
+    private void run() {
         
+        MainPanelController mainPanelController = new MainPanelController(new AnnualLessonDispositionAppOrm());
+        mainPanelController.start();
         
     }
     

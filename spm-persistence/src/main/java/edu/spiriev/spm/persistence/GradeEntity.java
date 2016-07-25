@@ -15,6 +15,7 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.persistence.Version;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -37,7 +38,7 @@ public class GradeEntity implements Serializable {
     private Integer gradeId;
     @Column(name = "grade_name")
     private String gradeName;
-
+    
     public GradeEntity() {
     }
 

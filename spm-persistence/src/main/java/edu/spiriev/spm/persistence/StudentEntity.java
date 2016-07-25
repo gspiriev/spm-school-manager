@@ -18,6 +18,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Version;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -44,8 +45,9 @@ public class StudentEntity implements Serializable{
     private String studentName;
     @Column(name = "ability")
     private Integer ability;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "studentId", fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "studentId", fetch = FetchType.LAZY, orphanRemoval = true)
     private StudentGradeEntity studentGradeEntity;
+   
 
     public StudentEntity() {
     }

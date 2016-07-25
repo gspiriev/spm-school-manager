@@ -48,9 +48,9 @@ public class MusicalPiecesEntity implements Serializable {
     private String pieceName;
     @Column(name = "complexity")
     private Integer complexity;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "musicalPieceId", fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "musicalPieceId", fetch = FetchType.LAZY, orphanRemoval = true)
     protected MusicalPieceGradeEntity musicalPiecesGradeEntity;
-
+    
     public MusicalPiecesEntity() {
     }
 
@@ -91,6 +91,12 @@ public class MusicalPiecesEntity implements Serializable {
     public void setComplexity(Integer complexity) {
         this.complexity = complexity;
     }
+
+    public void setMusicalPiecesGradeEntity(MusicalPieceGradeEntity musicalPiecesGradeEntity) {
+        this.musicalPiecesGradeEntity = musicalPiecesGradeEntity;
+    }
+    
+    
 
     @Override
     public int hashCode() {

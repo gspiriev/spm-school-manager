@@ -4,17 +4,27 @@
     <parent>
         <groupId>edu.spiriev.spm</groupId>
         <artifactId>spm-school-plan-manager</artifactId>
-        <version>1.4-SNAPSHOT</version>
+        <version>1.6-SNAPSHOT</version>
     </parent>
     <artifactId>spm-gui</artifactId>
     <packaging>jar</packaging>
     
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>edu.spiriev.spm.gui.SpmSwingGuiRun</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>spm-persistence</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>spm-business-logic</artifactId>

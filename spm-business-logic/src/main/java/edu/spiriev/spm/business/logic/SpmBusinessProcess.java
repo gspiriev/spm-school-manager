@@ -30,6 +30,56 @@ public class SpmBusinessProcess {
     
     public static final SpmBusinessProcess instance = new SpmBusinessProcess();
     
+    public List<Date> getDates(BusinessConnection bc) {
+        List<Date> allDates = bc.getDatesDao().loadAll();
+        bc.commitTransaction();
+        
+        return allDates;
+    }
+    
+    public List<MusicalPiece> getMusicalPieces(BusinessConnection bc) {
+        List<MusicalPiece> musicalPieces = bc.getMusicalPiecesDao().loadAll();
+        bc.commitTransaction();
+        return musicalPieces;
+    }
+    
+    public List<Student> getStudents(BusinessConnection bc) {
+        List<Student> allStudents = bc.getStudentDao().loadAll();
+        bc.commitTransaction();
+        return allStudents;
+    }
+    
+    public void insertStudent(BusinessConnection bc, Student st) {
+        bc.getStudentDao().persistStudent(st);
+        bc.commitTransaction();
+    }
+    
+    public void insertMusicalPiece(BusinessConnection bc, MusicalPiece mPiece) {
+        bc.getMusicalPiecesDao().persistMusicalPiece(mPiece);
+        bc.commitTransaction();
+    }
+    
+    public void insertDate(BusinessConnection bc, Integer[] date) {
+        bc.getDatesDao().persistDate(date);
+        bc.commitTransaction();
+    }
+    
+    public void removeDate(BusinessConnection bc, Integer[] date) {
+        bc.getDatesDao().removeDate(date);
+        bc.commitTransaction();
+        
+    }
+    
+    public void removeStudent(BusinessConnection bc, String studentName) {
+        bc.getStudentDao().removeStudent(studentName);
+        bc.commitTransaction();
+    }
+    
+    public void removeMusicalPiece(BusinessConnection bc, String musicalPieceName) {
+        bc.getMusicalPiecesDao().removeMusicalPiece(musicalPieceName);
+        bc.commitTransaction();
+    }
+    
     public Map<Student, WeeklySchedule> createAllStudentDisposition(BusinessConnection bc, Integer endYear, Integer startYear) {
         
         Map<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
@@ -37,13 +87,7 @@ public class SpmBusinessProcess {
         List<Date> dates = bc.getDatesDao().loadAll();
         List<MusicalPiece> musicalPieces = bc.getMusicalPiecesDao().loadAll();
         List<Student> students = bc.getStudentDao().loadAll();
-        
-        try {
-            bc.close();
-        } catch(Exception e) {
-            System.out.println("Manager factory closed");
-        }
-        
+        bc.commitTransaction();
         
         for (Student st: students) {
             

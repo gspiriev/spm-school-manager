@@ -12,31 +12,67 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.AbstractMap;
+import java.util.Date;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import javax.persistence.Persistence;
 
 /**
  *
  * @author root_spiriev
  */
 public class AnnualLessonDispositionAppOrm {
-
-    public static void main(String[] args) throws Exception {
-        AnnualLessonDispositionAppOrm annualDisposition = new AnnualLessonDispositionAppOrm();
-
-        annualDisposition.run();
+    
+    private final JpaDatabaseConnection bc = new JpaDatabaseConnection("manager1");
+    
+    public void persistStudent(Student st) {
+        SpmBusinessProcess.instance.insertStudent(bc, st);
+    }
+    
+    public void persistMusicalPiece(MusicalPiece mPiece) {
+        SpmBusinessProcess.instance.insertMusicalPiece(bc, mPiece);
+    }
+    
+    public void persistDate(Integer[] date) {
+        SpmBusinessProcess.instance.insertDate(bc, date);
+    }
+    
+    public void removeDate(Integer[] date) {
+        SpmBusinessProcess.instance.removeDate(bc, date);
+    }
+    
+    public void removeStudent(String studentName) {
+        SpmBusinessProcess.instance.removeStudent(bc, studentName);
+    }
+    
+    public void removeMusicalPiece(String musicalPieceName) {
+        SpmBusinessProcess.instance.removeMusicalPiece(bc, musicalPieceName);
+    }
+    
+    
+    public List<Date> getAllDates() {
+        
+        List<Date> allDates = SpmBusinessProcess.instance.getDates(bc);
+        return allDates;
+    }
+    
+    public List<MusicalPiece> getAllMusicalPieces() {
+        
+        List<MusicalPiece> musicalPieces = SpmBusinessProcess.instance.getMusicalPieces(bc);
+        return musicalPieces;
+    }
+    
+    public List<Student> getAllStudents() {
+        
+        List<Student> allStudents = SpmBusinessProcess.instance.getStudents(bc);
+        return allStudents;
     }
 
-    private void run() {
+    public void createStudentDisposition(Map.Entry<Integer, Integer> startEndYear) {
         
-        
-        Map.Entry<Integer, Integer> startEndYear = readUserInput();
-        String[] props = {"Properties in persistence.xml"};
-
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(
-                        new JpaDatabaseConnection("manager1"),
+                        bc,
                         startEndYear.getValue(),
                         startEndYear.getKey());
         

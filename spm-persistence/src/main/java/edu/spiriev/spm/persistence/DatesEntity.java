@@ -30,7 +30,8 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "DatesEntity.findByDateId", query = "SELECT d FROM DatesEntity d WHERE d.dateId = :dateId"),
     @NamedQuery(name = "DatesEntity.findByDateDay", query = "SELECT d FROM DatesEntity d WHERE d.dateDay = :dateDay"),
     @NamedQuery(name = "DatesEntity.findByDateMonth", query = "SELECT d FROM DatesEntity d WHERE d.dateMonth = :dateMonth"),
-    @NamedQuery(name = "DatesEntity.findByDateYear", query = "SELECT d FROM DatesEntity d WHERE d.dateYear = :dateYear")})
+    @NamedQuery(name = "DatesEntity.findByDateYear", query = "SELECT d FROM DatesEntity d WHERE d.dateYear = :dateYear"),
+    @NamedQuery(name = "DatesEntity.findbyDayMonth", query = "SELECT d FROM DatesEntity d WHERE d.dateDay = :dateDay AND d.dateMonth = :dateMonth")})
 public class DatesEntity implements Serializable{
     private static final long serialVersionUID = 1L;
     @Id
@@ -44,6 +45,7 @@ public class DatesEntity implements Serializable{
     private Integer dateMonth;
     @Column(name = "date_year")
     private Integer dateYear;
+    
 
     public DatesEntity() {
     }

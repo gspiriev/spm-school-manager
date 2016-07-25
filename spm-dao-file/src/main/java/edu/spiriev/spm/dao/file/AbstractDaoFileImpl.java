@@ -7,6 +7,8 @@ package edu.spiriev.spm.dao.file;
 
 import edu.spiriev.spm.dao.api.AbstractDao;
 import edu.spiriev.spm.dao.api.Parser;
+import edu.spiriev.spm.domain.model.MusicalPiece;
+import edu.spiriev.spm.domain.model.Student;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -47,5 +49,44 @@ public class AbstractDaoFileImpl<T, E> implements AbstractDao{
         return dataList;
         
     }
+
+    @Override
+    public void persistStudent(Student student) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+  
+    @Override
+    public Student findStudent(String studentName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void removeStudent(String studentName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void removeMusicalPiece(String musicalPieceName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void persistMusicalPiece(MusicalPiece mPiece) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void persistDate(Integer[] date) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void removeDate(Integer[] date) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
+    
+    
     
 }
