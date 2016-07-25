@@ -18,6 +18,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Version;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -48,9 +49,9 @@ public class MusicalPiecesEntity implements Serializable {
     private String pieceName;
     @Column(name = "complexity")
     private Integer complexity;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "musicalPieceId", fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "musicalPieceId", fetch = FetchType.LAZY, orphanRemoval = true)
     protected MusicalPieceGradeEntity musicalPiecesGradeEntity;
-
+    
     public MusicalPiecesEntity() {
     }
 

@@ -16,7 +16,6 @@ public class SpmSwingGuiRun {
         StartYearController ctrl = new StartYearController();
         ctrl.start();
         
-        
     }
     
 }

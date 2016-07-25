@@ -10,13 +10,13 @@ import edu.spiriev.spm.domain.model.MusicalPiece;
 import edu.spiriev.spm.domain.model.Student;
 
 import java.util.Date;
-import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import edu.spiriev.spm.dao.api.AbstractDao;
+import org.hibernate.TransactionException;
 
 /**
  *
@@ -25,8 +25,8 @@ import edu.spiriev.spm.dao.api.AbstractDao;
 public class JpaDatabaseConnection implements BusinessConnection {
     
     private final String managerName;
-    private EntityManagerFactory emf;
-    private EntityManager em;
+    private final EntityManagerFactory emf;
+    private final EntityManager em;
     
     private final AbstractDao<Student> studentDao;
     private final AbstractDao<MusicalPiece> musicalPiecesDao;
@@ -36,9 +36,11 @@ public class JpaDatabaseConnection implements BusinessConnection {
             this.managerName = managerName;
             this.emf = Persistence.createEntityManagerFactory(managerName);
             em = emf.createEntityManager();
+            em.getTransaction().begin();
             studentDao = new AbstractDaoImpl<>(em, new StudentsHibernateParser(), StudentEntity.class);
             musicalPiecesDao = new AbstractDaoImpl<>(em, new MusicalPieceHibernateParser(), MusicalPiecesEntity.class);
             datesDao = new AbstractDaoImpl<>(em, new DatesHibernateParser(), DatesEntity.class);
+            System.out.println("Connected to database");
     }
 	
     public EntityManager getEm() {
@@ -62,19 +64,17 @@ public class JpaDatabaseConnection implements BusinessConnection {
 	
     @Override
     public void commitTransaction() {
-        
-        if (em.isOpen()) {
-            em.getTransaction().commit();
-            System.out.println("Entity Manager is now closed");
-        } else {
-          
-        }
+      try {
+          em.getTransaction().commit();
+          em.close();
+      } catch (TransactionException e) {
+          em.getTransaction().rollback();
+      }
     }
 
     @Override
     public void close() {
         try {
-            em.close();
             emf.close();
             System.out.println("Manager factory closed");
         } catch (Exception e) {

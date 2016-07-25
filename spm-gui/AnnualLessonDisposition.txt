@@ -3,297 +3,297 @@
 15/09/2015 - 18/09/2015
 
 
-name: Menuetto I  no 14 from 'ABC du Piano', composer: Mozart
+name: Arietta in C, composer: Clementi
 name: Allegro in B flat, composer: Mozart
-name: Menuet in F, composer: Handel
+name: Air in D minor  K3, composer: Purcell
 
 
 21/09/2015 - 25/09/2015
 
 
-name: Menuetto I  no 14 from 'ABC du Piano', composer: Mozart
+name: Arietta in C, composer: Clementi
 name: Allegro in B flat, composer: Mozart
-name: Menuet in F, composer: Handel
+name: Air in D minor  K3, composer: Purcell
 
 
 28/09/2015 - 02/10/2015
 
 
-name: Menuetto I  no 14 from 'ABC du Piano', composer: Mozart
+name: Arietta in C, composer: Clementi
 name: Allegro in B flat, composer: Mozart
-name: Menuet in F, composer: Handel
+name: Air in D minor  K3, composer: Purcell
 
 
 05/10/2015 - 09/10/2015
 
 
-name: Menuetto I  no 14 from 'ABC du Piano', composer: Mozart
+name: Arietta in C, composer: Clementi
 name: Allegro in B flat, composer: Mozart
-name: Menuet in F, composer: Handel
+name: Air in D minor  K3, composer: Purcell
 
 
 12/10/2015 - 16/10/2015
 
 
-name: Menuetto I  no 14 from 'ABC du Piano', composer: Mozart
+name: Arietta in C, composer: Clementi
 name: Allegro in B flat, composer: Mozart
-name: Menuet in F, composer: Handel
+name: Air in D minor  K3, composer: Purcell
 
 
 19/10/2015 - 23/10/2015
 
 
-name: Menuetto I  no 14 from 'ABC du Piano', composer: Mozart
+name: Arietta in C, composer: Clementi
 name: Allegro in B flat, composer: Mozart
-name: Menuet in F, composer: Handel
+name: Air in D minor  K3, composer: Purcell
 
 
 26/10/2015 - 30/10/2015
 
 
-name: Menuetto I  no 14 from 'ABC du Piano', composer: Mozart
+name: Arietta in C, composer: Clementi
 name: Allegro in B flat, composer: Mozart
-name: Menuet in F, composer: Handel
+name: Air in D minor  K3, composer: Purcell
 
 
 03/11/2015 - 06/11/2015
 
 
-name: Menuetto I  no 14 from 'ABC du Piano', composer: Mozart
+name: Arietta in C, composer: Clementi
 name: Allegro in B flat, composer: Mozart
-name: Menuet in F, composer: Handel
+name: Air in D minor  K3, composer: Purcell
 
 
 09/11/2015 - 13/11/2015
 
 
-name: Ecossaise in G major WoO 23, composer: Beethoven
-name: Melodic Study, composer: Gurlitt
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Passepied in C "" Op 187, composer: Handel
+name: Game, composer: Kabalevsky
+name: Italian Song, composer: Tchaikovsky
 
 
 16/11/2015 - 20/11/2015
 
 
-name: Ecossaise in G major WoO 23, composer: Beethoven
-name: Melodic Study, composer: Gurlitt
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Passepied in C "" Op 187, composer: Handel
+name: Game, composer: Kabalevsky
+name: Italian Song, composer: Tchaikovsky
 
 
 23/11/2015 - 27/11/2015
 
 
-name: Ecossaise in G major WoO 23, composer: Beethoven
-name: Melodic Study, composer: Gurlitt
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Passepied in C "" Op 187, composer: Handel
+name: Game, composer: Kabalevsky
+name: Italian Song, composer: Tchaikovsky
 
 
 30/11/2015 - 04/12/2015
 
 
-name: Ecossaise in G major WoO 23, composer: Beethoven
-name: Melodic Study, composer: Gurlitt
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Passepied in C "" Op 187, composer: Handel
+name: Game, composer: Kabalevsky
+name: Italian Song, composer: Tchaikovsky
 
 
 07/12/2015 - 11/12/2015
 
 
-name: Ecossaise in G major WoO 23, composer: Beethoven
-name: Melodic Study, composer: Gurlitt
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Passepied in C "" Op 187, composer: Handel
+name: Game, composer: Kabalevsky
+name: Italian Song, composer: Tchaikovsky
 
 
 14/12/2015 - 18/12/2015
 
 
-name: Ecossaise in G major WoO 23, composer: Beethoven
-name: Melodic Study, composer: Gurlitt
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Passepied in C "" Op 187, composer: Handel
+name: Game, composer: Kabalevsky
+name: Italian Song, composer: Tchaikovsky
 
 
 21/12/2015 - 24/12/2015
 
 
-name: Ecossaise in G major WoO 23, composer: Beethoven
-name: Melodic Study, composer: Gurlitt
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Passepied in C "" Op 187, composer: Handel
+name: Game, composer: Kabalevsky
+name: Italian Song, composer: Tchaikovsky
 
 
 04/01/2016 - 08/01/2016
 
 
-name: Ecossaise in G major WoO 23, composer: Beethoven
-name: Melodic Study, composer: Gurlitt
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Passepied in C "" Op 187, composer: Handel
+name: Game, composer: Kabalevsky
+name: Italian Song, composer: Tchaikovsky
 
 
 11/01/2016 - 15/01/2016
 
 
-name: Air in D minor  K3, composer: Purcell
 name: Russian Song, composer: Tchaikovsky
-name: Sleeping Cat, composer: Hovhaness
+name: Two Short Pieces and Two Little Dances, composer: Bartók
+name: Hot Noon in the Meadow, composer: Alt
 
 
 18/01/2016 - 22/01/2016
 
 
-name: Air in D minor  K3, composer: Purcell
 name: Russian Song, composer: Tchaikovsky
-name: Sleeping Cat, composer: Hovhaness
+name: Two Short Pieces and Two Little Dances, composer: Bartók
+name: Hot Noon in the Meadow, composer: Alt
 
 
 25/01/2016 - 29/01/2016
 
 
-name: Air in D minor  K3, composer: Purcell
 name: Russian Song, composer: Tchaikovsky
-name: Sleeping Cat, composer: Hovhaness
+name: Two Short Pieces and Two Little Dances, composer: Bartók
+name: Hot Noon in the Meadow, composer: Alt
 
 
 08/02/2016 - 12/02/2016
 
 
-name: Air in D minor  K3, composer: Purcell
 name: Russian Song, composer: Tchaikovsky
-name: Sleeping Cat, composer: Hovhaness
+name: Two Short Pieces and Two Little Dances, composer: Bartók
+name: Hot Noon in the Meadow, composer: Alt
 
 
 15/02/2016 - 19/02/2016
 
 
-name: Air in D minor  K3, composer: Purcell
 name: Russian Song, composer: Tchaikovsky
-name: Sleeping Cat, composer: Hovhaness
+name: Two Short Pieces and Two Little Dances, composer: Bartók
+name: Hot Noon in the Meadow, composer: Alt
 
 
 22/02/2016 - 26/02/2016
 
 
-name: Air in D minor  K3, composer: Purcell
 name: Russian Song, composer: Tchaikovsky
-name: Sleeping Cat, composer: Hovhaness
+name: Two Short Pieces and Two Little Dances, composer: Bartók
+name: Hot Noon in the Meadow, composer: Alt
 
 
 29/02/2016 - 04/03/2016
 
 
-name: Air in D minor  K3, composer: Purcell
 name: Russian Song, composer: Tchaikovsky
-name: Sleeping Cat, composer: Hovhaness
+name: Two Short Pieces and Two Little Dances, composer: Bartók
+name: Hot Noon in the Meadow, composer: Alt
 
 
 07/03/2016 - 11/03/2016
 
 
-name: Air in D minor  K3, composer: Purcell
 name: Russian Song, composer: Tchaikovsky
-name: Sleeping Cat, composer: Hovhaness
+name: Two Short Pieces and Two Little Dances, composer: Bartók
+name: Hot Noon in the Meadow, composer: Alt
 
 
 14/03/2016 - 18/03/2016
 
 
-name: Children at Play, composer: Bartók
-name: Italian Song, composer: Tchaikovsky
-name: ""Waltz in F         ", composer: Gurlitt
+name: ""Allegretto grazioso in C""  Op 42  Lesson 5, composer: Gurlitt
+name: Moderato, composer: Gurlitt
+name: Menuett in F "" Op. 17, composer: Mozart
 
 
 21/03/2016 - 25/03/2016
 
 
-name: Children at Play, composer: Bartók
-name: Italian Song, composer: Tchaikovsky
-name: ""Waltz in F         ", composer: Gurlitt
+name: ""Allegretto grazioso in C""  Op 42  Lesson 5, composer: Gurlitt
+name: Moderato, composer: Gurlitt
+name: Menuett in F "" Op. 17, composer: Mozart
 
 
 28/03/2016 - 01/04/2016
 
 
-name: Children at Play, composer: Bartók
-name: Italian Song, composer: Tchaikovsky
-name: ""Waltz in F         ", composer: Gurlitt
+name: ""Allegretto grazioso in C""  Op 42  Lesson 5, composer: Gurlitt
+name: Moderato, composer: Gurlitt
+name: Menuett in F "" Op. 17, composer: Mozart
 
 
 11/04/2016 - 15/04/2016
 
 
-name: Children at Play, composer: Bartók
-name: Italian Song, composer: Tchaikovsky
-name: ""Waltz in F         ", composer: Gurlitt
+name: ""Allegretto grazioso in C""  Op 42  Lesson 5, composer: Gurlitt
+name: Moderato, composer: Gurlitt
+name: Menuett in F "" Op. 17, composer: Mozart
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Children at Play, composer: Bartók
-name: Italian Song, composer: Tchaikovsky
-name: ""Waltz in F         ", composer: Gurlitt
+name: ""Allegretto grazioso in C""  Op 42  Lesson 5, composer: Gurlitt
+name: Moderato, composer: Gurlitt
+name: Menuett in F "" Op. 17, composer: Mozart
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Children at Play, composer: Bartók
-name: Italian Song, composer: Tchaikovsky
-name: ""Waltz in F         ", composer: Gurlitt
+name: ""Allegretto grazioso in C""  Op 42  Lesson 5, composer: Gurlitt
+name: Moderato, composer: Gurlitt
+name: Menuett in F "" Op. 17, composer: Mozart
 
 
 03/05/2016 - 06/05/2016
 
 
-name: Children at Play, composer: Bartók
-name: Italian Song, composer: Tchaikovsky
-name: ""Waltz in F         ", composer: Gurlitt
+name: ""Allegretto grazioso in C""  Op 42  Lesson 5, composer: Gurlitt
+name: Moderato, composer: Gurlitt
+name: Menuett in F "" Op. 17, composer: Mozart
 
 
 09/05/2016 - 13/05/2016
 
 
-name: Children at Play, composer: Bartók
-name: Italian Song, composer: Tchaikovsky
-name: ""Waltz in F         ", composer: Gurlitt
+name: ""Allegretto grazioso in C""  Op 42  Lesson 5, composer: Gurlitt
+name: Moderato, composer: Gurlitt
+name: Menuett in F "" Op. 17, composer: Mozart
 
 
 16/05/2016 - 20/05/2016
 
 
-name: Two Little Dialogues, composer: Bartók
-name: Menuet in C, composer: L Mozart
-name: Moderato, composer: Gurlitt
+name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
+name: Minuetto in C, composer: Scarlatti
+name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
 
 
 23/05/2016 - 26/05/2016
 
 
-name: Two Little Dialogues, composer: Bartók
-name: Menuet in C, composer: L Mozart
-name: Moderato, composer: Gurlitt
+name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
+name: Minuetto in C, composer: Scarlatti
+name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
 
 
 30/05/2016 - 03/06/2016
 
 
-name: Two Little Dialogues, composer: Bartók
-name: Menuet in C, composer: L Mozart
-name: Moderato, composer: Gurlitt
+name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
+name: Minuetto in C, composer: Scarlatti
+name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
 
 
 06/06/2016 - 10/06/2016
 
 
-name: Two Little Dialogues, composer: Bartók
-name: Menuet in C, composer: L Mozart
-name: Moderato, composer: Gurlitt
+name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
+name: Minuetto in C, composer: Scarlatti
+name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
 
 
 13/06/2016 - 15/06/2016
 
 
-name: Two Little Dialogues, composer: Bartók
-name: Menuet in C, composer: L Mozart
-name: Moderato, composer: Gurlitt
+name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
+name: Minuetto in C, composer: Scarlatti
+name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
 
 
 Симона Симеонова FIRST grade
@@ -301,297 +301,297 @@ name: Moderato, composer: Gurlitt
 15/09/2015 - 18/09/2015
 
 
-name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
-name: Hot Noon in the Meadow, composer: Alt
-name: The Ocean, composer: Alt
+name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: Riggadoon, composer: Purcell
+name: Russian Song, composer: Tchaikovsky
 
 
 21/09/2015 - 25/09/2015
 
 
-name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
-name: Hot Noon in the Meadow, composer: Alt
-name: The Ocean, composer: Alt
+name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: Riggadoon, composer: Purcell
+name: Russian Song, composer: Tchaikovsky
 
 
 28/09/2015 - 02/10/2015
 
 
-name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
-name: Hot Noon in the Meadow, composer: Alt
-name: The Ocean, composer: Alt
+name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: Riggadoon, composer: Purcell
+name: Russian Song, composer: Tchaikovsky
 
 
 05/10/2015 - 09/10/2015
 
 
-name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
-name: Hot Noon in the Meadow, composer: Alt
-name: The Ocean, composer: Alt
+name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: Riggadoon, composer: Purcell
+name: Russian Song, composer: Tchaikovsky
 
 
 12/10/2015 - 16/10/2015
 
 
-name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
-name: Hot Noon in the Meadow, composer: Alt
-name: The Ocean, composer: Alt
+name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: Riggadoon, composer: Purcell
+name: Russian Song, composer: Tchaikovsky
 
 
 19/10/2015 - 23/10/2015
 
 
-name: ""Andantino in F"" "" Op. 100, composer: Gurlitt
-name: Hot Noon in the Meadow, composer: Alt
-name: The Ocean, composer: Alt
+name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: Riggadoon, composer: Purcell
+name: Russian Song, composer: Tchaikovsky
 
 
 26/10/2015 - 30/10/2015
 
 
-name: The Doll's Funeral, composer: Tchaikovsky
-name: Melodic Study, composer: Gurlitt
-name: Italian Song, composer: Tchaikovsky
+name: Menuet in C, composer: L Mozart
+name: Moderato, composer: Gurlitt
+name: Allegretto, composer: Mozart
 
 
 03/11/2015 - 06/11/2015
 
 
-name: The Doll's Funeral, composer: Tchaikovsky
-name: Melodic Study, composer: Gurlitt
-name: Italian Song, composer: Tchaikovsky
+name: Menuet in C, composer: L Mozart
+name: Moderato, composer: Gurlitt
+name: Allegretto, composer: Mozart
 
 
 09/11/2015 - 13/11/2015
 
 
-name: The Doll's Funeral, composer: Tchaikovsky
-name: Melodic Study, composer: Gurlitt
-name: Italian Song, composer: Tchaikovsky
+name: Menuet in C, composer: L Mozart
+name: Moderato, composer: Gurlitt
+name: Allegretto, composer: Mozart
 
 
 16/11/2015 - 20/11/2015
 
 
-name: The Doll's Funeral, composer: Tchaikovsky
-name: Melodic Study, composer: Gurlitt
-name: Italian Song, composer: Tchaikovsky
+name: Menuet in C, composer: L Mozart
+name: Moderato, composer: Gurlitt
+name: Allegretto, composer: Mozart
 
 
 23/11/2015 - 27/11/2015
 
 
-name: The Doll's Funeral, composer: Tchaikovsky
-name: Melodic Study, composer: Gurlitt
-name: Italian Song, composer: Tchaikovsky
+name: Menuet in C, composer: L Mozart
+name: Moderato, composer: Gurlitt
+name: Allegretto, composer: Mozart
 
 
 30/11/2015 - 04/12/2015
 
 
-name: The Doll's Funeral, composer: Tchaikovsky
-name: Melodic Study, composer: Gurlitt
-name: Italian Song, composer: Tchaikovsky
+name: Menuet in C, composer: L Mozart
+name: Moderato, composer: Gurlitt
+name: Allegretto, composer: Mozart
 
 
 07/12/2015 - 11/12/2015
 
 
-name: Minuet in C, composer: Rameau
-name: Ecossaise in G major WoO 23, composer: Beethoven
 name: Melody  KV 15pp, composer: Schumann
+name: ""Waltz in F         ", composer: Gurlitt
+name: Game, composer: Kabalevsky
 
 
 14/12/2015 - 18/12/2015
 
 
-name: Minuet in C, composer: Rameau
-name: Ecossaise in G major WoO 23, composer: Beethoven
 name: Melody  KV 15pp, composer: Schumann
+name: ""Waltz in F         ", composer: Gurlitt
+name: Game, composer: Kabalevsky
 
 
 21/12/2015 - 24/12/2015
 
 
-name: Minuet in C, composer: Rameau
-name: Ecossaise in G major WoO 23, composer: Beethoven
 name: Melody  KV 15pp, composer: Schumann
+name: ""Waltz in F         ", composer: Gurlitt
+name: Game, composer: Kabalevsky
 
 
 04/01/2016 - 08/01/2016
 
 
-name: Minuet in C, composer: Rameau
-name: Ecossaise in G major WoO 23, composer: Beethoven
 name: Melody  KV 15pp, composer: Schumann
+name: ""Waltz in F         ", composer: Gurlitt
+name: Game, composer: Kabalevsky
 
 
 11/01/2016 - 15/01/2016
 
 
-name: Minuet in C, composer: Rameau
-name: Ecossaise in G major WoO 23, composer: Beethoven
 name: Melody  KV 15pp, composer: Schumann
+name: ""Waltz in F         ", composer: Gurlitt
+name: Game, composer: Kabalevsky
 
 
 18/01/2016 - 22/01/2016
 
 
-name: Minuet in C, composer: Rameau
-name: Ecossaise in G major WoO 23, composer: Beethoven
 name: Melody  KV 15pp, composer: Schumann
+name: ""Waltz in F         ", composer: Gurlitt
+name: Game, composer: Kabalevsky
 
 
 25/01/2016 - 29/01/2016
 
 
-name: Theme and Variation 1, composer: Kabalevsky
-name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
-name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: ""Study in C""  no 13, composer: Le Couppey
+name: Menuett in F "" Op. 17, composer: Mozart
+name: Minuet in C, composer: Rameau
 
 
 08/02/2016 - 12/02/2016
 
 
-name: Theme and Variation 1, composer: Kabalevsky
-name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
-name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: ""Study in C""  no 13, composer: Le Couppey
+name: Menuett in F "" Op. 17, composer: Mozart
+name: Minuet in C, composer: Rameau
 
 
 15/02/2016 - 19/02/2016
 
 
-name: Theme and Variation 1, composer: Kabalevsky
-name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
-name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: ""Study in C""  no 13, composer: Le Couppey
+name: Menuett in F "" Op. 17, composer: Mozart
+name: Minuet in C, composer: Rameau
 
 
 22/02/2016 - 26/02/2016
 
 
-name: Theme and Variation 1, composer: Kabalevsky
-name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
-name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: ""Study in C""  no 13, composer: Le Couppey
+name: Menuett in F "" Op. 17, composer: Mozart
+name: Minuet in C, composer: Rameau
 
 
 29/02/2016 - 04/03/2016
 
 
-name: Theme and Variation 1, composer: Kabalevsky
-name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
-name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: ""Study in C""  no 13, composer: Le Couppey
+name: Menuett in F "" Op. 17, composer: Mozart
+name: Minuet in C, composer: Rameau
 
 
 07/03/2016 - 11/03/2016
 
 
-name: Theme and Variation 1, composer: Kabalevsky
-name: Quasi Adagio no 3 from 'For Children' vol 1, composer: Bartók
-name: Chorale Lord 4  6 and 12 are excellent for the LH., composer: Bach
+name: ""Study in C""  no 13, composer: Le Couppey
+name: Menuett in F "" Op. 17, composer: Mozart
+name: Minuet in C, composer: Rameau
 
 
 14/03/2016 - 18/03/2016
 
 
-name: Menuet in F, composer: Handel
 name: Menuetto in G, composer: Telemann
-name: Air in D minor  K3, composer: Purcell
+name: Theme and Variation 1, composer: Kabalevsky
+name: Mysterious Procession, composer: Agay
 
 
 21/03/2016 - 25/03/2016
 
 
-name: Menuet in F, composer: Handel
 name: Menuetto in G, composer: Telemann
-name: Air in D minor  K3, composer: Purcell
+name: Theme and Variation 1, composer: Kabalevsky
+name: Mysterious Procession, composer: Agay
 
 
 28/03/2016 - 01/04/2016
 
 
-name: Menuet in F, composer: Handel
 name: Menuetto in G, composer: Telemann
-name: Air in D minor  K3, composer: Purcell
+name: Theme and Variation 1, composer: Kabalevsky
+name: Mysterious Procession, composer: Agay
 
 
 11/04/2016 - 15/04/2016
 
 
-name: Menuet in F, composer: Handel
 name: Menuetto in G, composer: Telemann
-name: Air in D minor  K3, composer: Purcell
+name: Theme and Variation 1, composer: Kabalevsky
+name: Mysterious Procession, composer: Agay
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Menuet in F, composer: Handel
 name: Menuetto in G, composer: Telemann
-name: Air in D minor  K3, composer: Purcell
+name: Theme and Variation 1, composer: Kabalevsky
+name: Mysterious Procession, composer: Agay
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Menuet in F, composer: Handel
 name: Menuetto in G, composer: Telemann
-name: Air in D minor  K3, composer: Purcell
+name: Theme and Variation 1, composer: Kabalevsky
+name: Mysterious Procession, composer: Agay
 
 
 03/05/2016 - 06/05/2016
 
 
-name: Russian Song, composer: Tchaikovsky
-name: Mysterious Procession, composer: Agay
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Arietta in C, composer: Clementi
+name: Air in D minor  K3, composer: Purcell
+name: Sleeping Cat, composer: Hovhaness
 
 
 09/05/2016 - 13/05/2016
 
 
-name: Russian Song, composer: Tchaikovsky
-name: Mysterious Procession, composer: Agay
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Arietta in C, composer: Clementi
+name: Air in D minor  K3, composer: Purcell
+name: Sleeping Cat, composer: Hovhaness
 
 
 16/05/2016 - 20/05/2016
 
 
-name: Russian Song, composer: Tchaikovsky
-name: Mysterious Procession, composer: Agay
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Arietta in C, composer: Clementi
+name: Air in D minor  K3, composer: Purcell
+name: Sleeping Cat, composer: Hovhaness
 
 
 23/05/2016 - 26/05/2016
 
 
-name: Russian Song, composer: Tchaikovsky
-name: Mysterious Procession, composer: Agay
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Arietta in C, composer: Clementi
+name: Air in D minor  K3, composer: Purcell
+name: Sleeping Cat, composer: Hovhaness
 
 
 30/05/2016 - 03/06/2016
 
 
-name: Russian Song, composer: Tchaikovsky
-name: Mysterious Procession, composer: Agay
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Arietta in C, composer: Clementi
+name: Air in D minor  K3, composer: Purcell
+name: Sleeping Cat, composer: Hovhaness
 
 
 06/06/2016 - 10/06/2016
 
 
-name: Russian Song, composer: Tchaikovsky
-name: Mysterious Procession, composer: Agay
-name: ""Study in C""  no 13, composer: Le Couppey
+name: Arietta in C, composer: Clementi
+name: Air in D minor  K3, composer: Purcell
+name: Sleeping Cat, composer: Hovhaness
 
 
 13/06/2016 - 15/06/2016
 
 
+name: The Ocean, composer: Alt
+name: Italian Song, composer: Tchaikovsky
 name: Children at Play, composer: Bartók
-name: Scherzino, composer: Khachaturian
-name: Two Short Pieces and Two Little Dances, composer: Bartók
 
 
 Христо Ризов SECOND grade
@@ -599,297 +599,297 @@ name: Two Short Pieces and Two Little Dances, composer: Bartók
 15/09/2015 - 18/09/2015
 
 
-name: ""Andantino"" "" Op. 100, composer: Diabelli
-name: Enfantines, composer: Bloch
-name: Prelude in Gm  BWV Anh. II 132 (anon.), composer: Bach
+name: Children Carnival op. 25, composer: Beach
+name: Rigadoon in D minor Z D227, composer: Purcell
+name: Sunday, composer: Gurlitt
 
 
 21/09/2015 - 25/09/2015
 
 
-name: ""Andantino"" "" Op. 100, composer: Diabelli
-name: Enfantines, composer: Bloch
-name: Prelude in Gm  BWV Anh. II 132 (anon.), composer: Bach
+name: Children Carnival op. 25, composer: Beach
+name: Rigadoon in D minor Z D227, composer: Purcell
+name: Sunday, composer: Gurlitt
 
 
 28/09/2015 - 02/10/2015
 
 
-name: ""Andantino"" "" Op. 100, composer: Diabelli
-name: Enfantines, composer: Bloch
-name: Prelude in Gm  BWV Anh. II 132 (anon.), composer: Bach
+name: Children Carnival op. 25, composer: Beach
+name: Rigadoon in D minor Z D227, composer: Purcell
+name: Sunday, composer: Gurlitt
 
 
 05/10/2015 - 09/10/2015
 
 
-name: ""Andantino"" "" Op. 100, composer: Diabelli
-name: Enfantines, composer: Bloch
-name: Prelude in Gm  BWV Anh. II 132 (anon.), composer: Bach
+name: Children Carnival op. 25, composer: Beach
+name: Rigadoon in D minor Z D227, composer: Purcell
+name: Sunday, composer: Gurlitt
 
 
 12/10/2015 - 16/10/2015
 
 
-name: ""Andantino"" "" Op. 100, composer: Diabelli
-name: Enfantines, composer: Bloch
-name: Prelude in Gm  BWV Anh. II 132 (anon.), composer: Bach
+name: Children Carnival op. 25, composer: Beach
+name: Rigadoon in D minor Z D227, composer: Purcell
+name: Sunday, composer: Gurlitt
 
 
 19/10/2015 - 23/10/2015
 
 
-name: ""Andantino"" "" Op. 100, composer: Diabelli
-name: Enfantines, composer: Bloch
-name: Prelude in Gm  BWV Anh. II 132 (anon.), composer: Bach
+name: Children Carnival op. 25, composer: Beach
+name: Rigadoon in D minor Z D227, composer: Purcell
+name: Sunday, composer: Gurlitt
 
 
 26/10/2015 - 30/10/2015
 
 
-name: ""Andantino"" "" Op. 100, composer: Diabelli
-name: Enfantines, composer: Bloch
-name: Prelude in Gm  BWV Anh. II 132 (anon.), composer: Bach
+name: Children Carnival op. 25, composer: Beach
+name: Rigadoon in D minor Z D227, composer: Purcell
+name: Sunday, composer: Gurlitt
 
 
 03/11/2015 - 06/11/2015
 
 
-name: ""Andantino"" "" Op. 100, composer: Diabelli
-name: Enfantines, composer: Bloch
-name: Prelude in Gm  BWV Anh. II 132 (anon.), composer: Bach
+name: Children Carnival op. 25, composer: Beach
+name: Rigadoon in D minor Z D227, composer: Purcell
+name: Sunday, composer: Gurlitt
 
 
 09/11/2015 - 13/11/2015
 
 
-name: Mayflowers op. 61, composer: Oesten
-name: Minuet in G, composer: Bach
-name: ""Study in C"" "" Op 39, composer: Le Couppey
+name: Minuet in G  BWV Anh. 114 (C. Petzold), composer: Bach
+name: ""Undismayed"" "" Op. 100, composer: Gurlitt
+name: ""Sonatina in F"" "" B175, composer: Kuhlau
 
 
 16/11/2015 - 20/11/2015
 
 
-name: Mayflowers op. 61, composer: Oesten
-name: Minuet in G, composer: Bach
-name: ""Study in C"" "" Op 39, composer: Le Couppey
+name: Minuet in G  BWV Anh. 114 (C. Petzold), composer: Bach
+name: ""Undismayed"" "" Op. 100, composer: Gurlitt
+name: ""Sonatina in F"" "" B175, composer: Kuhlau
 
 
 23/11/2015 - 27/11/2015
 
 
-name: Mayflowers op. 61, composer: Oesten
-name: Minuet in G, composer: Bach
-name: ""Study in C"" "" Op 39, composer: Le Couppey
+name: Minuet in G  BWV Anh. 114 (C. Petzold), composer: Bach
+name: ""Undismayed"" "" Op. 100, composer: Gurlitt
+name: ""Sonatina in F"" "" B175, composer: Kuhlau
 
 
 30/11/2015 - 04/12/2015
 
 
-name: Mayflowers op. 61, composer: Oesten
-name: Minuet in G, composer: Bach
-name: ""Study in C"" "" Op 39, composer: Le Couppey
+name: Minuet in G  BWV Anh. 114 (C. Petzold), composer: Bach
+name: ""Undismayed"" "" Op. 100, composer: Gurlitt
+name: ""Sonatina in F"" "" B175, composer: Kuhlau
 
 
 07/12/2015 - 11/12/2015
 
 
-name: Mayflowers op. 61, composer: Oesten
-name: Minuet in G, composer: Bach
-name: ""Study in C"" "" Op 39, composer: Le Couppey
+name: Minuet in G  BWV Anh. 114 (C. Petzold), composer: Bach
+name: ""Undismayed"" "" Op. 100, composer: Gurlitt
+name: ""Sonatina in F"" "" B175, composer: Kuhlau
 
 
 14/12/2015 - 18/12/2015
 
 
-name: Mayflowers op. 61, composer: Oesten
-name: Minuet in G, composer: Bach
-name: ""Study in C"" "" Op 39, composer: Le Couppey
+name: Minuet in G  BWV Anh. 114 (C. Petzold), composer: Bach
+name: ""Undismayed"" "" Op. 100, composer: Gurlitt
+name: ""Sonatina in F"" "" B175, composer: Kuhlau
 
 
 21/12/2015 - 24/12/2015
 
 
-name: Mayflowers op. 61, composer: Oesten
-name: Minuet in G, composer: Bach
-name: ""Study in C"" "" Op 39, composer: Le Couppey
+name: Minuet in G  BWV Anh. 114 (C. Petzold), composer: Bach
+name: ""Undismayed"" "" Op. 100, composer: Gurlitt
+name: ""Sonatina in F"" "" B175, composer: Kuhlau
 
 
 04/01/2016 - 08/01/2016
 
 
-name: Mayflowers op. 61, composer: Oesten
-name: Minuet in G, composer: Bach
-name: ""Study in C"" "" Op 39, composer: Le Couppey
+name: Minuet in G  BWV Anh. 114 (C. Petzold), composer: Bach
+name: ""Undismayed"" "" Op. 100, composer: Gurlitt
+name: ""Sonatina in F"" "" B175, composer: Kuhlau
 
 
 11/01/2016 - 15/01/2016
 
 
-name: Lullaby, composer: Gurlitt
-name: To a Wild Rose, composer: MacDowell
-name: A Little Song  Op 140, composer: Kabalevsky
+name: ""Andantino"" "" Op. 100, composer: Diabelli
+name: Enfantines, composer: Bloch
+name: ""Study in C"" "" Op 39, composer: Le Couppey
 
 
 18/01/2016 - 22/01/2016
 
 
-name: Lullaby, composer: Gurlitt
-name: To a Wild Rose, composer: MacDowell
-name: A Little Song  Op 140, composer: Kabalevsky
+name: ""Andantino"" "" Op. 100, composer: Diabelli
+name: Enfantines, composer: Bloch
+name: ""Study in C"" "" Op 39, composer: Le Couppey
 
 
 25/01/2016 - 29/01/2016
 
 
-name: Lullaby, composer: Gurlitt
-name: To a Wild Rose, composer: MacDowell
-name: A Little Song  Op 140, composer: Kabalevsky
+name: ""Andantino"" "" Op. 100, composer: Diabelli
+name: Enfantines, composer: Bloch
+name: ""Study in C"" "" Op 39, composer: Le Couppey
 
 
 08/02/2016 - 12/02/2016
 
 
-name: Lullaby, composer: Gurlitt
-name: To a Wild Rose, composer: MacDowell
-name: A Little Song  Op 140, composer: Kabalevsky
+name: ""Andantino"" "" Op. 100, composer: Diabelli
+name: Enfantines, composer: Bloch
+name: ""Study in C"" "" Op 39, composer: Le Couppey
 
 
 15/02/2016 - 19/02/2016
 
 
-name: Lullaby, composer: Gurlitt
-name: To a Wild Rose, composer: MacDowell
-name: A Little Song  Op 140, composer: Kabalevsky
+name: ""Andantino"" "" Op. 100, composer: Diabelli
+name: Enfantines, composer: Bloch
+name: ""Study in C"" "" Op 39, composer: Le Couppey
 
 
 22/02/2016 - 26/02/2016
 
 
-name: Lullaby, composer: Gurlitt
-name: To a Wild Rose, composer: MacDowell
-name: A Little Song  Op 140, composer: Kabalevsky
+name: ""Andantino"" "" Op. 100, composer: Diabelli
+name: Enfantines, composer: Bloch
+name: ""Study in C"" "" Op 39, composer: Le Couppey
 
 
 29/02/2016 - 04/03/2016
 
 
-name: Lullaby, composer: Gurlitt
-name: To a Wild Rose, composer: MacDowell
-name: A Little Song  Op 140, composer: Kabalevsky
+name: ""Andantino"" "" Op. 100, composer: Diabelli
+name: Enfantines, composer: Bloch
+name: ""Study in C"" "" Op 39, composer: Le Couppey
 
 
 07/03/2016 - 11/03/2016
 
 
-name: Lullaby, composer: Gurlitt
-name: To a Wild Rose, composer: MacDowell
-name: A Little Song  Op 140, composer: Kabalevsky
+name: ""Andantino"" "" Op. 100, composer: Diabelli
+name: Enfantines, composer: Bloch
+name: ""Study in C"" "" Op 39, composer: Le Couppey
 
 
 14/03/2016 - 18/03/2016
 
 
-name: Sunday, composer: Gurlitt
-name: Minuet in Am  BWV Anh. 115 (C. Petzold), composer: Bach
-name: Morning prayer, composer: Gurlitt
+name: Bourrée from Overture in F, composer: Bach
+name: ""Galop         ", composer: Kabalevsky
+name: Minuet in Gm, composer: Bach
 
 
 21/03/2016 - 25/03/2016
 
 
-name: Sunday, composer: Gurlitt
-name: Minuet in Am  BWV Anh. 115 (C. Petzold), composer: Bach
-name: Morning prayer, composer: Gurlitt
+name: Bourrée from Overture in F, composer: Bach
+name: ""Galop         ", composer: Kabalevsky
+name: Minuet in Gm, composer: Bach
 
 
 28/03/2016 - 01/04/2016
 
 
-name: Sunday, composer: Gurlitt
-name: Minuet in Am  BWV Anh. 115 (C. Petzold), composer: Bach
-name: Morning prayer, composer: Gurlitt
+name: Bourrée from Overture in F, composer: Bach
+name: ""Galop         ", composer: Kabalevsky
+name: Minuet in Gm, composer: Bach
 
 
 11/04/2016 - 15/04/2016
 
 
-name: Sunday, composer: Gurlitt
-name: Minuet in Am  BWV Anh. 115 (C. Petzold), composer: Bach
-name: Morning prayer, composer: Gurlitt
+name: Bourrée from Overture in F, composer: Bach
+name: ""Galop         ", composer: Kabalevsky
+name: Minuet in Gm, composer: Bach
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Sunday, composer: Gurlitt
-name: Minuet in Am  BWV Anh. 115 (C. Petzold), composer: Bach
-name: Morning prayer, composer: Gurlitt
+name: Bourrée from Overture in F, composer: Bach
+name: ""Galop         ", composer: Kabalevsky
+name: Minuet in Gm, composer: Bach
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Sunday, composer: Gurlitt
-name: Minuet in Am  BWV Anh. 115 (C. Petzold), composer: Bach
-name: Morning prayer, composer: Gurlitt
+name: Bourrée from Overture in F, composer: Bach
+name: ""Galop         ", composer: Kabalevsky
+name: Minuet in Gm, composer: Bach
 
 
 03/05/2016 - 06/05/2016
 
 
-name: Sunday, composer: Gurlitt
-name: Minuet in Am  BWV Anh. 115 (C. Petzold), composer: Bach
-name: Morning prayer, composer: Gurlitt
+name: Bourrée from Overture in F, composer: Bach
+name: ""Galop         ", composer: Kabalevsky
+name: Minuet in Gm, composer: Bach
 
 
 09/05/2016 - 13/05/2016
 
 
-name: Sunday, composer: Gurlitt
-name: Minuet in Am  BWV Anh. 115 (C. Petzold), composer: Bach
-name: Morning prayer, composer: Gurlitt
+name: Bourrée from Overture in F, composer: Bach
+name: ""Galop         ", composer: Kabalevsky
+name: Minuet in Gm, composer: Bach
 
 
 16/05/2016 - 20/05/2016
 
 
-name: Musette in D  BWV Anh. II 121 (Anon.), composer: Bach
 name: Petit Trianon suite, composer: Agay
-name: ""Galop         ", composer: Kabalevsky
+name: Signi Lieti, composer: Alderighi
+name: Folk preludes, composer: Bowles
 
 
 23/05/2016 - 26/05/2016
 
 
-name: Musette in D  BWV Anh. II 121 (Anon.), composer: Bach
 name: Petit Trianon suite, composer: Agay
-name: ""Galop         ", composer: Kabalevsky
+name: Signi Lieti, composer: Alderighi
+name: Folk preludes, composer: Bowles
 
 
 30/05/2016 - 03/06/2016
 
 
-name: Musette in D  BWV Anh. II 121 (Anon.), composer: Bach
 name: Petit Trianon suite, composer: Agay
-name: ""Galop         ", composer: Kabalevsky
+name: Signi Lieti, composer: Alderighi
+name: Folk preludes, composer: Bowles
 
 
 06/06/2016 - 10/06/2016
 
 
-name: Musette in D  BWV Anh. II 121 (Anon.), composer: Bach
 name: Petit Trianon suite, composer: Agay
-name: ""Galop         ", composer: Kabalevsky
+name: Signi Lieti, composer: Alderighi
+name: Folk preludes, composer: Bowles
 
 
 13/06/2016 - 15/06/2016
 
 
-name: Musette in D  BWV Anh. II 121 (Anon.), composer: Bach
 name: Petit Trianon suite, composer: Agay
-name: ""Galop         ", composer: Kabalevsky
+name: Signi Lieti, composer: Alderighi
+name: Folk preludes, composer: Bowles
 
 
 Доротея Калинова THIRD grade
@@ -897,297 +897,297 @@ name: ""Galop         ", composer: Kabalevsky
 15/09/2015 - 18/09/2015
 
 
-name: Minuet in F, composer: Handel
+name: ""Sonatina"" "" Op 42, composer: Kuhlau
 name: The Witch, composer: Tchaikovsky
-name: Little Prelude  but what the heck  I love it!) full of tension and nervous energy jumping all over the keyboard., composer: Bach
+name: Rondo, composer: Couperin
 
 
 21/09/2015 - 25/09/2015
 
 
-name: Minuet in F, composer: Handel
+name: ""Sonatina"" "" Op 42, composer: Kuhlau
 name: The Witch, composer: Tchaikovsky
-name: Little Prelude  but what the heck  I love it!) full of tension and nervous energy jumping all over the keyboard., composer: Bach
+name: Rondo, composer: Couperin
 
 
 28/09/2015 - 02/10/2015
 
 
-name: Minuet in F, composer: Handel
+name: ""Sonatina"" "" Op 42, composer: Kuhlau
 name: The Witch, composer: Tchaikovsky
-name: Little Prelude  but what the heck  I love it!) full of tension and nervous energy jumping all over the keyboard., composer: Bach
+name: Rondo, composer: Couperin
 
 
 05/10/2015 - 09/10/2015
 
 
-name: Minuet in F, composer: Handel
+name: ""Sonatina"" "" Op 42, composer: Kuhlau
 name: The Witch, composer: Tchaikovsky
-name: Little Prelude  but what the heck  I love it!) full of tension and nervous energy jumping all over the keyboard., composer: Bach
+name: Rondo, composer: Couperin
 
 
 12/10/2015 - 16/10/2015
 
 
-name: Minuet in F, composer: Handel
+name: ""Sonatina"" "" Op 42, composer: Kuhlau
 name: The Witch, composer: Tchaikovsky
-name: Little Prelude  but what the heck  I love it!) full of tension and nervous energy jumping all over the keyboard., composer: Bach
+name: Rondo, composer: Couperin
 
 
 19/10/2015 - 23/10/2015
 
 
+name: Minuet in F, composer: Handel
 name: Fantasia No 09 in E minor, composer: Telemann
-name: Sonatina in B flat, composer: Handel
-name: Round Dance: No 17  C.P.E., composer: Bartók
+name: Hornpipe in B flat, composer: Purcell
 
 
 26/10/2015 - 30/10/2015
 
 
+name: Minuet in F, composer: Handel
 name: Fantasia No 09 in E minor, composer: Telemann
-name: Sonatina in B flat, composer: Handel
-name: Round Dance: No 17  C.P.E., composer: Bartók
+name: Hornpipe in B flat, composer: Purcell
 
 
 03/11/2015 - 06/11/2015
 
 
+name: Minuet in F, composer: Handel
 name: Fantasia No 09 in E minor, composer: Telemann
-name: Sonatina in B flat, composer: Handel
-name: Round Dance: No 17  C.P.E., composer: Bartók
+name: Hornpipe in B flat, composer: Purcell
 
 
 09/11/2015 - 13/11/2015
 
 
+name: Minuet in F, composer: Handel
 name: Fantasia No 09 in E minor, composer: Telemann
-name: Sonatina in B flat, composer: Handel
-name: Round Dance: No 17  C.P.E., composer: Bartók
+name: Hornpipe in B flat, composer: Purcell
 
 
 16/11/2015 - 20/11/2015
 
 
+name: Minuet in F, composer: Handel
 name: Fantasia No 09 in E minor, composer: Telemann
-name: Sonatina in B flat, composer: Handel
-name: Round Dance: No 17  C.P.E., composer: Bartók
+name: Hornpipe in B flat, composer: Purcell
 
 
 23/11/2015 - 27/11/2015
 
 
-name: Air in B flat "" Op 224, composer: Handel
-name: Rondo, composer: Couperin
-name: ""Clowns         ", composer: Kabalevsky
+name: Allegro in E minor, composer: Telemann
+name: ""Study in A flat         ", composer: Czerny
+name: Little Prelude  but what the heck  I love it!) full of tension and nervous energy jumping all over the keyboard., composer: Bach
 
 
 30/11/2015 - 04/12/2015
 
 
-name: Air in B flat "" Op 224, composer: Handel
-name: Rondo, composer: Couperin
-name: ""Clowns         ", composer: Kabalevsky
+name: Allegro in E minor, composer: Telemann
+name: ""Study in A flat         ", composer: Czerny
+name: Little Prelude  but what the heck  I love it!) full of tension and nervous energy jumping all over the keyboard., composer: Bach
 
 
 07/12/2015 - 11/12/2015
 
 
-name: Air in B flat "" Op 224, composer: Handel
-name: Rondo, composer: Couperin
-name: ""Clowns         ", composer: Kabalevsky
+name: Allegro in E minor, composer: Telemann
+name: ""Study in A flat         ", composer: Czerny
+name: Little Prelude  but what the heck  I love it!) full of tension and nervous energy jumping all over the keyboard., composer: Bach
 
 
 14/12/2015 - 18/12/2015
 
 
-name: Air in B flat "" Op 224, composer: Handel
-name: Rondo, composer: Couperin
-name: ""Clowns         ", composer: Kabalevsky
+name: Allegro in E minor, composer: Telemann
+name: ""Study in A flat         ", composer: Czerny
+name: Little Prelude  but what the heck  I love it!) full of tension and nervous energy jumping all over the keyboard., composer: Bach
 
 
 21/12/2015 - 24/12/2015
 
 
-name: Air in B flat "" Op 224, composer: Handel
-name: Rondo, composer: Couperin
-name: ""Clowns         ", composer: Kabalevsky
+name: Allegro in E minor, composer: Telemann
+name: ""Study in A flat         ", composer: Czerny
+name: Little Prelude  but what the heck  I love it!) full of tension and nervous energy jumping all over the keyboard., composer: Bach
 
 
 04/01/2016 - 08/01/2016
 
 
-name: ""Sonatina"" "" Op 42, composer: Kuhlau
-name: ""Study in C minor         ", composer: Burgmüller
-name: French Suite No. 6 - Menuet, composer: Bach
+name: Keringo, composer: Bartók
+name: Lento: No 11  C.P.E., composer: Bartók
+name: Menuet in A, composer: L Mozart
 
 
 11/01/2016 - 15/01/2016
 
 
-name: ""Sonatina"" "" Op 42, composer: Kuhlau
-name: ""Study in C minor         ", composer: Burgmüller
-name: French Suite No. 6 - Menuet, composer: Bach
+name: Keringo, composer: Bartók
+name: Lento: No 11  C.P.E., composer: Bartók
+name: Menuet in A, composer: L Mozart
 
 
 18/01/2016 - 22/01/2016
 
 
-name: ""Sonatina"" "" Op 42, composer: Kuhlau
-name: ""Study in C minor         ", composer: Burgmüller
-name: French Suite No. 6 - Menuet, composer: Bach
+name: Keringo, composer: Bartók
+name: Lento: No 11  C.P.E., composer: Bartók
+name: Menuet in A, composer: L Mozart
 
 
 25/01/2016 - 29/01/2016
 
 
-name: ""Sonatina"" "" Op 42, composer: Kuhlau
-name: ""Study in C minor         ", composer: Burgmüller
-name: French Suite No. 6 - Menuet, composer: Bach
+name: Keringo, composer: Bartók
+name: Lento: No 11  C.P.E., composer: Bartók
+name: Menuet in A, composer: L Mozart
 
 
 08/02/2016 - 12/02/2016
 
 
-name: ""Sonatina"" "" Op 42, composer: Kuhlau
-name: ""Study in C minor         ", composer: Burgmüller
-name: French Suite No. 6 - Menuet, composer: Bach
+name: Keringo, composer: Bartók
+name: Lento: No 11  C.P.E., composer: Bartók
+name: Menuet in A, composer: L Mozart
 
 
 15/02/2016 - 19/02/2016
 
 
-name: French Suite "" C.P.E., composer: Bach
-name: Polka, composer: Tchaikovsky
-name: Sonatina in F, composer: Gurlitt
+name: Music for Children Op. 65 No. 04, composer: Prokofiev
+name: French Suite No. 6 - Menuet, composer: Bach
+name: Allegro in F, composer: Hummel
 
 
 22/02/2016 - 26/02/2016
 
 
-name: French Suite "" C.P.E., composer: Bach
-name: Polka, composer: Tchaikovsky
-name: Sonatina in F, composer: Gurlitt
+name: Music for Children Op. 65 No. 04, composer: Prokofiev
+name: French Suite No. 6 - Menuet, composer: Bach
+name: Allegro in F, composer: Hummel
 
 
 29/02/2016 - 04/03/2016
 
 
-name: French Suite "" C.P.E., composer: Bach
-name: Polka, composer: Tchaikovsky
-name: Sonatina in F, composer: Gurlitt
+name: Music for Children Op. 65 No. 04, composer: Prokofiev
+name: French Suite No. 6 - Menuet, composer: Bach
+name: Allegro in F, composer: Hummel
 
 
 07/03/2016 - 11/03/2016
 
 
-name: French Suite "" C.P.E., composer: Bach
-name: Polka, composer: Tchaikovsky
-name: Sonatina in F, composer: Gurlitt
+name: Music for Children Op. 65 No. 04, composer: Prokofiev
+name: French Suite No. 6 - Menuet, composer: Bach
+name: Allegro in F, composer: Hummel
 
 
 14/03/2016 - 18/03/2016
 
 
-name: French Suite "" C.P.E., composer: Bach
-name: Polka, composer: Tchaikovsky
-name: Sonatina in F, composer: Gurlitt
+name: Music for Children Op. 65 No. 04, composer: Prokofiev
+name: French Suite No. 6 - Menuet, composer: Bach
+name: Allegro in F, composer: Hummel
 
 
 21/03/2016 - 25/03/2016
 
 
-name: Keringo, composer: Bartók
-name: Allegro in F, composer: Hummel
-name: ""Air         ", composer: Handel
+name: ""Study in D"" "" B175, composer: Heller
+name: Sonata K 040, composer: Scarlatti
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 28/03/2016 - 01/04/2016
 
 
-name: Keringo, composer: Bartók
-name: Allegro in F, composer: Hummel
-name: ""Air         ", composer: Handel
+name: ""Study in D"" "" B175, composer: Heller
+name: Sonata K 040, composer: Scarlatti
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 11/04/2016 - 15/04/2016
 
 
-name: Keringo, composer: Bartók
-name: Allegro in F, composer: Hummel
-name: ""Air         ", composer: Handel
+name: ""Study in D"" "" B175, composer: Heller
+name: Sonata K 040, composer: Scarlatti
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Keringo, composer: Bartók
-name: Allegro in F, composer: Hummel
-name: ""Air         ", composer: Handel
+name: ""Study in D"" "" B175, composer: Heller
+name: Sonata K 040, composer: Scarlatti
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Keringo, composer: Bartók
-name: Allegro in F, composer: Hummel
-name: ""Air         ", composer: Handel
+name: ""Study in D"" "" B175, composer: Heller
+name: Sonata K 040, composer: Scarlatti
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 03/05/2016 - 06/05/2016
 
 
-name: Peasant's Flute: No 26 from 'For Children' vol 2, composer: Bartók
-name: Menuet in A, composer: L Mozart
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Polka, composer: Tchaikovsky
+name: ""Impromptu         ", composer: Gurlitt
 
 
 09/05/2016 - 13/05/2016
 
 
-name: Peasant's Flute: No 26 from 'For Children' vol 2, composer: Bartók
-name: Menuet in A, composer: L Mozart
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Polka, composer: Tchaikovsky
+name: ""Impromptu         ", composer: Gurlitt
 
 
 16/05/2016 - 20/05/2016
 
 
-name: Peasant's Flute: No 26 from 'For Children' vol 2, composer: Bartók
-name: Menuet in A, composer: L Mozart
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Polka, composer: Tchaikovsky
+name: ""Impromptu         ", composer: Gurlitt
 
 
 23/05/2016 - 26/05/2016
 
 
-name: Peasant's Flute: No 26 from 'For Children' vol 2, composer: Bartók
-name: Menuet in A, composer: L Mozart
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Polka, composer: Tchaikovsky
+name: ""Impromptu         ", composer: Gurlitt
 
 
 30/05/2016 - 03/06/2016
 
 
-name: Peasant's Flute: No 26 from 'For Children' vol 2, composer: Bartók
-name: Menuet in A, composer: L Mozart
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Polka, composer: Tchaikovsky
+name: ""Impromptu         ", composer: Gurlitt
 
 
 06/06/2016 - 10/06/2016
 
 
+name: Gavotte in G, composer: Handel
+name: ""Air         ", composer: Handel
 name: Sonata K 431, composer: Scarlatti
-name: Music for Children Op. 65 No. 04, composer: Prokofiev
-name: Gracefulness, composer: Burgmüller
 
 
 13/06/2016 - 15/06/2016
 
 
+name: Gavotte in G, composer: Handel
+name: ""Air         ", composer: Handel
 name: Sonata K 431, composer: Scarlatti
-name: Music for Children Op. 65 No. 04, composer: Prokofiev
-name: Gracefulness, composer: Burgmüller
 
 
 Хайг Ованезов THIRD grade
@@ -1195,297 +1195,297 @@ name: Gracefulness, composer: Burgmüller
 15/09/2015 - 18/09/2015
 
 
-name: Hornpipe in B flat, composer: Purcell
-name: Fantasia No 09 in E minor, composer: Telemann
-name: ""Study in D"" "" B175, composer: Heller
+name: Andantino in E flat K236, composer: Mozart
+name: Le Coucou, composer: Dacquin
+name: Polka, composer: Tchaikovsky
 
 
 21/09/2015 - 25/09/2015
 
 
-name: Hornpipe in B flat, composer: Purcell
-name: Fantasia No 09 in E minor, composer: Telemann
-name: ""Study in D"" "" B175, composer: Heller
+name: Andantino in E flat K236, composer: Mozart
+name: Le Coucou, composer: Dacquin
+name: Polka, composer: Tchaikovsky
 
 
 28/09/2015 - 02/10/2015
 
 
-name: Hornpipe in B flat, composer: Purcell
-name: Fantasia No 09 in E minor, composer: Telemann
-name: ""Study in D"" "" B175, composer: Heller
+name: Andantino in E flat K236, composer: Mozart
+name: Le Coucou, composer: Dacquin
+name: Polka, composer: Tchaikovsky
 
 
 05/10/2015 - 09/10/2015
 
 
-name: Hornpipe in B flat, composer: Purcell
-name: Fantasia No 09 in E minor, composer: Telemann
-name: ""Study in D"" "" B175, composer: Heller
+name: Andantino in E flat K236, composer: Mozart
+name: Le Coucou, composer: Dacquin
+name: Polka, composer: Tchaikovsky
 
 
 12/10/2015 - 16/10/2015
 
 
-name: Hornpipe in B flat, composer: Purcell
-name: Fantasia No 09 in E minor, composer: Telemann
-name: ""Study in D"" "" B175, composer: Heller
+name: Andantino in E flat K236, composer: Mozart
+name: Le Coucou, composer: Dacquin
+name: Polka, composer: Tchaikovsky
 
 
 19/10/2015 - 23/10/2015
 
 
-name: Hornpipe in B flat, composer: Purcell
-name: Fantasia No 09 in E minor, composer: Telemann
-name: ""Study in D"" "" B175, composer: Heller
+name: Andantino in E flat K236, composer: Mozart
+name: Le Coucou, composer: Dacquin
+name: Polka, composer: Tchaikovsky
 
 
 26/10/2015 - 30/10/2015
 
 
-name: Hornpipe in B flat, composer: Purcell
-name: Fantasia No 09 in E minor, composer: Telemann
-name: ""Study in D"" "" B175, composer: Heller
+name: Andantino in E flat K236, composer: Mozart
+name: Le Coucou, composer: Dacquin
+name: Polka, composer: Tchaikovsky
 
 
 03/11/2015 - 06/11/2015
 
 
+name: Fantasia No 09 in E minor, composer: Telemann
+name: Allegro in F, composer: Hummel
 name: Little Flower, composer: Gurlitt
-name: Sonatina in F, composer: Gurlitt
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
 
 
 09/11/2015 - 13/11/2015
 
 
+name: Fantasia No 09 in E minor, composer: Telemann
+name: Allegro in F, composer: Hummel
 name: Little Flower, composer: Gurlitt
-name: Sonatina in F, composer: Gurlitt
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
 
 
 16/11/2015 - 20/11/2015
 
 
+name: Fantasia No 09 in E minor, composer: Telemann
+name: Allegro in F, composer: Hummel
 name: Little Flower, composer: Gurlitt
-name: Sonatina in F, composer: Gurlitt
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
 
 
 23/11/2015 - 27/11/2015
 
 
+name: Fantasia No 09 in E minor, composer: Telemann
+name: Allegro in F, composer: Hummel
 name: Little Flower, composer: Gurlitt
-name: Sonatina in F, composer: Gurlitt
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
 
 
 30/11/2015 - 04/12/2015
 
 
+name: Fantasia No 09 in E minor, composer: Telemann
+name: Allegro in F, composer: Hummel
 name: Little Flower, composer: Gurlitt
-name: Sonatina in F, composer: Gurlitt
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
 
 
 07/12/2015 - 11/12/2015
 
 
+name: Fantasia No 09 in E minor, composer: Telemann
+name: Allegro in F, composer: Hummel
 name: Little Flower, composer: Gurlitt
-name: Sonatina in F, composer: Gurlitt
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
 
 
 14/12/2015 - 18/12/2015
 
 
+name: Fantasia No 09 in E minor, composer: Telemann
+name: Allegro in F, composer: Hummel
 name: Little Flower, composer: Gurlitt
-name: Sonatina in F, composer: Gurlitt
-name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
 
 
 21/12/2015 - 24/12/2015
 
 
-name: The Witch, composer: Tchaikovsky
-name: ""Clowning"" "" Op 119, composer: Kabalevsky
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: ""Study in C minor         ", composer: Burgmüller
+name: The Wild Horseman, composer: Schumann
 
 
 04/01/2016 - 08/01/2016
 
 
-name: The Witch, composer: Tchaikovsky
-name: ""Clowning"" "" Op 119, composer: Kabalevsky
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: ""Study in C minor         ", composer: Burgmüller
+name: The Wild Horseman, composer: Schumann
 
 
 11/01/2016 - 15/01/2016
 
 
-name: The Witch, composer: Tchaikovsky
-name: ""Clowning"" "" Op 119, composer: Kabalevsky
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: ""Study in C minor         ", composer: Burgmüller
+name: The Wild Horseman, composer: Schumann
 
 
 18/01/2016 - 22/01/2016
 
 
-name: The Witch, composer: Tchaikovsky
-name: ""Clowning"" "" Op 119, composer: Kabalevsky
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: ""Study in C minor         ", composer: Burgmüller
+name: The Wild Horseman, composer: Schumann
 
 
 25/01/2016 - 29/01/2016
 
 
-name: The Witch, composer: Tchaikovsky
-name: ""Clowning"" "" Op 119, composer: Kabalevsky
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: ""Study in C minor         ", composer: Burgmüller
+name: The Wild Horseman, composer: Schumann
 
 
 08/02/2016 - 12/02/2016
 
 
-name: The Witch, composer: Tchaikovsky
-name: ""Clowning"" "" Op 119, composer: Kabalevsky
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: ""Study in C minor         ", composer: Burgmüller
+name: The Wild Horseman, composer: Schumann
 
 
 15/02/2016 - 19/02/2016
 
 
-name: The Witch, composer: Tchaikovsky
-name: ""Clowning"" "" Op 119, composer: Kabalevsky
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: ""Innocence""  from 'For Children ' vol 1, composer: Burgmüller
+name: ""Study in C minor         ", composer: Burgmüller
+name: The Wild Horseman, composer: Schumann
 
 
 22/02/2016 - 26/02/2016
 
 
-name: French Suite No. 6 - Menuet, composer: Bach
-name: Prelude in C minor "" C.P.E., composer: Bach
-name: Rondo, composer: Couperin
+name: Sonatina in B flat, composer: Handel
+name: Sonatina in F, composer: Gurlitt
+name: Allegro in E minor, composer: Telemann
 
 
 29/02/2016 - 04/03/2016
 
 
-name: French Suite No. 6 - Menuet, composer: Bach
-name: Prelude in C minor "" C.P.E., composer: Bach
-name: Rondo, composer: Couperin
+name: Sonatina in B flat, composer: Handel
+name: Sonatina in F, composer: Gurlitt
+name: Allegro in E minor, composer: Telemann
 
 
 07/03/2016 - 11/03/2016
 
 
-name: French Suite No. 6 - Menuet, composer: Bach
-name: Prelude in C minor "" C.P.E., composer: Bach
-name: Rondo, composer: Couperin
+name: Sonatina in B flat, composer: Handel
+name: Sonatina in F, composer: Gurlitt
+name: Allegro in E minor, composer: Telemann
 
 
 14/03/2016 - 18/03/2016
 
 
-name: French Suite No. 6 - Menuet, composer: Bach
-name: Prelude in C minor "" C.P.E., composer: Bach
-name: Rondo, composer: Couperin
+name: Sonatina in B flat, composer: Handel
+name: Sonatina in F, composer: Gurlitt
+name: Allegro in E minor, composer: Telemann
 
 
 21/03/2016 - 25/03/2016
 
 
-name: French Suite No. 6 - Menuet, composer: Bach
-name: Prelude in C minor "" C.P.E., composer: Bach
-name: Rondo, composer: Couperin
+name: Sonatina in B flat, composer: Handel
+name: Sonatina in F, composer: Gurlitt
+name: Allegro in E minor, composer: Telemann
 
 
 28/03/2016 - 01/04/2016
 
 
-name: French Suite No. 6 - Menuet, composer: Bach
-name: Prelude in C minor "" C.P.E., composer: Bach
-name: Rondo, composer: Couperin
+name: Sonatina in B flat, composer: Handel
+name: Sonatina in F, composer: Gurlitt
+name: Allegro in E minor, composer: Telemann
 
 
 11/04/2016 - 15/04/2016
 
 
-name: French Suite No. 6 - Menuet, composer: Bach
-name: Prelude in C minor "" C.P.E., composer: Bach
-name: Rondo, composer: Couperin
+name: Sonatina in B flat, composer: Handel
+name: Sonatina in F, composer: Gurlitt
+name: Allegro in E minor, composer: Telemann
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Lento: No 11  C.P.E., composer: Bartók
-name: ""Air         ", composer: Handel
-name: Sonata K 431, composer: Scarlatti
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Keringo, composer: Bartók
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Lento: No 11  C.P.E., composer: Bartók
-name: ""Air         ", composer: Handel
-name: Sonata K 431, composer: Scarlatti
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Keringo, composer: Bartók
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 03/05/2016 - 06/05/2016
 
 
-name: Lento: No 11  C.P.E., composer: Bartók
-name: ""Air         ", composer: Handel
-name: Sonata K 431, composer: Scarlatti
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Keringo, composer: Bartók
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 09/05/2016 - 13/05/2016
 
 
-name: Lento: No 11  C.P.E., composer: Bartók
-name: ""Air         ", composer: Handel
-name: Sonata K 431, composer: Scarlatti
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Keringo, composer: Bartók
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 16/05/2016 - 20/05/2016
 
 
-name: Lento: No 11  C.P.E., composer: Bartók
-name: ""Air         ", composer: Handel
-name: Sonata K 431, composer: Scarlatti
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Keringo, composer: Bartók
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 23/05/2016 - 26/05/2016
 
 
-name: Lento: No 11  C.P.E., composer: Bartók
-name: ""Air         ", composer: Handel
-name: Sonata K 431, composer: Scarlatti
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Keringo, composer: Bartók
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 30/05/2016 - 03/06/2016
 
 
-name: Lento: No 11  C.P.E., composer: Bartók
-name: ""Air         ", composer: Handel
-name: Sonata K 431, composer: Scarlatti
+name: Prelude in C minor "" C.P.E., composer: Bach
+name: Keringo, composer: Bartók
+name: ""Menuetto""  HWV 491, composer: Hummel
 
 
 06/06/2016 - 10/06/2016
 
 
-name: ""The Deserted Child"" "" Op. 100, composer: Gurlitt
-name: Old French Song, composer: Tchaikovsky
-name: The Wild Horseman, composer: Schumann
+name: Prelude  C.P.E., composer: Bach
+name: Minuet in F, composer: Handel
+name: Grand Waltz, composer: Clementi
 
 
 13/06/2016 - 15/06/2016
 
 
-name: ""The Deserted Child"" "" Op. 100, composer: Gurlitt
-name: Old French Song, composer: Tchaikovsky
-name: The Wild Horseman, composer: Schumann
+name: Prelude  C.P.E., composer: Bach
+name: Minuet in F, composer: Handel
+name: Grand Waltz, composer: Clementi
 
 
 Яна Димова THIRD grade
@@ -1493,297 +1493,297 @@ name: The Wild Horseman, composer: Schumann
 15/09/2015 - 18/09/2015
 
 
+name: Rondo, composer: Couperin
+name: The Witch, composer: Tchaikovsky
 name: French Suite No. 6 - Menuet, composer: Bach
-name: Grand Waltz, composer: Clementi
-name: Air in B flat "" Op 224, composer: Handel
 
 
 21/09/2015 - 25/09/2015
 
 
+name: Rondo, composer: Couperin
+name: The Witch, composer: Tchaikovsky
 name: French Suite No. 6 - Menuet, composer: Bach
-name: Grand Waltz, composer: Clementi
-name: Air in B flat "" Op 224, composer: Handel
 
 
 28/09/2015 - 02/10/2015
 
 
+name: Rondo, composer: Couperin
+name: The Witch, composer: Tchaikovsky
 name: French Suite No. 6 - Menuet, composer: Bach
-name: Grand Waltz, composer: Clementi
-name: Air in B flat "" Op 224, composer: Handel
 
 
 05/10/2015 - 09/10/2015
 
 
+name: Rondo, composer: Couperin
+name: The Witch, composer: Tchaikovsky
 name: French Suite No. 6 - Menuet, composer: Bach
-name: Grand Waltz, composer: Clementi
-name: Air in B flat "" Op 224, composer: Handel
 
 
 12/10/2015 - 16/10/2015
 
 
+name: Rondo, composer: Couperin
+name: The Witch, composer: Tchaikovsky
 name: French Suite No. 6 - Menuet, composer: Bach
-name: Grand Waltz, composer: Clementi
-name: Air in B flat "" Op 224, composer: Handel
 
 
 19/10/2015 - 23/10/2015
 
 
+name: Rondo, composer: Couperin
+name: The Witch, composer: Tchaikovsky
 name: French Suite No. 6 - Menuet, composer: Bach
-name: Grand Waltz, composer: Clementi
-name: Air in B flat "" Op 224, composer: Handel
 
 
 26/10/2015 - 30/10/2015
 
 
+name: Rondo, composer: Couperin
+name: The Witch, composer: Tchaikovsky
 name: French Suite No. 6 - Menuet, composer: Bach
-name: Grand Waltz, composer: Clementi
-name: Air in B flat "" Op 224, composer: Handel
 
 
 03/11/2015 - 06/11/2015
 
 
+name: Rondo, composer: Couperin
+name: The Witch, composer: Tchaikovsky
 name: French Suite No. 6 - Menuet, composer: Bach
-name: Grand Waltz, composer: Clementi
-name: Air in B flat "" Op 224, composer: Handel
 
 
 09/11/2015 - 13/11/2015
 
 
-name: Sonatina in F, composer: Gurlitt
-name: ""Sonatina in F         ", composer: Diabelli
-name: The Wild Horseman, composer: Schumann
+name: Arietta con Variazione, composer: Haydn
+name: ""Menuetto""  HWV 491, composer: Hummel
+name: ""Study in A flat         ", composer: Czerny
 
 
 16/11/2015 - 20/11/2015
 
 
-name: Sonatina in F, composer: Gurlitt
-name: ""Sonatina in F         ", composer: Diabelli
-name: The Wild Horseman, composer: Schumann
+name: Arietta con Variazione, composer: Haydn
+name: ""Menuetto""  HWV 491, composer: Hummel
+name: ""Study in A flat         ", composer: Czerny
 
 
 23/11/2015 - 27/11/2015
 
 
-name: Sonatina in F, composer: Gurlitt
-name: ""Sonatina in F         ", composer: Diabelli
-name: The Wild Horseman, composer: Schumann
+name: Arietta con Variazione, composer: Haydn
+name: ""Menuetto""  HWV 491, composer: Hummel
+name: ""Study in A flat         ", composer: Czerny
 
 
 30/11/2015 - 04/12/2015
 
 
-name: Sonatina in F, composer: Gurlitt
-name: ""Sonatina in F         ", composer: Diabelli
-name: The Wild Horseman, composer: Schumann
+name: Arietta con Variazione, composer: Haydn
+name: ""Menuetto""  HWV 491, composer: Hummel
+name: ""Study in A flat         ", composer: Czerny
 
 
 07/12/2015 - 11/12/2015
 
 
-name: Sonatina in F, composer: Gurlitt
-name: ""Sonatina in F         ", composer: Diabelli
-name: The Wild Horseman, composer: Schumann
+name: Arietta con Variazione, composer: Haydn
+name: ""Menuetto""  HWV 491, composer: Hummel
+name: ""Study in A flat         ", composer: Czerny
 
 
 14/12/2015 - 18/12/2015
 
 
-name: Sonatina in F, composer: Gurlitt
-name: ""Sonatina in F         ", composer: Diabelli
-name: The Wild Horseman, composer: Schumann
+name: Arietta con Variazione, composer: Haydn
+name: ""Menuetto""  HWV 491, composer: Hummel
+name: ""Study in A flat         ", composer: Czerny
 
 
 21/12/2015 - 24/12/2015
 
 
-name: Sonatina in F, composer: Gurlitt
-name: ""Sonatina in F         ", composer: Diabelli
-name: The Wild Horseman, composer: Schumann
+name: Arietta con Variazione, composer: Haydn
+name: ""Menuetto""  HWV 491, composer: Hummel
+name: ""Study in A flat         ", composer: Czerny
 
 
 04/01/2016 - 08/01/2016
 
 
-name: Sonatina in F, composer: Gurlitt
-name: ""Sonatina in F         ", composer: Diabelli
-name: The Wild Horseman, composer: Schumann
+name: Arietta con Variazione, composer: Haydn
+name: ""Menuetto""  HWV 491, composer: Hummel
+name: ""Study in A flat         ", composer: Czerny
 
 
 11/01/2016 - 15/01/2016
 
 
-name: Soldiers' March, composer: Kabalevsky
-name: ""Impromptu         ", composer: Gurlitt
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: Fantasia No 09 in E minor, composer: Telemann
+name: ""The Deserted Child"" "" Op. 100, composer: Gurlitt
+name: Sonata K 032, composer: Scarlatti
 
 
 18/01/2016 - 22/01/2016
 
 
-name: Soldiers' March, composer: Kabalevsky
-name: ""Impromptu         ", composer: Gurlitt
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: Fantasia No 09 in E minor, composer: Telemann
+name: ""The Deserted Child"" "" Op. 100, composer: Gurlitt
+name: Sonata K 032, composer: Scarlatti
 
 
 25/01/2016 - 29/01/2016
 
 
-name: Soldiers' March, composer: Kabalevsky
-name: ""Impromptu         ", composer: Gurlitt
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: Fantasia No 09 in E minor, composer: Telemann
+name: ""The Deserted Child"" "" Op. 100, composer: Gurlitt
+name: Sonata K 032, composer: Scarlatti
 
 
 08/02/2016 - 12/02/2016
 
 
-name: Soldiers' March, composer: Kabalevsky
-name: ""Impromptu         ", composer: Gurlitt
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: Fantasia No 09 in E minor, composer: Telemann
+name: ""The Deserted Child"" "" Op. 100, composer: Gurlitt
+name: Sonata K 032, composer: Scarlatti
 
 
 15/02/2016 - 19/02/2016
 
 
-name: Soldiers' March, composer: Kabalevsky
-name: ""Impromptu         ", composer: Gurlitt
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: Fantasia No 09 in E minor, composer: Telemann
+name: ""The Deserted Child"" "" Op. 100, composer: Gurlitt
+name: Sonata K 032, composer: Scarlatti
 
 
 22/02/2016 - 26/02/2016
 
 
-name: Soldiers' March, composer: Kabalevsky
-name: ""Impromptu         ", composer: Gurlitt
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: Fantasia No 09 in E minor, composer: Telemann
+name: ""The Deserted Child"" "" Op. 100, composer: Gurlitt
+name: Sonata K 032, composer: Scarlatti
 
 
 29/02/2016 - 04/03/2016
 
 
-name: Soldiers' March, composer: Kabalevsky
-name: ""Impromptu         ", composer: Gurlitt
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: Fantasia No 09 in E minor, composer: Telemann
+name: ""The Deserted Child"" "" Op. 100, composer: Gurlitt
+name: Sonata K 032, composer: Scarlatti
 
 
 07/03/2016 - 11/03/2016
 
 
-name: Soldiers' March, composer: Kabalevsky
-name: ""Impromptu         ", composer: Gurlitt
-name: ""Study in G"" "" Op. 100, composer: Czerny
+name: Fantasia No 09 in E minor, composer: Telemann
+name: ""The Deserted Child"" "" Op. 100, composer: Gurlitt
+name: Sonata K 032, composer: Scarlatti
 
 
 14/03/2016 - 18/03/2016
 
 
-name: Arietta con Variazione, composer: Haydn
-name: Sonatina in B flat, composer: Handel
-name: Lento: No 11  C.P.E., composer: Bartók
+name: Minuet in F, composer: Handel
+name: ""Air         ", composer: Handel
+name: ""Clowns         ", composer: Kabalevsky
 
 
 21/03/2016 - 25/03/2016
 
 
-name: Arietta con Variazione, composer: Haydn
-name: Sonatina in B flat, composer: Handel
-name: Lento: No 11  C.P.E., composer: Bartók
+name: Minuet in F, composer: Handel
+name: ""Air         ", composer: Handel
+name: ""Clowns         ", composer: Kabalevsky
 
 
 28/03/2016 - 01/04/2016
 
 
-name: Arietta con Variazione, composer: Haydn
-name: Sonatina in B flat, composer: Handel
-name: Lento: No 11  C.P.E., composer: Bartók
+name: Minuet in F, composer: Handel
+name: ""Air         ", composer: Handel
+name: ""Clowns         ", composer: Kabalevsky
 
 
 11/04/2016 - 15/04/2016
 
 
-name: Arietta con Variazione, composer: Haydn
-name: Sonatina in B flat, composer: Handel
-name: Lento: No 11  C.P.E., composer: Bartók
+name: Minuet in F, composer: Handel
+name: ""Air         ", composer: Handel
+name: ""Clowns         ", composer: Kabalevsky
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Arietta con Variazione, composer: Haydn
-name: Sonatina in B flat, composer: Handel
-name: Lento: No 11  C.P.E., composer: Bartók
+name: Minuet in F, composer: Handel
+name: ""Air         ", composer: Handel
+name: ""Clowns         ", composer: Kabalevsky
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Arietta con Variazione, composer: Haydn
-name: Sonatina in B flat, composer: Handel
-name: Lento: No 11  C.P.E., composer: Bartók
+name: Minuet in F, composer: Handel
+name: ""Air         ", composer: Handel
+name: ""Clowns         ", composer: Kabalevsky
 
 
 03/05/2016 - 06/05/2016
 
 
-name: Arietta con Variazione, composer: Haydn
-name: Sonatina in B flat, composer: Handel
-name: Lento: No 11  C.P.E., composer: Bartók
+name: Minuet in F, composer: Handel
+name: ""Air         ", composer: Handel
+name: ""Clowns         ", composer: Kabalevsky
 
 
 09/05/2016 - 13/05/2016
 
 
-name: Arietta con Variazione, composer: Haydn
-name: Sonatina in B flat, composer: Handel
-name: Lento: No 11  C.P.E., composer: Bartók
+name: Minuet in F, composer: Handel
+name: ""Air         ", composer: Handel
+name: ""Clowns         ", composer: Kabalevsky
 
 
 16/05/2016 - 20/05/2016
 
 
-name: Gracefulness, composer: Burgmüller
-name: Little Flower, composer: Gurlitt
-name: ""Study in A flat         ", composer: Czerny
+name: Sonatina in B flat, composer: Handel
+name: Air in B flat "" Op 224, composer: Handel
+name: Choral: No 28 from 'For Children' vol 1, composer: Bartók
 
 
 23/05/2016 - 26/05/2016
 
 
-name: Gracefulness, composer: Burgmüller
-name: Little Flower, composer: Gurlitt
-name: ""Study in A flat         ", composer: Czerny
+name: Sonatina in B flat, composer: Handel
+name: Air in B flat "" Op 224, composer: Handel
+name: Choral: No 28 from 'For Children' vol 1, composer: Bartók
 
 
 30/05/2016 - 03/06/2016
 
 
-name: Gracefulness, composer: Burgmüller
-name: Little Flower, composer: Gurlitt
-name: ""Study in A flat         ", composer: Czerny
+name: Sonatina in B flat, composer: Handel
+name: Air in B flat "" Op 224, composer: Handel
+name: Choral: No 28 from 'For Children' vol 1, composer: Bartók
 
 
 06/06/2016 - 10/06/2016
 
 
-name: Gracefulness, composer: Burgmüller
-name: Little Flower, composer: Gurlitt
-name: ""Study in A flat         ", composer: Czerny
+name: Sonatina in B flat, composer: Handel
+name: Air in B flat "" Op 224, composer: Handel
+name: Choral: No 28 from 'For Children' vol 1, composer: Bartók
 
 
 13/06/2016 - 15/06/2016
 
 
-name: Gracefulness, composer: Burgmüller
-name: Little Flower, composer: Gurlitt
-name: ""Study in A flat         ", composer: Czerny
+name: Sonatina in B flat, composer: Handel
+name: Air in B flat "" Op 224, composer: Handel
+name: Choral: No 28 from 'For Children' vol 1, composer: Bartók
 
 
 Виктория Атанасова FOURTH grade
@@ -1791,297 +1791,297 @@ name: ""Study in A flat         ", composer: Czerny
 15/09/2015 - 18/09/2015
 
 
-name: ""Prelude"" "" B60, composer: Heller
-name: ""Barcarolle""  Bagatelle in A minor "" Op 119, composer: Burgmüller
-name: Waltz no. 18 in Eb major, composer: Chopin
+name: Mazurka in F minor  op. 7 no. 5, composer: Chopin
+name: ""Merry and Sad         ", composer: Beethoven
+name: Sonatina in B flat, composer: Handel
 
 
 21/09/2015 - 25/09/2015
 
 
-name: ""Prelude"" "" B60, composer: Heller
-name: ""Barcarolle""  Bagatelle in A minor "" Op 119, composer: Burgmüller
-name: Waltz no. 18 in Eb major, composer: Chopin
+name: Mazurka in F minor  op. 7 no. 5, composer: Chopin
+name: ""Merry and Sad         ", composer: Beethoven
+name: Sonatina in B flat, composer: Handel
 
 
 28/09/2015 - 02/10/2015
 
 
-name: ""Prelude"" "" B60, composer: Heller
-name: ""Barcarolle""  Bagatelle in A minor "" Op 119, composer: Burgmüller
-name: Waltz no. 18 in Eb major, composer: Chopin
+name: Mazurka in F minor  op. 7 no. 5, composer: Chopin
+name: ""Merry and Sad         ", composer: Beethoven
+name: Sonatina in B flat, composer: Handel
 
 
 05/10/2015 - 09/10/2015
 
 
-name: ""Prelude"" "" B60, composer: Heller
-name: ""Barcarolle""  Bagatelle in A minor "" Op 119, composer: Burgmüller
-name: Waltz no. 18 in Eb major, composer: Chopin
+name: Mazurka in F minor  op. 7 no. 5, composer: Chopin
+name: ""Merry and Sad         ", composer: Beethoven
+name: Sonatina in B flat, composer: Handel
 
 
 12/10/2015 - 16/10/2015
 
 
-name: ""Prelude"" "" B60, composer: Heller
-name: ""Barcarolle""  Bagatelle in A minor "" Op 119, composer: Burgmüller
-name: Waltz no. 18 in Eb major, composer: Chopin
+name: Mazurka in F minor  op. 7 no. 5, composer: Chopin
+name: ""Merry and Sad         ", composer: Beethoven
+name: Sonatina in B flat, composer: Handel
 
 
 19/10/2015 - 23/10/2015
 
 
-name: ""Merry and Sad         ", composer: Beethoven
-name: ""Sonatina in G         ", composer: Clementi
 name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
 
 
 26/10/2015 - 30/10/2015
 
 
-name: ""Merry and Sad         ", composer: Beethoven
-name: ""Sonatina in G         ", composer: Clementi
 name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
 
 
 03/11/2015 - 06/11/2015
 
 
-name: ""Merry and Sad         ", composer: Beethoven
-name: ""Sonatina in G         ", composer: Clementi
 name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
 
 
 09/11/2015 - 13/11/2015
 
 
-name: ""Merry and Sad         ", composer: Beethoven
-name: ""Sonatina in G         ", composer: Clementi
 name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
 
 
 16/11/2015 - 20/11/2015
 
 
-name: ""Merry and Sad         ", composer: Beethoven
-name: ""Sonatina in G         ", composer: Clementi
 name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
 
 
 23/11/2015 - 27/11/2015
 
 
-name: ""Study in A flat""  HWV 585, composer: Heller
-name: For Children  J.C.F., composer: Bartók
-name: ""Bagatelle in F""  BWV Anh 127, composer: Beethoven
+name: Clockwork Doll, composer: Shostakovich
+name: ""Study in F"" "" Op 33, composer: Berens
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 30/11/2015 - 04/12/2015
 
 
-name: ""Study in A flat""  HWV 585, composer: Heller
-name: For Children  J.C.F., composer: Bartók
-name: ""Bagatelle in F""  BWV Anh 127, composer: Beethoven
+name: Clockwork Doll, composer: Shostakovich
+name: ""Study in F"" "" Op 33, composer: Berens
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 07/12/2015 - 11/12/2015
 
 
-name: ""Study in A flat""  HWV 585, composer: Heller
-name: For Children  J.C.F., composer: Bartók
-name: ""Bagatelle in F""  BWV Anh 127, composer: Beethoven
+name: Clockwork Doll, composer: Shostakovich
+name: ""Study in F"" "" Op 33, composer: Berens
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 14/12/2015 - 18/12/2015
 
 
-name: ""Study in A flat""  HWV 585, composer: Heller
-name: For Children  J.C.F., composer: Bartók
-name: ""Bagatelle in F""  BWV Anh 127, composer: Beethoven
+name: Clockwork Doll, composer: Shostakovich
+name: ""Study in F"" "" Op 33, composer: Berens
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 21/12/2015 - 24/12/2015
 
 
-name: ""Study in A flat""  HWV 585, composer: Heller
-name: For Children  J.C.F., composer: Bartók
-name: ""Bagatelle in F""  BWV Anh 127, composer: Beethoven
+name: Clockwork Doll, composer: Shostakovich
+name: ""Study in F"" "" Op 33, composer: Berens
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 04/01/2016 - 08/01/2016
 
 
-name: ""Study in F"" "" Op 33, composer: Berens
-name: English Suite No. 2 - Bouree 2, composer: Bach
-name: French Suite No. 1 - Menuet 2, composer: Bach
+name: Minuetto, composer: Mozart
+name: Sonatina No. 2 in C, composer: Attwood
+name: L'Organiste' vol 1 no 23 - Quasi Lento, composer: Franck
 
 
 11/01/2016 - 15/01/2016
 
 
-name: ""Study in F"" "" Op 33, composer: Berens
-name: English Suite No. 2 - Bouree 2, composer: Bach
-name: French Suite No. 1 - Menuet 2, composer: Bach
+name: Minuetto, composer: Mozart
+name: Sonatina No. 2 in C, composer: Attwood
+name: L'Organiste' vol 1 no 23 - Quasi Lento, composer: Franck
 
 
 18/01/2016 - 22/01/2016
 
 
-name: ""Study in F"" "" Op 33, composer: Berens
-name: English Suite No. 2 - Bouree 2, composer: Bach
-name: French Suite No. 1 - Menuet 2, composer: Bach
+name: Minuetto, composer: Mozart
+name: Sonatina No. 2 in C, composer: Attwood
+name: L'Organiste' vol 1 no 23 - Quasi Lento, composer: Franck
 
 
 25/01/2016 - 29/01/2016
 
 
-name: ""Study in F"" "" Op 33, composer: Berens
-name: English Suite No. 2 - Bouree 2, composer: Bach
-name: French Suite No. 1 - Menuet 2, composer: Bach
+name: Minuetto, composer: Mozart
+name: Sonatina No. 2 in C, composer: Attwood
+name: L'Organiste' vol 1 no 23 - Quasi Lento, composer: Franck
 
 
 08/02/2016 - 12/02/2016
 
 
-name: ""Study in F"" "" Op 33, composer: Berens
-name: English Suite No. 2 - Bouree 2, composer: Bach
-name: French Suite No. 1 - Menuet 2, composer: Bach
+name: Minuetto, composer: Mozart
+name: Sonatina No. 2 in C, composer: Attwood
+name: L'Organiste' vol 1 no 23 - Quasi Lento, composer: Franck
 
 
 15/02/2016 - 19/02/2016
 
 
-name: Sonata in Am, composer: Benda
-name: French Suite No. 6 - Polonaise, composer: Bach
-name: Sonatina in F, composer: Benda
+name: Cantabile in Bb major, composer: Chopin
+name: English Suite No. 4 - Menuet 1, composer: Bach
+name: Sonatina in F, composer: Beethoven
 
 
 22/02/2016 - 26/02/2016
 
 
-name: Sonata in Am, composer: Benda
-name: French Suite No. 6 - Polonaise, composer: Bach
-name: Sonatina in F, composer: Benda
+name: Cantabile in Bb major, composer: Chopin
+name: English Suite No. 4 - Menuet 1, composer: Bach
+name: Sonatina in F, composer: Beethoven
 
 
 29/02/2016 - 04/03/2016
 
 
-name: Sonata in Am, composer: Benda
-name: French Suite No. 6 - Polonaise, composer: Bach
-name: Sonatina in F, composer: Benda
+name: Cantabile in Bb major, composer: Chopin
+name: English Suite No. 4 - Menuet 1, composer: Bach
+name: Sonatina in F, composer: Beethoven
 
 
 07/03/2016 - 11/03/2016
 
 
-name: Sonata in Am, composer: Benda
-name: French Suite No. 6 - Polonaise, composer: Bach
-name: Sonatina in F, composer: Benda
+name: Cantabile in Bb major, composer: Chopin
+name: English Suite No. 4 - Menuet 1, composer: Bach
+name: Sonatina in F, composer: Beethoven
 
 
 14/03/2016 - 18/03/2016
 
 
-name: Sonata in Am, composer: Benda
-name: French Suite No. 6 - Polonaise, composer: Bach
-name: Sonatina in F, composer: Benda
+name: Cantabile in Bb major, composer: Chopin
+name: English Suite No. 4 - Menuet 1, composer: Bach
+name: Sonatina in F, composer: Beethoven
 
 
 21/03/2016 - 25/03/2016
 
 
-name: Ecossaise in Bm, composer: Schubert
-name: ""Lyric Pieces"" "" Op 36, composer: Grieg
-name: Sonatina in F, composer: Beethoven
+name: ""Rondo in D         ", composer: Kabalevsky
+name: Dedication, composer: Granados
+name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
 
 
 28/03/2016 - 01/04/2016
 
 
-name: Ecossaise in Bm, composer: Schubert
-name: ""Lyric Pieces"" "" Op 36, composer: Grieg
-name: Sonatina in F, composer: Beethoven
+name: ""Rondo in D         ", composer: Kabalevsky
+name: Dedication, composer: Granados
+name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
 
 
 11/04/2016 - 15/04/2016
 
 
-name: Ecossaise in Bm, composer: Schubert
-name: ""Lyric Pieces"" "" Op 36, composer: Grieg
-name: Sonatina in F, composer: Beethoven
+name: ""Rondo in D         ", composer: Kabalevsky
+name: Dedication, composer: Granados
+name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Ecossaise in Bm, composer: Schubert
-name: ""Lyric Pieces"" "" Op 36, composer: Grieg
-name: Sonatina in F, composer: Beethoven
+name: ""Rondo in D         ", composer: Kabalevsky
+name: Dedication, composer: Granados
+name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Ecossaise in Bm, composer: Schubert
-name: ""Lyric Pieces"" "" Op 36, composer: Grieg
-name: Sonatina in F, composer: Beethoven
+name: ""Rondo in D         ", composer: Kabalevsky
+name: Dedication, composer: Granados
+name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
 
 
 03/05/2016 - 06/05/2016
 
 
-name: Gigue, composer: Hummel
-name: Music for Children Op. 65 No. 02, composer: Prokofiev
-name: Sonatina No. 2 in C, composer: Attwood
+name: ""Study in E"" "" Op 46, composer: Heller
+name: Air "" Op 30, composer: Purcell
+name: ""Sonatina in G""  Presto, composer: Clementi
 
 
 09/05/2016 - 13/05/2016
 
 
-name: Gigue, composer: Hummel
-name: Music for Children Op. 65 No. 02, composer: Prokofiev
-name: Sonatina No. 2 in C, composer: Attwood
+name: ""Study in E"" "" Op 46, composer: Heller
+name: Air "" Op 30, composer: Purcell
+name: ""Sonatina in G""  Presto, composer: Clementi
 
 
 16/05/2016 - 20/05/2016
 
 
-name: Gigue, composer: Hummel
-name: Music for Children Op. 65 No. 02, composer: Prokofiev
-name: Sonatina No. 2 in C, composer: Attwood
+name: ""Study in E"" "" Op 46, composer: Heller
+name: Air "" Op 30, composer: Purcell
+name: ""Sonatina in G""  Presto, composer: Clementi
 
 
 23/05/2016 - 26/05/2016
 
 
-name: Gigue, composer: Hummel
-name: Music for Children Op. 65 No. 02, composer: Prokofiev
-name: Sonatina No. 2 in C, composer: Attwood
+name: ""Study in E"" "" Op 46, composer: Heller
+name: Air "" Op 30, composer: Purcell
+name: ""Sonatina in G""  Presto, composer: Clementi
 
 
 30/05/2016 - 03/06/2016
 
 
-name: Gigue, composer: Hummel
-name: Music for Children Op. 65 No. 02, composer: Prokofiev
-name: Sonatina No. 2 in C, composer: Attwood
+name: ""Study in E"" "" Op 46, composer: Heller
+name: Air "" Op 30, composer: Purcell
+name: ""Sonatina in G""  Presto, composer: Clementi
 
 
 06/06/2016 - 10/06/2016
 
 
-name: For Children "" C.P.E., composer: Bartók
-name: Mazurka in F minor  op. 7 no. 5, composer: Chopin
-name: Preludes Op. 28. no. 20, composer: Chopin
+name: French Suite No. 3 - Menuet, composer: Bach
+name: ""Sonatina in G         ", composer: Clementi
+name: French Suite No. 6 - Polonaise, composer: Bach
 
 
 13/06/2016 - 15/06/2016
 
 
-name: For Children "" C.P.E., composer: Bartók
-name: Mazurka in F minor  op. 7 no. 5, composer: Chopin
-name: Preludes Op. 28. no. 20, composer: Chopin
+name: French Suite No. 3 - Menuet, composer: Bach
+name: ""Sonatina in G         ", composer: Clementi
+name: French Suite No. 6 - Polonaise, composer: Bach
 
 
 Ема Сиракова FOURTH grade
@@ -2089,297 +2089,297 @@ name: Preludes Op. 28. no. 20, composer: Chopin
 15/09/2015 - 18/09/2015
 
 
-name: English Suite No. 1 - Bouree 2, composer: Bach
-name: English Suite No. 4 - Menuet 1, composer: Bach
-name: ""30 Pieces for Children"" "" Op 125, composer: Kabalevsky
+name: Sonata K 034, composer: Scarlatti
+name: Sonata in G, composer: Schumann
+name: English Suite No. 2 - Bouree 1, composer: Bach
 
 
 21/09/2015 - 25/09/2015
 
 
-name: English Suite No. 1 - Bouree 2, composer: Bach
-name: English Suite No. 4 - Menuet 1, composer: Bach
-name: ""30 Pieces for Children"" "" Op 125, composer: Kabalevsky
+name: Sonata K 034, composer: Scarlatti
+name: Sonata in G, composer: Schumann
+name: English Suite No. 2 - Bouree 1, composer: Bach
 
 
 28/09/2015 - 02/10/2015
 
 
-name: English Suite No. 1 - Bouree 2, composer: Bach
-name: English Suite No. 4 - Menuet 1, composer: Bach
-name: ""30 Pieces for Children"" "" Op 125, composer: Kabalevsky
+name: Sonata K 034, composer: Scarlatti
+name: Sonata in G, composer: Schumann
+name: English Suite No. 2 - Bouree 1, composer: Bach
 
 
 05/10/2015 - 09/10/2015
 
 
-name: English Suite No. 1 - Bouree 2, composer: Bach
-name: English Suite No. 4 - Menuet 1, composer: Bach
-name: ""30 Pieces for Children"" "" Op 125, composer: Kabalevsky
+name: Sonata K 034, composer: Scarlatti
+name: Sonata in G, composer: Schumann
+name: English Suite No. 2 - Bouree 1, composer: Bach
 
 
 12/10/2015 - 16/10/2015
 
 
-name: English Suite No. 1 - Bouree 2, composer: Bach
-name: English Suite No. 4 - Menuet 1, composer: Bach
-name: ""30 Pieces for Children"" "" Op 125, composer: Kabalevsky
+name: Sonata K 034, composer: Scarlatti
+name: Sonata in G, composer: Schumann
+name: English Suite No. 2 - Bouree 1, composer: Bach
 
 
 19/10/2015 - 23/10/2015
 
 
-name: English Suite No. 1 - Bouree 2, composer: Bach
-name: English Suite No. 4 - Menuet 1, composer: Bach
-name: ""30 Pieces for Children"" "" Op 125, composer: Kabalevsky
+name: Sonata K 034, composer: Scarlatti
+name: Sonata in G, composer: Schumann
+name: English Suite No. 2 - Bouree 1, composer: Bach
 
 
 26/10/2015 - 30/10/2015
 
 
-name: Sonatina in F, composer: Beethoven
-name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
-name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
+name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 03/11/2015 - 06/11/2015
 
 
-name: Sonatina in F, composer: Beethoven
-name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
-name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
+name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 09/11/2015 - 13/11/2015
 
 
-name: Sonatina in F, composer: Beethoven
-name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
-name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
+name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 16/11/2015 - 20/11/2015
 
 
-name: Sonatina in F, composer: Beethoven
-name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
-name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
+name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 23/11/2015 - 27/11/2015
 
 
-name: Sonatina in F, composer: Beethoven
-name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
-name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
+name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 30/11/2015 - 04/12/2015
 
 
-name: Sonatina in F, composer: Beethoven
-name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
-name: English Suite No. 2 - Bouree 2, composer: Bach
+name: Feuille d’album, composer: Chopin
+name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
+name: ""Lyric Pieces"" "" Op 36, composer: Grieg
 
 
 07/12/2015 - 11/12/2015
 
 
-name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
-name: ""Study in F"" "" Op 33, composer: Berens
-name: Sonata K 404, composer: Scarlatti
+name: Daydream, composer: Tchaikovsky
+name: English Suite No. 4 - Menuet 2, composer: Bach
+name: Clockwork Doll, composer: Shostakovich
 
 
 14/12/2015 - 18/12/2015
 
 
-name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
-name: ""Study in F"" "" Op 33, composer: Berens
-name: Sonata K 404, composer: Scarlatti
+name: Daydream, composer: Tchaikovsky
+name: English Suite No. 4 - Menuet 2, composer: Bach
+name: Clockwork Doll, composer: Shostakovich
 
 
 21/12/2015 - 24/12/2015
 
 
-name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
-name: ""Study in F"" "" Op 33, composer: Berens
-name: Sonata K 404, composer: Scarlatti
+name: Daydream, composer: Tchaikovsky
+name: English Suite No. 4 - Menuet 2, composer: Bach
+name: Clockwork Doll, composer: Shostakovich
 
 
 04/01/2016 - 08/01/2016
 
 
-name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
-name: ""Study in F"" "" Op 33, composer: Berens
-name: Sonata K 404, composer: Scarlatti
+name: Daydream, composer: Tchaikovsky
+name: English Suite No. 4 - Menuet 2, composer: Bach
+name: Clockwork Doll, composer: Shostakovich
 
 
 11/01/2016 - 15/01/2016
 
 
-name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
-name: ""Study in F"" "" Op 33, composer: Berens
-name: Sonata K 404, composer: Scarlatti
+name: Daydream, composer: Tchaikovsky
+name: English Suite No. 4 - Menuet 2, composer: Bach
+name: Clockwork Doll, composer: Shostakovich
 
 
 18/01/2016 - 22/01/2016
 
 
-name: March in E flat  TWV 33:21  3rd mvt  Très vite, composer: Bach
-name: ""Study in F"" "" Op 33, composer: Berens
-name: Sonata K 404, composer: Scarlatti
+name: Daydream, composer: Tchaikovsky
+name: English Suite No. 4 - Menuet 2, composer: Bach
+name: Clockwork Doll, composer: Shostakovich
 
 
 25/01/2016 - 29/01/2016
 
 
-name: For Children "" C.P.E., composer: Bartók
-name: ""Sonata XVI, composer: Haydn
-name: Air "" Op 30, composer: Purcell
+name: Dedication, composer: Granados
+name: Waltz no. 17 in A minor, composer: Chopin
+name: Sonatina in F, composer: Benda
 
 
 08/02/2016 - 12/02/2016
 
 
-name: For Children "" C.P.E., composer: Bartók
-name: ""Sonata XVI, composer: Haydn
-name: Air "" Op 30, composer: Purcell
+name: Dedication, composer: Granados
+name: Waltz no. 17 in A minor, composer: Chopin
+name: Sonatina in F, composer: Benda
 
 
 15/02/2016 - 19/02/2016
 
 
-name: For Children "" C.P.E., composer: Bartók
-name: ""Sonata XVI, composer: Haydn
-name: Air "" Op 30, composer: Purcell
+name: Dedication, composer: Granados
+name: Waltz no. 17 in A minor, composer: Chopin
+name: Sonatina in F, composer: Benda
 
 
 22/02/2016 - 26/02/2016
 
 
-name: For Children "" C.P.E., composer: Bartók
-name: ""Sonata XVI, composer: Haydn
-name: Air "" Op 30, composer: Purcell
+name: Dedication, composer: Granados
+name: Waltz no. 17 in A minor, composer: Chopin
+name: Sonatina in F, composer: Benda
 
 
 29/02/2016 - 04/03/2016
 
 
-name: For Children "" C.P.E., composer: Bartók
-name: ""Sonata XVI, composer: Haydn
-name: Air "" Op 30, composer: Purcell
+name: Dedication, composer: Granados
+name: Waltz no. 17 in A minor, composer: Chopin
+name: Sonatina in F, composer: Benda
 
 
 07/03/2016 - 11/03/2016
 
 
-name: For Children "" C.P.E., composer: Bartók
-name: ""Sonata XVI, composer: Haydn
-name: Air "" Op 30, composer: Purcell
+name: Dedication, composer: Granados
+name: Waltz no. 17 in A minor, composer: Chopin
+name: Sonatina in F, composer: Benda
 
 
 14/03/2016 - 18/03/2016
 
 
-name: Partita in G, composer: Telemann
-name: Reaper's Song, composer: Schumann
-name: Moffat Two Bourrées, composer: Purcell
+name: Music for Children Op. 65 No. 02, composer: Prokofiev
+name: Sonatina No. 2 in C, composer: Attwood
+name: A Strange Story, composer: Heller
 
 
 21/03/2016 - 25/03/2016
 
 
-name: Partita in G, composer: Telemann
-name: Reaper's Song, composer: Schumann
-name: Moffat Two Bourrées, composer: Purcell
+name: Music for Children Op. 65 No. 02, composer: Prokofiev
+name: Sonatina No. 2 in C, composer: Attwood
+name: A Strange Story, composer: Heller
 
 
 28/03/2016 - 01/04/2016
 
 
-name: Partita in G, composer: Telemann
-name: Reaper's Song, composer: Schumann
-name: Moffat Two Bourrées, composer: Purcell
+name: Music for Children Op. 65 No. 02, composer: Prokofiev
+name: Sonatina No. 2 in C, composer: Attwood
+name: A Strange Story, composer: Heller
 
 
 11/04/2016 - 15/04/2016
 
 
-name: Partita in G, composer: Telemann
-name: Reaper's Song, composer: Schumann
-name: Moffat Two Bourrées, composer: Purcell
+name: Music for Children Op. 65 No. 02, composer: Prokofiev
+name: Sonatina No. 2 in C, composer: Attwood
+name: A Strange Story, composer: Heller
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Partita in G, composer: Telemann
-name: Reaper's Song, composer: Schumann
-name: Moffat Two Bourrées, composer: Purcell
+name: Music for Children Op. 65 No. 02, composer: Prokofiev
+name: Sonatina No. 2 in C, composer: Attwood
+name: A Strange Story, composer: Heller
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Partita in G, composer: Telemann
-name: Reaper's Song, composer: Schumann
-name: Moffat Two Bourrées, composer: Purcell
+name: Music for Children Op. 65 No. 02, composer: Prokofiev
+name: Sonatina No. 2 in C, composer: Attwood
+name: A Strange Story, composer: Heller
 
 
 03/05/2016 - 06/05/2016
 
 
-name: ""Bagatelle         ", composer: Beethoven
-name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
-name: Gigue, composer: Hummel
+name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
+name: Cantabile in Bb major, composer: Chopin
+name: ""Study in D"" "" B60, composer: Heller
 
 
 09/05/2016 - 13/05/2016
 
 
-name: ""Bagatelle         ", composer: Beethoven
-name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
-name: Gigue, composer: Hummel
+name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
+name: Cantabile in Bb major, composer: Chopin
+name: ""Study in D"" "" B60, composer: Heller
 
 
 16/05/2016 - 20/05/2016
 
 
-name: ""Bagatelle         ", composer: Beethoven
-name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
-name: Gigue, composer: Hummel
+name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
+name: Cantabile in Bb major, composer: Chopin
+name: ""Study in D"" "" B60, composer: Heller
 
 
 23/05/2016 - 26/05/2016
 
 
-name: ""Bagatelle         ", composer: Beethoven
-name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
-name: Gigue, composer: Hummel
+name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
+name: Cantabile in Bb major, composer: Chopin
+name: ""Study in D"" "" B60, composer: Heller
 
 
 30/05/2016 - 03/06/2016
 
 
-name: ""Bagatelle         ", composer: Beethoven
-name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
-name: Gigue, composer: Hummel
+name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
+name: Cantabile in Bb major, composer: Chopin
+name: ""Study in D"" "" B60, composer: Heller
 
 
 06/06/2016 - 10/06/2016
 
 
-name: ""Bagatelle         ", composer: Beethoven
-name: Prelude and fugue no. 1 in C, composer: P. D. Q. Bach
-name: Gigue, composer: Hummel
+name: ""Scherzo in Bb"" "" Op 60, composer: Schubert
+name: Cantabile in Bb major, composer: Chopin
+name: ""Study in D"" "" B60, composer: Heller
 
 
 13/06/2016 - 15/06/2016
 
 
-name: Fur Elise, composer: Beethoven
-name: Melody in G, composer: Heller
-name: Daydream, composer: Tchaikovsky
+name: Sonatina in B flat, composer: Handel
+name: For Children  J.C.F., composer: Bartók
+name: Mazurka in F minor  op. 7 no. 5, composer: Chopin
 
 
 Симона Зографова FIFTH grade
@@ -2387,313 +2387,313 @@ name: Daydream, composer: Tchaikovsky
 15/09/2015 - 18/09/2015
 
 
-name: Sonata in G minor, composer: Arne
-name: ""Sonata XVI, composer: Haydn
-name: Sonata in D minor, composer: Arne
+name: Invention 01, composer: Bach
+name: Little Piece (Poco Allegro) in C# minor  'La Milordine', composer: Franck
+name: Consolations, composer: Liszt
 
 
 21/09/2015 - 25/09/2015
 
 
-name: Sonata in G minor, composer: Arne
-name: ""Sonata XVI, composer: Haydn
-name: Sonata in D minor, composer: Arne
+name: Invention 01, composer: Bach
+name: Little Piece (Poco Allegro) in C# minor  'La Milordine', composer: Franck
+name: Consolations, composer: Liszt
 
 
 28/09/2015 - 02/10/2015
 
 
-name: Sonata in G minor, composer: Arne
-name: ""Sonata XVI, composer: Haydn
-name: Sonata in D minor, composer: Arne
+name: Invention 01, composer: Bach
+name: Little Piece (Poco Allegro) in C# minor  'La Milordine', composer: Franck
+name: Consolations, composer: Liszt
 
 
 05/10/2015 - 09/10/2015
 
 
-name: Sonata in G minor, composer: Arne
-name: ""Sonata XVI, composer: Haydn
-name: Sonata in D minor, composer: Arne
+name: Invention 01, composer: Bach
+name: Little Piece (Poco Allegro) in C# minor  'La Milordine', composer: Franck
+name: Consolations, composer: Liszt
 
 
 12/10/2015 - 16/10/2015
 
 
-name: Wiegenlied 174, composer: Liszt
-name: Nocturne in B flat "" Op 36, composer: Field
-name: French Suite No. 5 - Gavotte, composer: Bach
+name: ""L'Hirondelle"" "" Op 119, composer: Burgmüller
+name: Waltz in D minor "" Op 119, composer: Britten
+name: Suite No 10, composer: Handel
 
 
 19/10/2015 - 23/10/2015
 
 
-name: Wiegenlied 174, composer: Liszt
-name: Nocturne in B flat "" Op 36, composer: Field
-name: French Suite No. 5 - Gavotte, composer: Bach
+name: ""L'Hirondelle"" "" Op 119, composer: Burgmüller
+name: Waltz in D minor "" Op 119, composer: Britten
+name: Suite No 10, composer: Handel
 
 
 26/10/2015 - 30/10/2015
 
 
-name: Wiegenlied 174, composer: Liszt
-name: Nocturne in B flat "" Op 36, composer: Field
-name: French Suite No. 5 - Gavotte, composer: Bach
+name: ""L'Hirondelle"" "" Op 119, composer: Burgmüller
+name: Waltz in D minor "" Op 119, composer: Britten
+name: Suite No 10, composer: Handel
 
 
 03/11/2015 - 06/11/2015
 
 
-name: Wiegenlied 174, composer: Liszt
-name: Nocturne in B flat "" Op 36, composer: Field
-name: French Suite No. 5 - Gavotte, composer: Bach
+name: ""L'Hirondelle"" "" Op 119, composer: Burgmüller
+name: Waltz in D minor "" Op 119, composer: Britten
+name: Suite No 10, composer: Handel
 
 
 09/11/2015 - 13/11/2015
 
 
-name: ""Sonata XVI, composer: Haydn
-name: Grandmother Tales Op. 31 No. 2, composer: Prokofiev
-name: ""Suite in G B60, composer: Handel
+name: Reiterstück, composer: Schumann
+name: Nocturne in B flat "" Op 36, composer: Field
+name: Adagio in C, composer: Mozart
 
 
 16/11/2015 - 20/11/2015
 
 
-name: ""Sonata XVI, composer: Haydn
-name: Grandmother Tales Op. 31 No. 2, composer: Prokofiev
-name: ""Suite in G B60, composer: Handel
+name: Reiterstück, composer: Schumann
+name: Nocturne in B flat "" Op 36, composer: Field
+name: Adagio in C, composer: Mozart
 
 
 23/11/2015 - 27/11/2015
 
 
-name: ""Sonata XVI, composer: Haydn
-name: Grandmother Tales Op. 31 No. 2, composer: Prokofiev
-name: ""Suite in G B60, composer: Handel
+name: Reiterstück, composer: Schumann
+name: Nocturne in B flat "" Op 36, composer: Field
+name: Adagio in C, composer: Mozart
 
 
 30/11/2015 - 04/12/2015
 
 
-name: ""Sonata XVI, composer: Haydn
-name: Grandmother Tales Op. 31 No. 2, composer: Prokofiev
-name: ""Suite in G B60, composer: Handel
+name: Reiterstück, composer: Schumann
+name: Nocturne in B flat "" Op 36, composer: Field
+name: Adagio in C, composer: Mozart
 
 
 07/12/2015 - 11/12/2015
 
 
-name: French Suite No. 1 - Menuet 1, composer: Bach
-name: Variations on Ah vous dirai je maman, composer: Mozart
-name: Fantaisie No 06 in B flat  Op 34 No. 08, composer: Telemann
+name: Invention 13, composer: Bach
+name: French Suite No. 6 - Gavotte, composer: Bach
+name: ""Waltz in A minor         ", composer: Heller
 
 
 14/12/2015 - 18/12/2015
 
 
-name: French Suite No. 1 - Menuet 1, composer: Bach
-name: Variations on Ah vous dirai je maman, composer: Mozart
-name: Fantaisie No 06 in B flat  Op 34 No. 08, composer: Telemann
+name: Invention 13, composer: Bach
+name: French Suite No. 6 - Gavotte, composer: Bach
+name: ""Waltz in A minor         ", composer: Heller
 
 
 21/12/2015 - 24/12/2015
 
 
-name: French Suite No. 1 - Menuet 1, composer: Bach
-name: Variations on Ah vous dirai je maman, composer: Mozart
-name: Fantaisie No 06 in B flat  Op 34 No. 08, composer: Telemann
+name: Invention 13, composer: Bach
+name: French Suite No. 6 - Gavotte, composer: Bach
+name: ""Waltz in A minor         ", composer: Heller
 
 
 04/01/2016 - 08/01/2016
 
 
-name: French Suite No. 1 - Menuet 1, composer: Bach
-name: Variations on Ah vous dirai je maman, composer: Mozart
-name: Fantaisie No 06 in B flat  Op 34 No. 08, composer: Telemann
+name: Invention 13, composer: Bach
+name: French Suite No. 6 - Gavotte, composer: Bach
+name: ""Waltz in A minor         ", composer: Heller
 
 
 11/01/2016 - 15/01/2016
 
 
-name: ""Prelude in C# minor"" "" Op 45, composer: Heller
+name: Pisen Op. 2 No. 2, composer: Smetana
 name: French Suite No. 3 - Sarabande, composer: Bach
-name: Music for Children Op. 65 No. 12, composer: Prokofiev
+name: Sonata K 373, composer: Scarlatti
 
 
 18/01/2016 - 22/01/2016
 
 
-name: ""Prelude in C# minor"" "" Op 45, composer: Heller
+name: Pisen Op. 2 No. 2, composer: Smetana
 name: French Suite No. 3 - Sarabande, composer: Bach
-name: Music for Children Op. 65 No. 12, composer: Prokofiev
+name: Sonata K 373, composer: Scarlatti
 
 
 25/01/2016 - 29/01/2016
 
 
-name: ""Prelude in C# minor"" "" Op 45, composer: Heller
+name: Pisen Op. 2 No. 2, composer: Smetana
 name: French Suite No. 3 - Sarabande, composer: Bach
-name: Music for Children Op. 65 No. 12, composer: Prokofiev
+name: Sonata K 373, composer: Scarlatti
 
 
 08/02/2016 - 12/02/2016
 
 
-name: ""Prelude in C# minor"" "" Op 45, composer: Heller
+name: Pisen Op. 2 No. 2, composer: Smetana
 name: French Suite No. 3 - Sarabande, composer: Bach
-name: Music for Children Op. 65 No. 12, composer: Prokofiev
+name: Sonata K 373, composer: Scarlatti
 
 
 15/02/2016 - 19/02/2016
 
 
-name: Sonata K 454, composer: Scarlatti
+name: English Suite No. 6 - Courante, composer: Bach
+name: Sleepless Nights Op 87 No 3, composer: Heller
 name: ""Sonata XVI, composer: Haydn
-name: The Christmas Tree S. 186, composer: Liszt
 
 
 22/02/2016 - 26/02/2016
 
 
-name: Sonata K 454, composer: Scarlatti
+name: English Suite No. 6 - Courante, composer: Bach
+name: Sleepless Nights Op 87 No 3, composer: Heller
 name: ""Sonata XVI, composer: Haydn
-name: The Christmas Tree S. 186, composer: Liszt
 
 
 29/02/2016 - 04/03/2016
 
 
-name: Sonata K 454, composer: Scarlatti
+name: English Suite No. 6 - Courante, composer: Bach
+name: Sleepless Nights Op 87 No 3, composer: Heller
 name: ""Sonata XVI, composer: Haydn
-name: The Christmas Tree S. 186, composer: Liszt
 
 
 07/03/2016 - 11/03/2016
 
 
-name: Sonata K 454, composer: Scarlatti
+name: English Suite No. 6 - Courante, composer: Bach
+name: Sleepless Nights Op 87 No 3, composer: Heller
 name: ""Sonata XVI, composer: Haydn
-name: The Christmas Tree S. 186, composer: Liszt
 
 
 14/03/2016 - 18/03/2016
 
 
-name: ""Sonata in D""  Op.39 No.9, composer: Clementi
-name: Adagio in C, composer: Mozart
-name: Invention 10, composer: Bach
+name: Suite no 13, composer: Handel
+name: French Suite No. 5 - Bouree 1, composer: Bach
+name: Allegro Moderato in F, composer: L Mozart
 
 
 21/03/2016 - 25/03/2016
 
 
-name: ""Sonata in D""  Op.39 No.9, composer: Clementi
-name: Adagio in C, composer: Mozart
-name: Invention 10, composer: Bach
+name: Suite no 13, composer: Handel
+name: French Suite No. 5 - Bouree 1, composer: Bach
+name: Allegro Moderato in F, composer: L Mozart
 
 
 28/03/2016 - 01/04/2016
 
 
-name: ""Sonata in D""  Op.39 No.9, composer: Clementi
-name: Adagio in C, composer: Mozart
-name: Invention 10, composer: Bach
+name: Suite no 13, composer: Handel
+name: French Suite No. 5 - Bouree 1, composer: Bach
+name: Allegro Moderato in F, composer: L Mozart
 
 
 11/04/2016 - 15/04/2016
 
 
-name: ""Sonata in D""  Op.39 No.9, composer: Clementi
-name: Adagio in C, composer: Mozart
-name: Invention 10, composer: Bach
+name: Suite no 13, composer: Handel
+name: French Suite No. 5 - Bouree 1, composer: Bach
+name: Allegro Moderato in F, composer: L Mozart
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Invention 13, composer: Bach
-name: English Suite No. 6 - Double, composer: Bach
-name: Sonata K 070, composer: Scarlatti
+name: ""Lento""  Kp 63, composer: Schumann
+name: Music for Children Op. 65 No. 06, composer: Prokofiev
+name: ""Study in F""  HWV 452, composer: Heller
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Invention 13, composer: Bach
-name: English Suite No. 6 - Double, composer: Bach
-name: Sonata K 070, composer: Scarlatti
+name: ""Lento""  Kp 63, composer: Schumann
+name: Music for Children Op. 65 No. 06, composer: Prokofiev
+name: ""Study in F""  HWV 452, composer: Heller
 
 
 03/05/2016 - 06/05/2016
 
 
-name: Invention 13, composer: Bach
-name: English Suite No. 6 - Double, composer: Bach
-name: Sonata K 070, composer: Scarlatti
+name: ""Lento""  Kp 63, composer: Schumann
+name: Music for Children Op. 65 No. 06, composer: Prokofiev
+name: ""Study in F""  HWV 452, composer: Heller
 
 
 09/05/2016 - 13/05/2016
 
 
-name: Invention 13, composer: Bach
-name: English Suite No. 6 - Double, composer: Bach
-name: Sonata K 070, composer: Scarlatti
+name: ""Lento""  Kp 63, composer: Schumann
+name: Music for Children Op. 65 No. 06, composer: Prokofiev
+name: ""Study in F""  HWV 452, composer: Heller
 
 
 16/05/2016 - 20/05/2016
 
 
-name: English Suite No. 1 - Double 2, composer: Bach
-name: Sancta Dorothea S. 187, composer: Liszt
-name: Three Sketches, composer: Barber
+name: French Suite No. 1 - Menuet 1, composer: Bach
+name: ""Sonata XVI, composer: Haydn
+name: ""Prelude in F"" "" Op 45, composer: Heller
 
 
 23/05/2016 - 26/05/2016
 
 
-name: English Suite No. 1 - Double 2, composer: Bach
-name: Sancta Dorothea S. 187, composer: Liszt
-name: Three Sketches, composer: Barber
+name: French Suite No. 1 - Menuet 1, composer: Bach
+name: ""Sonata XVI, composer: Haydn
+name: ""Prelude in F"" "" Op 45, composer: Heller
 
 
 30/05/2016 - 03/06/2016
 
 
-name: English Suite No. 1 - Double 2, composer: Bach
-name: Sancta Dorothea S. 187, composer: Liszt
-name: Three Sketches, composer: Barber
+name: French Suite No. 1 - Menuet 1, composer: Bach
+name: ""Sonata XVI, composer: Haydn
+name: ""Prelude in F"" "" Op 45, composer: Heller
 
 
 06/06/2016 - 10/06/2016
 
 
-name: English Suite No. 1 - Double 2, composer: Bach
-name: Sancta Dorothea S. 187, composer: Liszt
-name: Three Sketches, composer: Barber
+name: French Suite No. 1 - Menuet 1, composer: Bach
+name: ""Sonata XVI, composer: Haydn
+name: ""Prelude in F"" "" Op 45, composer: Heller
 
 
 13/06/2016 - 17/06/2016
 
 
-name: ""Sonatina in F         ", composer: Kuhlau
-name: Ten Easy Piano Pieces - Evening in the Country, composer: Bartók
-name: Little Piece (Poco Allegro) in C# minor  'La Milordine', composer: Franck
+name: ""Sonata XVI, composer: Haydn
+name: Sancta Dorothea S. 187, composer: Liszt
+name: Visions Fugitives Op. 22 No. 01, composer: Prokofiev
 
 
 20/06/2016 - 24/06/2016
 
 
-name: ""Sonatina in F         ", composer: Kuhlau
-name: Ten Easy Piano Pieces - Evening in the Country, composer: Bartók
-name: Little Piece (Poco Allegro) in C# minor  'La Milordine', composer: Franck
+name: ""Sonata XVI, composer: Haydn
+name: Sancta Dorothea S. 187, composer: Liszt
+name: Visions Fugitives Op. 22 No. 01, composer: Prokofiev
 
 
 27/06/2016 - 30/06/2016
 
 
-name: ""Sonatina in F         ", composer: Kuhlau
-name: Ten Easy Piano Pieces - Evening in the Country, composer: Bartók
-name: Little Piece (Poco Allegro) in C# minor  'La Milordine', composer: Franck
+name: ""Sonata XVI, composer: Haydn
+name: Sancta Dorothea S. 187, composer: Liszt
+name: Visions Fugitives Op. 22 No. 01, composer: Prokofiev
 
 
 Елизар Ставрев SIXTH grade
@@ -2701,312 +2701,312 @@ name: Little Piece (Poco Allegro) in C# minor  'La Milordine', composer: Franck
 15/09/2015 - 18/09/2015
 
 
-name: Catch Me if You Can, composer: Schumann
-name: Mazurka in Bb major no. 51, composer: Chopin
-name: Arabesque 1, composer: Debussy
+name: Sonata K 481, composer: Scarlatti
+name: Bagatelle in A, composer: Beethoven
+name: Baba-Yaga  Waldscenen  Op 82 No. 06, composer: Tchaikovsky
 
 
 21/09/2015 - 25/09/2015
 
 
-name: Catch Me if You Can, composer: Schumann
-name: Mazurka in Bb major no. 51, composer: Chopin
-name: Arabesque 1, composer: Debussy
+name: Sonata K 481, composer: Scarlatti
+name: Bagatelle in A, composer: Beethoven
+name: Baba-Yaga  Waldscenen  Op 82 No. 06, composer: Tchaikovsky
 
 
 28/09/2015 - 02/10/2015
 
 
-name: Catch Me if You Can, composer: Schumann
-name: Mazurka in Bb major no. 51, composer: Chopin
-name: Arabesque 1, composer: Debussy
+name: Sonata K 481, composer: Scarlatti
+name: Bagatelle in A, composer: Beethoven
+name: Baba-Yaga  Waldscenen  Op 82 No. 06, composer: Tchaikovsky
 
 
 05/10/2015 - 09/10/2015
 
 
-name: Catch Me if You Can, composer: Schumann
-name: Mazurka in Bb major no. 51, composer: Chopin
-name: Arabesque 1, composer: Debussy
+name: Sonata K 481, composer: Scarlatti
+name: Bagatelle in A, composer: Beethoven
+name: Baba-Yaga  Waldscenen  Op 82 No. 06, composer: Tchaikovsky
 
 
 12/10/2015 - 16/10/2015
 
 
-name: Catch Me if You Can, composer: Schumann
-name: Mazurka in Bb major no. 51, composer: Chopin
-name: Arabesque 1, composer: Debussy
+name: Sonata K 481, composer: Scarlatti
+name: Bagatelle in A, composer: Beethoven
+name: Baba-Yaga  Waldscenen  Op 82 No. 06, composer: Tchaikovsky
 
 
 19/10/2015 - 23/10/2015
 
 
-name: Catch Me if You Can, composer: Schumann
-name: Mazurka in Bb major no. 51, composer: Chopin
-name: Arabesque 1, composer: Debussy
+name: Sonata K 481, composer: Scarlatti
+name: Bagatelle in A, composer: Beethoven
+name: Baba-Yaga  Waldscenen  Op 82 No. 06, composer: Tchaikovsky
 
 
 26/10/2015 - 30/10/2015
 
 
-name: Bagatelle in G flat  no 7 from ‘Dances of the Dolls’, composer: Tcherepnin
-name: Preludes Op. 28. no. 06, composer: Chopin
-name: Prelude Op. 02 no. 02, composer: Scriabin
+name: Sonata in Bb major, composer: Mozart
+name: Largo in Eb major, composer: Chopin
+name: Prelude Op. 11 no. 22, composer: Scriabin
 
 
 03/11/2015 - 06/11/2015
 
 
-name: Bagatelle in G flat  no 7 from ‘Dances of the Dolls’, composer: Tcherepnin
-name: Preludes Op. 28. no. 06, composer: Chopin
-name: Prelude Op. 02 no. 02, composer: Scriabin
+name: Sonata in Bb major, composer: Mozart
+name: Largo in Eb major, composer: Chopin
+name: Prelude Op. 11 no. 22, composer: Scriabin
 
 
 09/11/2015 - 13/11/2015
 
 
-name: Bagatelle in G flat  no 7 from ‘Dances of the Dolls’, composer: Tcherepnin
-name: Preludes Op. 28. no. 06, composer: Chopin
-name: Prelude Op. 02 no. 02, composer: Scriabin
+name: Sonata in Bb major, composer: Mozart
+name: Largo in Eb major, composer: Chopin
+name: Prelude Op. 11 no. 22, composer: Scriabin
 
 
 16/11/2015 - 20/11/2015
 
 
-name: Bagatelle in G flat  no 7 from ‘Dances of the Dolls’, composer: Tcherepnin
-name: Preludes Op. 28. no. 06, composer: Chopin
-name: Prelude Op. 02 no. 02, composer: Scriabin
+name: Sonata in Bb major, composer: Mozart
+name: Largo in Eb major, composer: Chopin
+name: Prelude Op. 11 no. 22, composer: Scriabin
 
 
 23/11/2015 - 27/11/2015
 
 
-name: Bagatelle in G flat  no 7 from ‘Dances of the Dolls’, composer: Tcherepnin
-name: Preludes Op. 28. no. 06, composer: Chopin
-name: Prelude Op. 02 no. 02, composer: Scriabin
+name: Sonata in Bb major, composer: Mozart
+name: Largo in Eb major, composer: Chopin
+name: Prelude Op. 11 no. 22, composer: Scriabin
 
 
 30/11/2015 - 04/12/2015
 
 
-name: Bagatelle in G flat  no 7 from ‘Dances of the Dolls’, composer: Tcherepnin
-name: Preludes Op. 28. no. 06, composer: Chopin
-name: Prelude Op. 02 no. 02, composer: Scriabin
+name: Sonata in Bb major, composer: Mozart
+name: Largo in Eb major, composer: Chopin
+name: Prelude Op. 11 no. 22, composer: Scriabin
 
 
 07/12/2015 - 11/12/2015
 
 
-name: Sonata in F major, composer: Mozart
-name: Sonata 04. Op. 14 no. 2, composer: Beethoven
-name: English Suite No. 1 - Sarabande, composer: Bach
+name: English Suite No. 2 - Sarabande, composer: Bach
+name: Songs Without Words Op. 19 no. 6, composer: Mendelssohn
+name: Sonata 02. Op. 49 no. 1, composer: Beethoven
 
 
 14/12/2015 - 18/12/2015
 
 
-name: Sonata in F major, composer: Mozart
-name: Sonata 04. Op. 14 no. 2, composer: Beethoven
-name: English Suite No. 1 - Sarabande, composer: Bach
+name: English Suite No. 2 - Sarabande, composer: Bach
+name: Songs Without Words Op. 19 no. 6, composer: Mendelssohn
+name: Sonata 02. Op. 49 no. 1, composer: Beethoven
 
 
 21/12/2015 - 24/12/2015
 
 
-name: Sonata in F major, composer: Mozart
-name: Sonata 04. Op. 14 no. 2, composer: Beethoven
-name: English Suite No. 1 - Sarabande, composer: Bach
+name: English Suite No. 2 - Sarabande, composer: Bach
+name: Songs Without Words Op. 19 no. 6, composer: Mendelssohn
+name: Sonata 02. Op. 49 no. 1, composer: Beethoven
 
 
 04/01/2016 - 08/01/2016
 
 
-name: Sonata in F major, composer: Mozart
-name: Sonata 04. Op. 14 no. 2, composer: Beethoven
-name: English Suite No. 1 - Sarabande, composer: Bach
+name: English Suite No. 2 - Sarabande, composer: Bach
+name: Songs Without Words Op. 19 no. 6, composer: Mendelssohn
+name: Sonata 02. Op. 49 no. 1, composer: Beethoven
 
 
 11/01/2016 - 15/01/2016
 
 
-name: Sonata in F major, composer: Mozart
-name: Sonata 04. Op. 14 no. 2, composer: Beethoven
-name: English Suite No. 1 - Sarabande, composer: Bach
+name: English Suite No. 2 - Sarabande, composer: Bach
+name: Songs Without Words Op. 19 no. 6, composer: Mendelssohn
+name: Sonata 02. Op. 49 no. 1, composer: Beethoven
 
 
 18/01/2016 - 22/01/2016
 
 
-name: Sonata in F major, composer: Mozart
-name: Sonata 04. Op. 14 no. 2, composer: Beethoven
-name: English Suite No. 1 - Sarabande, composer: Bach
+name: English Suite No. 2 - Sarabande, composer: Bach
+name: Songs Without Words Op. 19 no. 6, composer: Mendelssohn
+name: Sonata 02. Op. 49 no. 1, composer: Beethoven
 
 
 25/01/2016 - 29/01/2016
 
 
-name: Waltz No. 12 (Fm, composer: Chopin
-name: Waltz No. 15 (E), composer: Chopin
-name: English Suite No. 2 - Gigue, composer: Bach
+name: English Suite No. 6 - Gavotte 1, composer: Bach
+name: Andante in C  K 312, composer: Schubert
+name: Polonaise Op. 40 no. 1 in A, composer: Chopin
 
 
 08/02/2016 - 12/02/2016
 
 
-name: Waltz No. 12 (Fm, composer: Chopin
-name: Waltz No. 15 (E), composer: Chopin
-name: English Suite No. 2 - Gigue, composer: Bach
+name: English Suite No. 6 - Gavotte 1, composer: Bach
+name: Andante in C  K 312, composer: Schubert
+name: Polonaise Op. 40 no. 1 in A, composer: Chopin
 
 
 15/02/2016 - 19/02/2016
 
 
-name: Waltz No. 12 (Fm, composer: Chopin
-name: Waltz No. 15 (E), composer: Chopin
-name: English Suite No. 2 - Gigue, composer: Bach
+name: English Suite No. 6 - Gavotte 1, composer: Bach
+name: Andante in C  K 312, composer: Schubert
+name: Polonaise Op. 40 no. 1 in A, composer: Chopin
 
 
 22/02/2016 - 26/02/2016
 
 
-name: Waltz No. 12 (Fm, composer: Chopin
-name: Waltz No. 15 (E), composer: Chopin
-name: English Suite No. 2 - Gigue, composer: Bach
+name: English Suite No. 6 - Gavotte 1, composer: Bach
+name: Andante in C  K 312, composer: Schubert
+name: Polonaise Op. 40 no. 1 in A, composer: Chopin
 
 
 29/02/2016 - 04/03/2016
 
 
-name: Waltz No. 12 (Fm, composer: Chopin
-name: Waltz No. 15 (E), composer: Chopin
-name: English Suite No. 2 - Gigue, composer: Bach
+name: English Suite No. 6 - Gavotte 1, composer: Bach
+name: Andante in C  K 312, composer: Schubert
+name: Polonaise Op. 40 no. 1 in A, composer: Chopin
 
 
 07/03/2016 - 11/03/2016
 
 
-name: Waltz No. 12 (Fm, composer: Chopin
-name: Waltz No. 15 (E), composer: Chopin
-name: English Suite No. 2 - Gigue, composer: Bach
+name: English Suite No. 6 - Gavotte 1, composer: Bach
+name: Andante in C  K 312, composer: Schubert
+name: Polonaise Op. 40 no. 1 in A, composer: Chopin
 
 
 14/03/2016 - 18/03/2016
 
 
-name: Sonata K 481, composer: Scarlatti
-name: Pastorale "" Op 39, composer: Scarlatti
-name: Sonata K 054, composer: Scarlatti
+name: ""Sonata XVI, composer: Haydn
+name: English Suite No. 3 - Allemande, composer: Bach
+name: Songs Without Words Op. 102 no. 4, composer: Mendelssohn
 
 
 21/03/2016 - 25/03/2016
 
 
-name: Sonata K 481, composer: Scarlatti
-name: Pastorale "" Op 39, composer: Scarlatti
-name: Sonata K 054, composer: Scarlatti
+name: ""Sonata XVI, composer: Haydn
+name: English Suite No. 3 - Allemande, composer: Bach
+name: Songs Without Words Op. 102 no. 4, composer: Mendelssohn
 
 
 28/03/2016 - 01/04/2016
 
 
-name: Sonata K 481, composer: Scarlatti
-name: Pastorale "" Op 39, composer: Scarlatti
-name: Sonata K 054, composer: Scarlatti
+name: ""Sonata XVI, composer: Haydn
+name: English Suite No. 3 - Allemande, composer: Bach
+name: Songs Without Words Op. 102 no. 4, composer: Mendelssohn
 
 
 11/04/2016 - 15/04/2016
 
 
-name: Sonata K 481, composer: Scarlatti
-name: Pastorale "" Op 39, composer: Scarlatti
-name: Sonata K 054, composer: Scarlatti
+name: ""Sonata XVI, composer: Haydn
+name: English Suite No. 3 - Allemande, composer: Bach
+name: Songs Without Words Op. 102 no. 4, composer: Mendelssohn
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Sonata K 481, composer: Scarlatti
-name: Pastorale "" Op 39, composer: Scarlatti
-name: Sonata K 054, composer: Scarlatti
+name: ""Sonata XVI, composer: Haydn
+name: English Suite No. 3 - Allemande, composer: Bach
+name: Songs Without Words Op. 102 no. 4, composer: Mendelssohn
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Sonata K 481, composer: Scarlatti
-name: Pastorale "" Op 39, composer: Scarlatti
-name: Sonata K 054, composer: Scarlatti
+name: ""Sonata XVI, composer: Haydn
+name: English Suite No. 3 - Allemande, composer: Bach
+name: Songs Without Words Op. 102 no. 4, composer: Mendelssohn
 
 
 03/05/2016 - 06/05/2016
 
 
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: Prelude Op. 11 no. 22, composer: Scriabin
-name: Sonata K 247, composer: Scarlatti
+name: Kinderstück (Child’s Piece), composer: Webern
+name: Pour le piano 2 - Sarabande, composer: Debussy
+name: Sonata K 146, composer: Scarlatti
 
 
 09/05/2016 - 13/05/2016
 
 
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: Prelude Op. 11 no. 22, composer: Scriabin
-name: Sonata K 247, composer: Scarlatti
+name: Kinderstück (Child’s Piece), composer: Webern
+name: Pour le piano 2 - Sarabande, composer: Debussy
+name: Sonata K 146, composer: Scarlatti
 
 
 16/05/2016 - 20/05/2016
 
 
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: Prelude Op. 11 no. 22, composer: Scriabin
-name: Sonata K 247, composer: Scarlatti
+name: Kinderstück (Child’s Piece), composer: Webern
+name: Pour le piano 2 - Sarabande, composer: Debussy
+name: Sonata K 146, composer: Scarlatti
 
 
 23/05/2016 - 26/05/2016
 
 
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: Prelude Op. 11 no. 22, composer: Scriabin
-name: Sonata K 247, composer: Scarlatti
+name: Kinderstück (Child’s Piece), composer: Webern
+name: Pour le piano 2 - Sarabande, composer: Debussy
+name: Sonata K 146, composer: Scarlatti
 
 
 30/05/2016 - 03/06/2016
 
 
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: Prelude Op. 11 no. 22, composer: Scriabin
-name: Sonata K 247, composer: Scarlatti
+name: Kinderstück (Child’s Piece), composer: Webern
+name: Pour le piano 2 - Sarabande, composer: Debussy
+name: Sonata K 146, composer: Scarlatti
 
 
 06/06/2016 - 10/06/2016
 
 
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: Prelude Op. 11 no. 22, composer: Scriabin
-name: Sonata K 247, composer: Scarlatti
+name: Kinderstück (Child’s Piece), composer: Webern
+name: Pour le piano 2 - Sarabande, composer: Debussy
+name: Sonata K 146, composer: Scarlatti
 
 
 13/06/2016 - 17/06/2016
 
 
-name: ""Adagio in F"" "" Op 3, composer: Haydn
-name: ""Study in C minor""  HWV 441, composer: Heller
+name: ""Waltz in C# minor         ", composer: Brahms
+name: Mazurka in Ab major  op. posth. 67 no. 4, composer: Chopin
 name: Waltz No. 03 (Am, composer: Chopin
 
 
 20/06/2016 - 24/06/2016
 
 
-name: ""Adagio in F"" "" Op 3, composer: Haydn
-name: ""Study in C minor""  HWV 441, composer: Heller
+name: ""Waltz in C# minor         ", composer: Brahms
+name: Mazurka in Ab major  op. posth. 67 no. 4, composer: Chopin
 name: Waltz No. 03 (Am, composer: Chopin
 
 
 27/06/2016 - 30/06/2016
 
 
-name: ""Adagio in F"" "" Op 3, composer: Haydn
-name: ""Study in C minor""  HWV 441, composer: Heller
+name: ""Waltz in C# minor         ", composer: Brahms
+name: Mazurka in Ab major  op. posth. 67 no. 4, composer: Chopin
 name: Waltz No. 03 (Am, composer: Chopin
 
 
@@ -3015,312 +3015,312 @@ name: Waltz No. 03 (Am, composer: Chopin
 15/09/2015 - 18/09/2015
 
 
-name: Mazurka in A minor, composer: Chopin
-name: Adagio in G "" Op 72, composer: Schubert
-name: Allegro in G minor "" Op 46, composer: Mozart
+name: Gymnopedies, composer: Satie
+name: ""Study in B minor""  HWV 453, composer: Heller
+name: The Entreating Child  D334, composer: Schumann
 
 
 21/09/2015 - 25/09/2015
 
 
-name: Mazurka in A minor, composer: Chopin
-name: Adagio in G "" Op 72, composer: Schubert
-name: Allegro in G minor "" Op 46, composer: Mozart
+name: Gymnopedies, composer: Satie
+name: ""Study in B minor""  HWV 453, composer: Heller
+name: The Entreating Child  D334, composer: Schumann
 
 
 28/09/2015 - 02/10/2015
 
 
-name: Mazurka in A minor, composer: Chopin
-name: Adagio in G "" Op 72, composer: Schubert
-name: Allegro in G minor "" Op 46, composer: Mozart
+name: Gymnopedies, composer: Satie
+name: ""Study in B minor""  HWV 453, composer: Heller
+name: The Entreating Child  D334, composer: Schumann
 
 
 05/10/2015 - 09/10/2015
 
 
-name: Mazurka in A minor, composer: Chopin
-name: Adagio in G "" Op 72, composer: Schubert
-name: Allegro in G minor "" Op 46, composer: Mozart
+name: Gymnopedies, composer: Satie
+name: ""Study in B minor""  HWV 453, composer: Heller
+name: The Entreating Child  D334, composer: Schumann
 
 
 12/10/2015 - 16/10/2015
 
 
-name: Mazurka in A minor, composer: Chopin
-name: Adagio in G "" Op 72, composer: Schubert
-name: Allegro in G minor "" Op 46, composer: Mozart
+name: Gymnopedies, composer: Satie
+name: ""Study in B minor""  HWV 453, composer: Heller
+name: The Entreating Child  D334, composer: Schumann
 
 
 19/10/2015 - 23/10/2015
 
 
-name: Sonata K 247, composer: Scarlatti
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: ""Sonatina in D         ", composer: Clementi
+name: ""Sonata in F# minor"" "" Op 33, composer: Clementi
+name: Nocturnes op. 36, composer: Fauré
+name: Six Variations on ‘Nel cor più non mi sento’ WoO 70, composer: Beethoven
 
 
 26/10/2015 - 30/10/2015
 
 
-name: Sonata K 247, composer: Scarlatti
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: ""Sonatina in D         ", composer: Clementi
+name: ""Sonata in F# minor"" "" Op 33, composer: Clementi
+name: Nocturnes op. 36, composer: Fauré
+name: Six Variations on ‘Nel cor più non mi sento’ WoO 70, composer: Beethoven
 
 
 03/11/2015 - 06/11/2015
 
 
-name: Sonata K 247, composer: Scarlatti
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: ""Sonatina in D         ", composer: Clementi
+name: ""Sonata in F# minor"" "" Op 33, composer: Clementi
+name: Nocturnes op. 36, composer: Fauré
+name: Six Variations on ‘Nel cor più non mi sento’ WoO 70, composer: Beethoven
 
 
 09/11/2015 - 13/11/2015
 
 
-name: Sonata K 247, composer: Scarlatti
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: ""Sonatina in D         ", composer: Clementi
+name: ""Sonata in F# minor"" "" Op 33, composer: Clementi
+name: Nocturnes op. 36, composer: Fauré
+name: Six Variations on ‘Nel cor più non mi sento’ WoO 70, composer: Beethoven
 
 
 16/11/2015 - 20/11/2015
 
 
-name: Sonata K 247, composer: Scarlatti
-name: ""Vöglein (Little Bird) Op 43, composer: Grieg
-name: ""Sonatina in D         ", composer: Clementi
+name: ""Sonata in F# minor"" "" Op 33, composer: Clementi
+name: Nocturnes op. 36, composer: Fauré
+name: Six Variations on ‘Nel cor più non mi sento’ WoO 70, composer: Beethoven
 
 
 23/11/2015 - 27/11/2015
 
 
-name: ""Etude in D"" "" B 60, composer: Heller
-name: Catch Me if You Can, composer: Schumann
-name: Sonata K 020, composer: Scarlatti
+name: Nocturne no 13 in D minor "" Op 8, composer: Field
+name: Mouvements Perpetuels no 1, composer: Poulenc
+name: English Suite No. 1 - Courante 2, composer: Bach
 
 
 30/11/2015 - 04/12/2015
 
 
-name: ""Etude in D"" "" B 60, composer: Heller
-name: Catch Me if You Can, composer: Schumann
-name: Sonata K 020, composer: Scarlatti
+name: Nocturne no 13 in D minor "" Op 8, composer: Field
+name: Mouvements Perpetuels no 1, composer: Poulenc
+name: English Suite No. 1 - Courante 2, composer: Bach
 
 
 07/12/2015 - 11/12/2015
 
 
-name: ""Etude in D"" "" B 60, composer: Heller
-name: Catch Me if You Can, composer: Schumann
-name: Sonata K 020, composer: Scarlatti
+name: Nocturne no 13 in D minor "" Op 8, composer: Field
+name: Mouvements Perpetuels no 1, composer: Poulenc
+name: English Suite No. 1 - Courante 2, composer: Bach
 
 
 14/12/2015 - 18/12/2015
 
 
-name: ""Etude in D"" "" B 60, composer: Heller
-name: Catch Me if You Can, composer: Schumann
-name: Sonata K 020, composer: Scarlatti
+name: Nocturne no 13 in D minor "" Op 8, composer: Field
+name: Mouvements Perpetuels no 1, composer: Poulenc
+name: English Suite No. 1 - Courante 2, composer: Bach
 
 
 21/12/2015 - 24/12/2015
 
 
-name: ""Etude in D"" "" B 60, composer: Heller
-name: Catch Me if You Can, composer: Schumann
-name: Sonata K 020, composer: Scarlatti
+name: Nocturne no 13 in D minor "" Op 8, composer: Field
+name: Mouvements Perpetuels no 1, composer: Poulenc
+name: English Suite No. 1 - Courante 2, composer: Bach
 
 
 04/01/2016 - 08/01/2016
 
 
-name: Arabesque 1, composer: Debussy
-name: The Entreating Child  D334, composer: Schumann
-name: Preludes Op. 28. no. 09, composer: Chopin
+name: Menuett in A, composer: Schubert
+name: Suite in A, composer: Telemann
+name: No 39 from ‘For Children’, composer: Bartók
 
 
 11/01/2016 - 15/01/2016
 
 
-name: Arabesque 1, composer: Debussy
-name: The Entreating Child  D334, composer: Schumann
-name: Preludes Op. 28. no. 09, composer: Chopin
+name: Menuett in A, composer: Schubert
+name: Suite in A, composer: Telemann
+name: No 39 from ‘For Children’, composer: Bartók
 
 
 18/01/2016 - 22/01/2016
 
 
-name: Arabesque 1, composer: Debussy
-name: The Entreating Child  D334, composer: Schumann
-name: Preludes Op. 28. no. 09, composer: Chopin
+name: Menuett in A, composer: Schubert
+name: Suite in A, composer: Telemann
+name: No 39 from ‘For Children’, composer: Bartók
 
 
 25/01/2016 - 29/01/2016
 
 
-name: Arabesque 1, composer: Debussy
-name: The Entreating Child  D334, composer: Schumann
-name: Preludes Op. 28. no. 09, composer: Chopin
+name: Menuett in A, composer: Schubert
+name: Suite in A, composer: Telemann
+name: No 39 from ‘For Children’, composer: Bartók
 
 
 08/02/2016 - 12/02/2016
 
 
-name: Arabesque 1, composer: Debussy
-name: The Entreating Child  D334, composer: Schumann
-name: Preludes Op. 28. no. 09, composer: Chopin
+name: Menuett in A, composer: Schubert
+name: Suite in A, composer: Telemann
+name: No 39 from ‘For Children’, composer: Bartók
 
 
 15/02/2016 - 19/02/2016
 
 
-name: Sonata K 147, composer: Scarlatti
-name: Invention 07, composer: Bach
-name: Invention 03, composer: Bach
+name: Images II 3 - Et la lune descend sur le temple qui fut, composer: Debussy
+name: ""Bagatelle in C         ", composer: Beethoven
+name: Einsame Blumen (Lonely Flowers)  D29, composer: Schumann
 
 
 22/02/2016 - 26/02/2016
 
 
-name: Sonata K 147, composer: Scarlatti
-name: Invention 07, composer: Bach
-name: Invention 03, composer: Bach
+name: Images II 3 - Et la lune descend sur le temple qui fut, composer: Debussy
+name: ""Bagatelle in C         ", composer: Beethoven
+name: Einsame Blumen (Lonely Flowers)  D29, composer: Schumann
 
 
 29/02/2016 - 04/03/2016
 
 
-name: Sonata K 147, composer: Scarlatti
-name: Invention 07, composer: Bach
-name: Invention 03, composer: Bach
+name: Images II 3 - Et la lune descend sur le temple qui fut, composer: Debussy
+name: ""Bagatelle in C         ", composer: Beethoven
+name: Einsame Blumen (Lonely Flowers)  D29, composer: Schumann
 
 
 07/03/2016 - 11/03/2016
 
 
-name: Sonata K 147, composer: Scarlatti
-name: Invention 07, composer: Bach
-name: Invention 03, composer: Bach
+name: Images II 3 - Et la lune descend sur le temple qui fut, composer: Debussy
+name: ""Bagatelle in C         ", composer: Beethoven
+name: Einsame Blumen (Lonely Flowers)  D29, composer: Schumann
 
 
 14/03/2016 - 18/03/2016
 
 
-name: Sonata K 147, composer: Scarlatti
-name: Invention 07, composer: Bach
-name: Invention 03, composer: Bach
+name: Images II 3 - Et la lune descend sur le temple qui fut, composer: Debussy
+name: ""Bagatelle in C         ", composer: Beethoven
+name: Einsame Blumen (Lonely Flowers)  D29, composer: Schumann
 
 
 21/03/2016 - 25/03/2016
 
 
-name: Songs Without Words Op. 62 no. 1, composer: Mendelssohn
-name: Sonata K 446, composer: Scarlatti
-name: Mazurka in Bb major  op. 30 no. 2, composer: Chopin
+name: Sonata K 481, composer: Scarlatti
+name: Songs Without Words Op. 53 no. 2, composer: Mendelssohn
+name: Mazurka in A minor  op. 7 no. 2, composer: Chopin
 
 
 28/03/2016 - 01/04/2016
 
 
-name: Songs Without Words Op. 62 no. 1, composer: Mendelssohn
-name: Sonata K 446, composer: Scarlatti
-name: Mazurka in Bb major  op. 30 no. 2, composer: Chopin
+name: Sonata K 481, composer: Scarlatti
+name: Songs Without Words Op. 53 no. 2, composer: Mendelssohn
+name: Mazurka in A minor  op. 7 no. 2, composer: Chopin
 
 
 11/04/2016 - 15/04/2016
 
 
-name: Songs Without Words Op. 62 no. 1, composer: Mendelssohn
-name: Sonata K 446, composer: Scarlatti
-name: Mazurka in Bb major  op. 30 no. 2, composer: Chopin
+name: Sonata K 481, composer: Scarlatti
+name: Songs Without Words Op. 53 no. 2, composer: Mendelssohn
+name: Mazurka in A minor  op. 7 no. 2, composer: Chopin
 
 
 18/04/2016 - 22/04/2016
 
 
-name: Songs Without Words Op. 62 no. 1, composer: Mendelssohn
-name: Sonata K 446, composer: Scarlatti
-name: Mazurka in Bb major  op. 30 no. 2, composer: Chopin
+name: Sonata K 481, composer: Scarlatti
+name: Songs Without Words Op. 53 no. 2, composer: Mendelssohn
+name: Mazurka in A minor  op. 7 no. 2, composer: Chopin
 
 
 25/04/2016 - 28/04/2016
 
 
-name: Songs Without Words Op. 62 no. 1, composer: Mendelssohn
-name: Sonata K 446, composer: Scarlatti
-name: Mazurka in Bb major  op. 30 no. 2, composer: Chopin
+name: Sonata K 481, composer: Scarlatti
+name: Songs Without Words Op. 53 no. 2, composer: Mendelssohn
+name: Mazurka in A minor  op. 7 no. 2, composer: Chopin
 
 
 03/05/2016 - 06/05/2016
 
 
-name: Pour le piano 2 - Sarabande, composer: Debussy
-name: Nocturnes op. 37, composer: Fauré
-name: English Suite No. 2 - Sarabande, composer: Bach
+name: Fantasy in D minor K.397, composer: Mozart
+name: Bourée Fantasque, composer: Chabrier
+name: French Suite No. 1 - Courante, composer: Bach
 
 
 09/05/2016 - 13/05/2016
 
 
-name: Pour le piano 2 - Sarabande, composer: Debussy
-name: Nocturnes op. 37, composer: Fauré
-name: English Suite No. 2 - Sarabande, composer: Bach
+name: Fantasy in D minor K.397, composer: Mozart
+name: Bourée Fantasque, composer: Chabrier
+name: French Suite No. 1 - Courante, composer: Bach
 
 
 16/05/2016 - 20/05/2016
 
 
-name: Pour le piano 2 - Sarabande, composer: Debussy
-name: Nocturnes op. 37, composer: Fauré
-name: English Suite No. 2 - Sarabande, composer: Bach
+name: Fantasy in D minor K.397, composer: Mozart
+name: Bourée Fantasque, composer: Chabrier
+name: French Suite No. 1 - Courante, composer: Bach
 
 
 23/05/2016 - 26/05/2016
 
 
-name: Pour le piano 2 - Sarabande, composer: Debussy
-name: Nocturnes op. 37, composer: Fauré
-name: English Suite No. 2 - Sarabande, composer: Bach
+name: Fantasy in D minor K.397, composer: Mozart
+name: Bourée Fantasque, composer: Chabrier
+name: French Suite No. 1 - Courante, composer: Bach
 
 
 30/05/2016 - 03/06/2016
 
 
-name: Pour le piano 2 - Sarabande, composer: Debussy
-name: Nocturnes op. 37, composer: Fauré
-name: English Suite No. 2 - Sarabande, composer: Bach
+name: Fantasy in D minor K.397, composer: Mozart
+name: Bourée Fantasque, composer: Chabrier
+name: French Suite No. 1 - Courante, composer: Bach
 
 
 06/06/2016 - 10/06/2016
 
 
-name: Grandmother Tales Op. 31 No. 1, composer: Prokofiev
-name: Mazurka in A minor, composer: Chopin
-name: Sinfonia 13, composer: Bach
+name: Sonata K 386, composer: Scarlatti
+name: Sonata 3. Op. 79 (Alla Tedesca), composer: Beethoven
+name: Songs Without Words Op. 53 no. 5, composer: Mendelssohn
 
 
 13/06/2016 - 17/06/2016
 
 
-name: Grandmother Tales Op. 31 No. 1, composer: Prokofiev
-name: Mazurka in A minor, composer: Chopin
-name: Sinfonia 13, composer: Bach
+name: Sonata K 386, composer: Scarlatti
+name: Sonata 3. Op. 79 (Alla Tedesca), composer: Beethoven
+name: Songs Without Words Op. 53 no. 5, composer: Mendelssohn
 
 
 20/06/2016 - 24/06/2016
 
 
-name: Grandmother Tales Op. 31 No. 1, composer: Prokofiev
-name: Mazurka in A minor, composer: Chopin
-name: Sinfonia 13, composer: Bach
+name: Sonata K 386, composer: Scarlatti
+name: Sonata 3. Op. 79 (Alla Tedesca), composer: Beethoven
+name: Songs Without Words Op. 53 no. 5, composer: Mendelssohn
 
 
 27/06/2016 - 30/06/2016
 
 
-name: Grandmother Tales Op. 31 No. 1, composer: Prokofiev
-name: Mazurka in A minor, composer: Chopin
-name: Sinfonia 13, composer: Bach
+name: Sonata K 386, composer: Scarlatti
+name: Sonata 3. Op. 79 (Alla Tedesca), composer: Beethoven
+name: Songs Without Words Op. 53 no. 5, composer: Mendelssohn
 
 

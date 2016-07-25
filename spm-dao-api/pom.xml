@@ -4,10 +4,10 @@
     <parent>
         <groupId>edu.spiriev.spm</groupId>
         <artifactId>spm-school-plan-manager</artifactId>
-        <version>1.4-SNAPSHOT</version>
+        <version>1.4</version>
     </parent>
     <artifactId>spm-dao-api</artifactId>
-  <version>1.4-SNAPSHOT</version>
+  <version>1.4</version>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>

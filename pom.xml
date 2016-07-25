@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.spiriev.spm</groupId>
     <artifactId>spm-school-plan-manager</artifactId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.4</version>
     <packaging>pom</packaging>
     <name>School Plan Manager</name>
     <scm>
         <connection>scm:git:https://github.com/gspiriev/spm-school-manager.git</connection>
-      <tag>HEAD</tag>
+      <tag>spm-school-plan-manager-1.5</tag>
     </scm>
     <distributionManagement>
         <repository>
