@@ -1,3 +1,0 @@
-#!/bin/bash
-clear
-java edu.spiriev.spm.application.file.AnnualLessonDispositionApp

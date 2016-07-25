@@ -23,7 +23,7 @@ import java.util.List;
  * Loads school dates from the school dates resource file.
  * @author root_spiriev
  */
-//public class SchoolDatesDatabaseParser implements Parser<Date, EntityMarker>{
+public class SchoolDatesDatabaseParser{
 //
 //    @Override
 //    public Date parse(String stringToParse) {
@@ -82,4 +82,4 @@ import java.util.List;
 //    }
 //
 //    
-//}
+}

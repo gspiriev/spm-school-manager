@@ -7,6 +7,7 @@ package edu.spiriev.spm.dao.file;
 
 import edu.spiriev.spm.dao.api.AbstractDao;
 import edu.spiriev.spm.dao.api.Parser;
+import edu.spiriev.spm.domain.model.Student;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -46,6 +47,21 @@ public class AbstractDaoFileImpl<T, E> implements AbstractDao{
         }
         return dataList;
         
+    }
+
+    @Override
+    public void persistStudent(Student student) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+  
+    @Override
+    public Student findStudent(String studentName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void removeStudent(Integer studentId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

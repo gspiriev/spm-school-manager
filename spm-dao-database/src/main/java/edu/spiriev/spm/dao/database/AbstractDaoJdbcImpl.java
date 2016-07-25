@@ -22,7 +22,7 @@ import java.util.List;
  *
  * @author root_spiriev
  */
-//public class AbstractDaoJdbcImpl implements AbstractDao{
+public class AbstractDaoJdbcImpl{
 //
 //    
 //    
@@ -59,6 +59,6 @@ import java.util.List;
 //        
 //    }
 //    
-//}
+}
     
 

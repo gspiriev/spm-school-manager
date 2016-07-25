@@ -22,21 +22,11 @@ import javax.persistence.Persistence;
  */
 public class AnnualLessonDispositionAppOrm {
 
-    public static void main(String[] args) throws Exception {
-        AnnualLessonDispositionAppOrm annualDisposition = new AnnualLessonDispositionAppOrm();
-
-        annualDisposition.run();
-    }
-
-    private void run() {
+    public void run(Map.Entry<Integer, Integer> startEndYear) {
         
-        
-        Map.Entry<Integer, Integer> startEndYear = readUserInput();
-        String[] props = {"Properties in persistence.xml"};
-
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(
-                        new JpaDatabaseConnection("manager1"),
+                        new JpaDatabaseConnection("manager2"),
                         startEndYear.getValue(),
                         startEndYear.getKey());
         

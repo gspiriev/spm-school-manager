@@ -18,7 +18,7 @@ import java.util.List;
  *
  * @author root_spiriev
  */
-//public class JdbcConnection implements BusinessConnection {
+public class JdbcConnection{
 //
 //    @Override
 //    public void commitTransaction() {
@@ -102,4 +102,4 @@ import java.util.List;
 //    
 //    
 //    
-//}
+}

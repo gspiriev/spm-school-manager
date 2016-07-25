@@ -21,7 +21,7 @@ import java.util.List;
  * Loads a list a students from a resource file
  * @author root_spiriev
  */
-//public class StudentDatabaseParser implements Parser<Student, EntityMarker>{
+public class StudentDatabaseParser{
 //
 //    @Override
 //    public Student parse(String stringToParse) {
@@ -78,4 +78,4 @@ import java.util.List;
 //        return students;
 //    }
 //
-//}
+}
