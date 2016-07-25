@@ -19,7 +19,7 @@ import java.util.Date;
 public class GetDataFromFiles implements BusinessConnection {
     
     private final File[] resources;
-    private final String[] props;
+    
     private final AbstractDao<Student> studentDao;
     private final AbstractDao<MusicalPiece> musicalPiecesDao;
     private final AbstractDao<Date> datesDao;
@@ -30,7 +30,6 @@ public class GetDataFromFiles implements BusinessConnection {
         this.resources = new File[] {new File(cl.getResource(props[0]).getFile()),
                     new File(cl.getResource(props[1]).getFile()),
                     new File(cl.getResource(props[2]).getFile())};
-        this.props = props;
         this.studentDao = new AbstractDaoFileImpl<>(resources[0], new StudentParser());                
         this.musicalPiecesDao = new AbstractDaoFileImpl<>(resources[1], new MusicalPieceParser()); 
         this.datesDao = new AbstractDaoFileImpl<>(resources[2], new SchoolDatesParser()); 

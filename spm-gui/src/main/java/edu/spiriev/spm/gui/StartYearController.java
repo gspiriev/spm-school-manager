@@ -6,10 +6,6 @@
 package edu.spiriev.spm.gui;
 
 import edu.spiriev.spm.application.file.AnnualLessonDispositionAppOrm;
-import edu.spiriev.spm.business.logic.SpmBusinessProcess;
-import edu.spiriev.spm.domain.model.Student;
-import edu.spiriev.spm.domain.model.WeeklySchedule;
-import edu.spiriev.spm.persistence.JpaDatabaseConnection;
 import java.util.AbstractMap;
 import java.util.Map;
 import javax.swing.SwingUtilities;
@@ -43,15 +39,8 @@ public class StartYearController {
                 @Override
                 protected Void doInBackground() throws Exception {
                     Map.Entry<Integer, Integer> startEndYear = new AbstractMap.SimpleEntry<>(startYearInt, startYearInt + 1);
-                    Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
-                            .createAllStudentDisposition(
-                                    new JpaDatabaseConnection("manager1"),
-                                    startEndYear.getValue(),
-                                    startEndYear.getKey());
-
-                    
-                    new AnnualLessonDispositionAppOrm().writeOutput(lessonDisposition);
-                    
+                    AnnualLessonDispositionAppOrm runApp = new AnnualLessonDispositionAppOrm();
+                    runApp.run(startEndYear);
                     return null;
                 }
                 

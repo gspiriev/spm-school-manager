@@ -5,6 +5,8 @@
  */
 package edu.spiriev.spm.dao.api;
 
+
+import edu.spiriev.spm.domain.model.Student;
 import java.util.List;
 
 /**
@@ -14,5 +16,10 @@ import java.util.List;
 public interface AbstractDao<T> {
     
     List<T> loadAll();
-     
+    
+    void persistStudent(Student student);
+    
+    Student findStudent(String studentName);
+    
+    void removeStudent(Integer studentId);
 }

@@ -37,7 +37,7 @@ public class SpmBusinessProcess {
         List<Date> dates = bc.getDatesDao().loadAll();
         List<MusicalPiece> musicalPieces = bc.getMusicalPiecesDao().loadAll();
         List<Student> students = bc.getStudentDao().loadAll();
-        
+        bc.commitTransaction();
         try {
             bc.close();
         } catch(Exception e) {

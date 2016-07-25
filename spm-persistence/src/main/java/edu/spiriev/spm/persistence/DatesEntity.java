@@ -16,6 +16,7 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.persistence.Version;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -44,6 +45,7 @@ public class DatesEntity implements Serializable{
     private Integer dateMonth;
     @Column(name = "date_year")
     private Integer dateYear;
+    
 
     public DatesEntity() {
     }

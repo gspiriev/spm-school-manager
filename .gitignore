@@ -23,3 +23,5 @@
 /**/.settings
 /**/.project
 /spm-gui/target/
+*.releaseBackup
+release.properties

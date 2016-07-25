@@ -6,7 +6,6 @@
 package edu.spiriev.spm.application.file;
 
 import edu.spiriev.spm.business.logic.SpmBusinessProcess;
-import edu.spiriev.spm.dao.file.AbstractDaoFileImpl;
 import edu.spiriev.spm.dao.file.GetDataFromFiles;
 import edu.spiriev.spm.domain.model.Student;
 import edu.spiriev.spm.domain.model.WeeklySchedule;
@@ -35,11 +34,6 @@ public class AnnualLessonDispositionAppFileReading {
         Map.Entry<Integer, Integer> startEndYear = readUserInput();
         String[] props = new String[] {
         "Students", "Graded_Pieces_All_CSV.csv", "deprecatedDatesFirst.txt"};
-        ClassLoader cl = this.getClass().getClassLoader();
-        
-        File[] resources = new File[] {new File(cl.getResource(props[0]).getFile()),
-                    new File(cl.getResource(props[1]).getFile()),
-                    new File(cl.getResource(props[2]).getFile())};
         
         Map<Student, WeeklySchedule> lessonDisposition = SpmBusinessProcess.instance
                 .createAllStudentDisposition(

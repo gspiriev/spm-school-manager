@@ -19,6 +19,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Version;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -44,6 +45,7 @@ public class StudentGradeEntity implements Serializable {
     @JoinColumn(name = "student_id", referencedColumnName = "student_id")
     @OneToOne(optional = false, fetch = FetchType.LAZY)
     private StudentEntity studentId;
+   
 
     public StudentGradeEntity() {
     }

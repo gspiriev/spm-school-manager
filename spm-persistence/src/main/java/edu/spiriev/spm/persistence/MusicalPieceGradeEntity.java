@@ -17,6 +17,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Version;
 import javax.xml.bind.annotation.XmlRootElement;
 import org.hibernate.annotations.NamedQuery;
 
@@ -42,6 +43,7 @@ public class MusicalPieceGradeEntity implements Serializable {
     @JoinColumn(name = "musicalPiece_id", referencedColumnName = "musicalPiece_id")
     @OneToOne(optional = false, fetch = FetchType.LAZY)
     private MusicalPiecesEntity musicalPieceId;
+   
 
     public MusicalPieceGradeEntity(Integer musicalPieceGradeId) {
         this.musicalPieceGradeId = musicalPieceGradeId;

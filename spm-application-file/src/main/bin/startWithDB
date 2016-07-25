@@ -1,3 +1,3 @@
 #!/bin/bash
 clear
-java edu.spiriev.spm.application.file.AnnualLessonDispositionApp
+java edu.spiriev.spm.gui.SpmSwingGuiRun
