@@ -42,13 +42,18 @@ public class AnnualLessonDisposition {
     ) {
 
         List<MusicalPiece> studentMusicalPieces = makeStudentMusicalPieces(musicalPieces, student);
+        if (studentMusicalPieces.isEmpty()) {
+            throw new IllegalArgumentException("There are no suitable musical pieces for a student. Check student ability or musical" +
+                                                                                           " piece complexity");
+        }
 
         LinkedHashMap<StudyDate, Lesson> schedule = new LinkedHashMap<>();
         for (StudyDate studyDate : studyDates) {
 
             schedule.put(studyDate, new Lesson(null, null, null));
         }
-        initializeSchedule(schedule, studentMusicalPieces, student);
+        initializeSchedule(schedule, studentMusicalPieces, student) ;
+        
         WeeklySchedule specificSchedule = new WeeklySchedule(schedule);
 
         return specificSchedule;
@@ -90,16 +95,21 @@ public class AnnualLessonDisposition {
             },
             (Object l, Object m) -> {
                 ((Lesson) l).setPiece3((MusicalPiece) m);
-            },};
+            }};
 
         MusicalPieceStudyCalculator calc = new MusicalPieceStudyCalculator(10);
 
         Iterator<MusicalPiece> musicalPieceSequence = studentMusicalPieces.iterator();
         //need method refactoring
         for (BiConsumer<Lesson, MusicalPiece> lessonPieceSetter : lessonPieceSetters) {
-
+            
             int studiedWeeks = 1;
-            MusicalPiece mp = musicalPieceSequence.next();
+            MusicalPiece mp;
+            if (musicalPieceSequence.hasNext()) {
+                mp = musicalPieceSequence.next();
+            } else {
+                mp = studentMusicalPieces.get(0);
+            }
             int mpStudyWeeks = calc.calculateStudyWeeks(student, mp);
 
             for (Lesson lesson : schedule.values()) {
@@ -107,12 +117,17 @@ public class AnnualLessonDisposition {
                 if (studiedWeeks == mpStudyWeeks) {
 
                     studiedWeeks = 1;
-                    mp = musicalPieceSequence.next();
+                    if (musicalPieceSequence.hasNext()) {
+                        mp = musicalPieceSequence.next();
+                        mpStudyWeeks = calc.calculateStudyWeeks(student, mp);
+                    } else {
+                        mp = studentMusicalPieces.get(0);
+                        mpStudyWeeks = calc.calculateStudyWeeks(student, mp);
+                    }
                 }
                 lessonPieceSetter.accept(lesson, mp);
                 studiedWeeks++;
             }
         }
     }
-
 }

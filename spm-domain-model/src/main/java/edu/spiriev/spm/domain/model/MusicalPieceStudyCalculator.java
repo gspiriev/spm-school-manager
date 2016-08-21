@@ -29,11 +29,12 @@ public class MusicalPieceStudyCalculator {
         try {
             
             int learningCapability = student.getAbility() - mPiece.getComplexity();
+            
             weeks = maximumStudyPeriodInWeeks - learningCapability;
         } catch (IllegalArgumentException e) {
             
             System.err.println("Student ability and musical piece complexity " +
-                                "must numbers between 1 and 10 ");
+                                "must  be numbers between 1 and 10 ");
         }
         
         return weeks;

@@ -54,6 +54,14 @@ public class DatesEntity implements Serializable{
         this.dateId = dateId;
     }
 
+    public DatesEntity(Integer dateDay, Integer dateMonth, Integer dateYear) {
+        this.dateDay = dateDay;
+        this.dateMonth = dateMonth;
+        this.dateYear = dateYear;
+    }
+    
+    
+
     public Integer getDateId() {
         return dateId;
     }

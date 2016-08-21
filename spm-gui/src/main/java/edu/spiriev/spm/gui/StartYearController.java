@@ -5,9 +5,12 @@
  */
 package edu.spiriev.spm.gui;
 
-import edu.spiriev.spm.application.file.AnnualLessonDispositionAppOrm;
+import edu.spiriev.spm.business.logic.SpmBusinessProcess;
+import edu.spiriev.spm.dao.api.BusinessConnection;
 import java.util.AbstractMap;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 
@@ -18,19 +21,16 @@ import javax.swing.SwingWorker;
 public class StartYearController {
     
     private StartYearView view;
-    private final AnnualLessonDispositionAppOrm app;
+    private final BusinessConnection bc;
 
-    public StartYearController(AnnualLessonDispositionAppOrm app) {
-        this.app = app;
+    public StartYearController(BusinessConnection bc) {
+        this.bc = bc;
     }
     
-    
-    
     public void start() {
-        
-        SwingUtilities.invokeLater(() -> {
+            SwingUtilities.invokeLater(() -> {
             view = new StartYearView();
-            view.addButtonEvents(this);
+            view.addButtonEventsStartYear(this);
         });
     }
 
@@ -41,19 +41,25 @@ public class StartYearController {
             view.getLabel().setText("Please enter a valid year");
 
         } else {
+            
             SwingWorker<Void, Void> worker = new SwingWorker<Void, Void>() {
 
                 @Override
                 protected Void doInBackground() throws Exception {
                     Map.Entry<Integer, Integer> startEndYear = new AbstractMap.SimpleEntry<>(startYearInt, startYearInt + 1);
-                    app.createStudentDisposition(startEndYear);
+                    SpmBusinessProcess.instance.createAllStudentDisposition(bc, startEndYear.getValue(), startEndYear.getKey());
                     return null;
-                }
+                } 
                 
                 @Override
                 protected void done() {
-                    
-                    view.getLabel().setText("Disposition file created in " + System.getProperty("user.dir"));
+                    try{
+                     get();
+                     view.getLabel().setText("Schedule created!");
+                    } catch (ExecutionException | InterruptedException  e) {
+                        String msg = e.getMessage();
+                        JOptionPane.showMessageDialog(null, msg);
+                    }                 
                 }
             };
             

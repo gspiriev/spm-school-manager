@@ -5,7 +5,7 @@
   <!-- TODO: a jarjar format would be better -->
   <id>jar-with-dependencies</id>
   <formats>
-    <format>jar</format>
+    <format>zip</format>
   </formats>
   <includeBaseDirectory>false</includeBaseDirectory>
 	
@@ -19,13 +19,12 @@
           <excludes>
               <exclude>**/application.properties</exclude>
               <exclude>**/deprecatedDatesFirst.txt</exclude>
+	      <exclude>**/log4j.properties</exclude>
               <exclude>**/Graded_Pieces_All_CSV.csv</exclude>
-              <exclude>**/log4j.properties</exclude>
               <exclude>**/spmDB</exclude>
               <exclude>**/spmHsqlDB.properties</exclude>
               <exclude>**/spmHsqlDB.script</exclude>
               <exclude>**/Students.txt</exclude>
-              <exclude>**/.log4j.properties.swp</exclude>
               <exclude>**/META-INF/maven/**</exclude>
           </excludes>
       </unpackOptions>
@@ -42,6 +41,10 @@
       <fileSet>
           <directory>src/main/resources</directory>
           <outputDirectory>/res</outputDirectory>
+      </fileSet>
+      <fileSet>
+          <directory>src/main/config</directory>
+          <outputDirectory>/</outputDirectory>
       </fileSet>
   </fileSets>
 </assembly>

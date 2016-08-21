@@ -3,6 +3,7 @@ package edu.spiriev.spm.gui;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -64,8 +65,10 @@ public class StartYearView {
         return enterYearFrm;
     }
 
-    public void addButtonEvents(StartYearController startCtrl) {
-
+    public void addButtonEventsStartYear(StartYearController startCtrl) {
+        for (ActionListener al: this.okButton.getActionListeners()) {
+            this.okButton.removeActionListener(al);
+        }
         this.okButton.addActionListener((ActionEvent e) -> {
 
             startCtrl.onClickOk();

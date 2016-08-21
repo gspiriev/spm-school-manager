@@ -28,4 +28,14 @@ public class MusicalPieceHibernateParser implements Parser<MusicalPiece, Musical
         return nextPiece;
     }
     
+    @Override
+    public boolean isNumeric(String str) {
+        try {
+            int i = Integer.parseInt(str);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        return true;
+    }
+    
 }

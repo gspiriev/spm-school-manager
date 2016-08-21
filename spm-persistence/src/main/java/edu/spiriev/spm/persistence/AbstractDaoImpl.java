@@ -25,6 +25,7 @@ public class AbstractDaoImpl<T, E> implements AbstractDao{
     private final EntityManager em;
     private final Parser<T, E> parser;
     private final Class<E> entityType;
+    
 
     public AbstractDaoImpl(EntityManager em, Parser parser, Class<E> entityType) {
             this.em = em;
@@ -88,12 +89,16 @@ public class AbstractDaoImpl<T, E> implements AbstractDao{
     public void persistDate(Integer[] date) {
         em.getTransaction().begin();
         DatesEntity dateEntity = new DatesEntity();
-        em.persist(dateEntity);
-        em.flush();
-        
         dateEntity.setDateDay(date[0]);
         dateEntity.setDateMonth(date[1]);
         dateEntity.setDateYear(date[2]);
+        if (em.contains(dateEntity)) {
+            em.merge(dateEntity);
+        } else {
+            em.persist(dateEntity);
+        }
+        
+        em.flush();
     }
     
     @Override
@@ -112,7 +117,13 @@ public class AbstractDaoImpl<T, E> implements AbstractDao{
         em.getTransaction().begin();
         Query query = em.createNamedQuery("StudentEntity.findByStudentName").setParameter("studentName", studentName);
         StudentEntity studentEntity = (StudentEntity)query.getSingleResult();
-        em.remove(studentEntity);
+        if (em.contains(studentEntity)) {
+            em.merge(studentEntity);
+            em.remove(studentEntity);
+        } else {
+            em.remove(studentEntity);
+        }
+        em.flush();
     }
 
     @Override
@@ -120,17 +131,28 @@ public class AbstractDaoImpl<T, E> implements AbstractDao{
         em.getTransaction().begin();
         Query query = em.createNamedQuery("MusicalPiecesEntity.findByPieceName").setParameter("pieceName", musicalPiece);
         MusicalPiecesEntity mpEntity = (MusicalPiecesEntity)query.getSingleResult();
-        em.remove(mpEntity);
+        if (em.contains(mpEntity)) {
+            em.merge(mpEntity);
+            em.remove(mpEntity);
+        } else {
+            em.remove(mpEntity);
+        }
+        em.flush();
     }
 
     @Override
     public void removeDate(Integer[] date) {
         em.getTransaction().begin();
-        Query query = em.createNativeQuery("DELETE FROM dates WHERE date_day=" + date[0] + " AND date_month=" + date[1]);
-        query.executeUpdate();
+        Query selectQuery = em.createNamedQuery("DatesEntity.findbyDayMonth").setParameter("dateDay", date[0])
+                                                                             .setParameter("dateMonth", date[1]);
+        DatesEntity entity = (DatesEntity)selectQuery.getSingleResult();
+        if (em.contains(entity)) {
+            em.merge(entity);
+            em.remove(entity);
+        } else {
+            em.remove(entity);
+        }
+        em.flush();
     }
 
-    
-    
-    
 }

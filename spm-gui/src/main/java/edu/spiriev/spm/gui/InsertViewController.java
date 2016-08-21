@@ -5,11 +5,11 @@
  */
 package edu.spiriev.spm.gui;
 
-import edu.spiriev.spm.application.file.AnnualLessonDispositionAppOrm;
+import edu.spiriev.spm.business.logic.SpmBusinessProcess;
+import edu.spiriev.spm.dao.api.BusinessConnection;
 import edu.spiriev.spm.domain.model.Grade;
 import edu.spiriev.spm.domain.model.MusicalPiece;
 import edu.spiriev.spm.domain.model.Student;
-import java.util.List;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
@@ -22,16 +22,14 @@ import javax.swing.table.DefaultTableModel;
 public class InsertViewController {
     
     public final InsertView insertView;
-    private final AnnualLessonDispositionAppOrm app;
     private final DefaultTableModel tableModels;
+    private final BusinessConnection bc;
 
-    public InsertViewController(InsertView insertView, AnnualLessonDispositionAppOrm app, DefaultTableModel tableModels) {
+    public InsertViewController(InsertView insertView, DefaultTableModel tableModels, BusinessConnection bc) {
         this.insertView = insertView;
-        this.app = app;
         this.tableModels = tableModels;
+        this.bc = bc;
     }
-
-    
 
     public void startForStudent() {
         SwingUtilities.invokeLater(() -> {
@@ -63,15 +61,21 @@ public class InsertViewController {
                 String name = fields[0].getText();
                 Integer grade = new Integer(fields[1].getText().trim());
                 Integer ability = new Integer(fields[2].getText().trim());
-                String[] modelUpdate = new String[]{name, Grade.values()[grade - 1].toString(), fields[2].getText().trim()};
-                Student studentToInsert = new Student(name, Grade.values()[grade - 1], ability );
-                app.persistStudent(studentToInsert);
-                tableModels.addRow(modelUpdate);
-                return null;
+                if (grade > 12 || grade <= 0 || ability > 10 || ability <= 0) {
+                    insertView.getLabel().setText("Invalid student field!");
+                    return null;
+                } else {
+                    String[] modelUpdate = new String[]{name, Grade.values()[grade - 1].toString(), fields[2].getText().trim()};
+                    Student studentToInsert = new Student(name, Grade.values()[grade - 1], ability );
+                    SpmBusinessProcess.instance.insertStudent(bc, studentToInsert);
+                    tableModels.addRow(modelUpdate);
+                    return null;
+                }
             }
         };
         
         worker.execute();
+        
     }
     
     public void onClickInsertMusicalPiece() {
@@ -82,18 +86,24 @@ public class InsertViewController {
                 JTextField[] fields = insertView.getFields();
                 String name = fields[0].getText();
                 String composerName = fields[1].getText();
-                Integer complexity = new Integer(fields[2].getText().trim());
-                Integer grade = new Integer(fields[3].getText().trim());
-                String[] modelUpdate = new String[]{name, composerName, fields[2].getText().trim(), Grade.values()[grade - 1].toString()};
+                Integer grade = new Integer(fields[2].getText().trim());
+                Integer complexity = new Integer(fields[3].getText().trim());
                 
-                MusicalPiece mPiece = new MusicalPiece(name, composerName, complexity, Grade.values()[grade - 1]);
-                app.persistMusicalPiece(mPiece);
-                tableModels.addRow(modelUpdate);
-                return null;
+                if (grade > 12 || grade <= 0 || complexity > 10 || complexity <= 0) {
+                    insertView.getLabel().setText("Invalid musical piece field!");
+                    return null;
+                } else {
+                    String[] modelUpdate = new String[]{name, composerName,  Grade.values()[grade - 1].toString(), fields[3].getText().trim()};
+                    MusicalPiece mPiece = new MusicalPiece(name, composerName, complexity, Grade.values()[grade - 1]);
+                    SpmBusinessProcess.instance.insertMusicalPiece(bc, mPiece);
+                    tableModels.addRow(modelUpdate);
+                    return null;
+                }
             }
         };
         
         worker.execute();
+        
     }
     
     public void onClickInsertDate() {
@@ -106,15 +116,23 @@ public class InsertViewController {
                 date[0] = new Integer(fields[0].getText().trim());
                 date[1] = new Integer(fields[1].getText().trim());
                 date[2] = new Integer(fields[2].getText().trim());
-                String[] modelUpdate = new String[]{fields[0].getText().trim() + "/" + fields[1].getText().trim()
-                                                                               + "/" + fields[2].getText().trim()};
-                app.persistDate(date);
-                tableModels.addRow(modelUpdate);
-                return null;
+                if (date[0] > 31 || date[1] > 12 || date[2] > 2099 || 
+                    date[0] <= 0 || date[1] <= 0 || date[2] <= 0) {
+                    
+                    insertView.getLabel().setText("Please enter a valid date");
+                    return null;
+                } else {
+                    String[] modelUpdate = new String[]{fields[0].getText().trim() + "/" + fields[1].getText().trim()
+                                                                                   + "/" + fields[2].getText().trim()};
+                    SpmBusinessProcess.instance.insertDate(bc, date);
+                    tableModels.addRow(modelUpdate);
+                    return null;
+                }
             }
         };
         
         worker.execute();
+        
     }
     
     public void onClickCancel() {

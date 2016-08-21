@@ -46,6 +46,11 @@ public class JpaDatabaseConnection implements BusinessConnection {
         return em;
     }
 
+    public EntityManagerFactory getEmf() {
+        return emf;
+    }
+    
+
     @Override
     public AbstractDao<Student> getStudentDao() {
             return studentDao;
@@ -66,7 +71,7 @@ public class JpaDatabaseConnection implements BusinessConnection {
       try {
           em.getTransaction().commit();
       } catch (TransactionException e) {
-          em.getTransaction().rollback();
+          e.printStackTrace();
       }
     }
 

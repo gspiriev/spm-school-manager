@@ -5,7 +5,7 @@
  */
 package edu.spiriev.spm.gui;
 
-import edu.spiriev.spm.application.file.AnnualLessonDispositionAppOrm;
+import edu.spiriev.spm.dao.api.BusinessConnection;
 import javax.swing.SwingUtilities;
 
 /**
@@ -15,28 +15,27 @@ import javax.swing.SwingUtilities;
 public class MainPanelController {
     
     private MainPanelView mainPanelView;
-    private final AnnualLessonDispositionAppOrm app;
+    private final BusinessConnection bc;
 
-    public MainPanelController(AnnualLessonDispositionAppOrm app) {
-        this.app = app;
+    public MainPanelController(BusinessConnection bc) {
+        this.bc = bc;
     }
     
     public void start() {
         
         SwingUtilities.invokeLater(() -> {
             mainPanelView = new MainPanelView();
-            mainPanelView.addButtonEvents(this);
+            mainPanelView.addButtonEventsMainPanel(this);
         });
-        
     }
     
     public void onClickCreateSchedule() {
-        StartYearController ctrl = new StartYearController(app);
+        StartYearController ctrl = new StartYearController(bc);
         ctrl.start();
     }
     
     public void onClickEditData() {
-        EditDataController ctrl = new EditDataController(app);
+        EditDataController ctrl = new EditDataController(bc);
         ctrl.start();
     }
 }

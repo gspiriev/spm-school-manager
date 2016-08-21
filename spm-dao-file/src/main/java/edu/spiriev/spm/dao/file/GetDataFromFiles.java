@@ -11,6 +11,7 @@ import edu.spiriev.spm.domain.model.MusicalPiece;
 import edu.spiriev.spm.domain.model.Student;
 import java.io.File;
 import java.util.Date;
+import java.util.Properties;
 
 /**
  *
@@ -24,12 +25,12 @@ public class GetDataFromFiles implements BusinessConnection {
     private final AbstractDao<MusicalPiece> musicalPiecesDao;
     private final AbstractDao<Date> datesDao;
 
-    public GetDataFromFiles(String[] props) {
+    public GetDataFromFiles(Properties props) {
         ClassLoader cl = this.getClass().getClassLoader();
-        
-        this.resources = new File[] {new File(cl.getResource(props[0]).getFile()),
-                    new File(cl.getResource(props[1]).getFile()),
-                    new File(cl.getResource(props[2]).getFile())};
+       
+        this.resources = new File[] {new File(cl.getResource(props.getProperty("studentsFile")).getFile()),
+                    new File(cl.getResource(props.getProperty("musicalPiecesFile")).getFile()),
+                    new File(cl.getResource(props.getProperty("datesFile")).getFile())};
         this.studentDao = new AbstractDaoFileImpl<>(resources[0], new StudentParser());                
         this.musicalPiecesDao = new AbstractDaoFileImpl<>(resources[1], new MusicalPieceParser()); 
         this.datesDao = new AbstractDaoFileImpl<>(resources[2], new SchoolDatesParser()); 
@@ -42,7 +43,7 @@ public class GetDataFromFiles implements BusinessConnection {
     
     @Override
     public void commitTransaction() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return;
     }
 
     @Override

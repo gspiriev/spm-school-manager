@@ -9,7 +9,21 @@
     <artifactId>spm-application-file</artifactId>
   <version>1.6-SNAPSHOT</version>
     <packaging>jar</packaging>
-    
+   <build>
+   <plugins>   
+     <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>edu.spiriev.spm.application.file.AnnualLessonDispositionApp</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
+   </build>
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
@@ -34,6 +48,11 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>spm-persistence</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>spm-gui</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

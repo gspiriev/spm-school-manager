@@ -1,0 +1,3 @@
+#!/bin/bash
+clear
+java -Dlog4j.configuration=./res/log4j.properties edu.spiriev.spm.application.file.AnnualLessonDispositionApp

@@ -14,6 +14,9 @@ import edu.spiriev.spm.domain.model.AnnualLessonDisposition;
 import edu.spiriev.spm.domain.model.MusicalPiece;
 import edu.spiriev.spm.domain.model.StudyDate;
 import edu.spiriev.spm.domain.model.WeeklySchedule;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -29,11 +32,10 @@ import java.util.Map;
 public class SpmBusinessProcess {
     
     public static final SpmBusinessProcess instance = new SpmBusinessProcess();
-    
+       
     public List<Date> getDates(BusinessConnection bc) {
         List<Date> allDates = bc.getDatesDao().loadAll();
         bc.commitTransaction();
-        
         return allDates;
     }
     
@@ -85,7 +87,9 @@ public class SpmBusinessProcess {
         Map<Student, WeeklySchedule> lessonDisposition = new LinkedHashMap<>();
         
         List<Date> dates = bc.getDatesDao().loadAll();
+        bc.commitTransaction();
         List<MusicalPiece> musicalPieces = bc.getMusicalPiecesDao().loadAll();
+        bc.commitTransaction();
         List<Student> students = bc.getStudentDao().loadAll();
         bc.commitTransaction();
         
@@ -116,6 +120,7 @@ public class SpmBusinessProcess {
                                                                             musicalPieces);
            lessonDisposition.put(st, specificSchedule);
         }
+        writeOutput(lessonDisposition);
         return lessonDisposition;
     }
     
@@ -183,6 +188,32 @@ public class SpmBusinessProcess {
         }
 
         return datesInAWeek;
+    }
+    
+    public void writeOutput(Map<Student, WeeklySchedule> lessonDisposition) {
+
+        File outFile = new File(".", "AnnualLessonDisposition.txt");
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(outFile))) {
+
+            while (lessonDisposition.size() > 0) {
+
+                Map.Entry<Student, WeeklySchedule> dispositionSetEntry
+                        = lessonDisposition.entrySet().iterator().next();
+
+                lessonDisposition.remove(dispositionSetEntry.getKey());
+                String keySt = dispositionSetEntry.getKey().toString() + "\n" + "\n";
+                String vaSt = dispositionSetEntry.getValue().toString();
+                writer.write(keySt);
+                writer.write(vaSt);
+                writer.flush();
+            }
+
+            System.out.println("Disposition file created in " + System.getProperty("user.dir"));
+        } catch (Exception e) {
+
+            System.out.println("No output file or path found");
+        }
     }
    
 }

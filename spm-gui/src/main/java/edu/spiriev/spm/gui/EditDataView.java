@@ -68,7 +68,7 @@ public class EditDataView {
     
     
 
-    public void addButtonEvents(EditDataController ctrl) {
+    public void addButtonEventsEditData(EditDataController ctrl) {
         this.editDates.addActionListener((ActionEvent e) -> {
             ctrl.onClickEditDates();
         });

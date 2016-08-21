@@ -23,63 +23,28 @@ import java.util.List;
  * Loads school dates from the school dates resource file.
  * @author root_spiriev
  */
-public class SchoolDatesDatabaseParser{
-//
-//    @Override
-//    public Date parse(String stringToParse) {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-//
-//    @Override
-//    public Date parse(EntityMarker entity) {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-//    
-//    
-//    
-//    private final Connection conn;
-//
-//    public SchoolDatesDatabaseParser(Connection conn) {
-//        this.conn = conn;
-//    }
-//    
-//    
-//    @Override
-//    public List<Date> loadDates(){
-//
-//        ArrayList<Date> noSchoolDateList = new ArrayList<>();
-//        
-//        try {
-//            
-//            Statement stmt = conn.createStatement();
-//            String sql = "SELECT date_day, date_month, date_year FROM dates";
-//            ResultSet rs = stmt.executeQuery(sql);
-//          
-//            while(rs.next()) {
-//               
-//                String dateString = rs.getString(1) + "/" + rs.getString(2) + "/" + rs.getString(3);
-//                
-//                DateFormat dFormat = new SimpleDateFormat("dd/MM/yyyy");
-//                
-//                try{
-//                    
-//                    Date date = dFormat.parse(dateString);
-//                    noSchoolDateList.add(date);
-//                } catch (ParseException e) {
-//                    
-//                    e.printStackTrace();
-//                }
-//                
-//            }
-//            
-//        } catch (SQLException e) {
-//            
-//            System.err.println("Invalid SQL query");
-//            e.printStackTrace();
-//        }
-//        
-//        return noSchoolDateList;
-//    }
-//
-//    
+public class SchoolDatesDatabaseParser implements Parser<Date, Date>{
+
+    @Override
+    public Date parse(String stringToParse) {
+                Date date = null;
+                DateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+                try {
+                    date = sdf.parse(stringToParse);
+                } catch(ParseException pe) {
+                    System.err.println("Cannot parse date");
+                }
+                
+                return date;
+    }
+
+    @Override
+    public Date parse(Date entity) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean isNumeric(String str) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

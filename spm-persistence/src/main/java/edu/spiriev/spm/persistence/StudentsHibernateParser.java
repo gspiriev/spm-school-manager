@@ -29,4 +29,14 @@ public class StudentsHibernateParser implements Parser<Student, StudentEntity> {
         
         return student;
     }
+    
+    @Override
+    public boolean isNumeric(String str) {
+        try {
+            int i = Integer.parseInt(str);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        return true;
+    }
 }

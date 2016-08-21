@@ -19,10 +19,10 @@ import javax.swing.SwingConstants;
  */
 public class MainPanelView  {
     
-    private final JFrame mainFrame = new JFrame("School Project Manager");
+    private final JFrame mainFrame = new JFrame("School Plan Manager");
     private final JButton createSchedule = new JButton("Create schedule");
     private final JButton editData = new JButton("Edit data");
-    private final JLabel mainLabel = new JLabel("Welcome to \"School Project Manager\"", SwingConstants.CENTER);
+    private final JLabel mainLabel = new JLabel("Welcome to \"School Plan Manager\"", SwingConstants.CENTER);
 
     public MainPanelView() {
         
@@ -41,7 +41,7 @@ public class MainPanelView  {
         mainFrame.setVisible(true);
     }
     
-    public void addButtonEvents(MainPanelController ctrl) {
+    public void addButtonEventsMainPanel(MainPanelController ctrl) {
         
         this.createSchedule.addActionListener((ActionEvent e) -> {
             

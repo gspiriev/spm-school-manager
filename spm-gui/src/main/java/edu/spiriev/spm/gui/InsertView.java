@@ -11,6 +11,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 /**
@@ -23,6 +24,7 @@ public class InsertView {
     private final JButton insert = new JButton("Insert");
     private final JButton cancel = new JButton("Cancel");
     private final JTextField[] fields;
+    JLabel label = new JLabel();
 
     public InsertView(JFrame frame, JTextField[] fields) {
         this.frame = frame;
@@ -45,6 +47,7 @@ public class InsertView {
 
         this.frame.add(insert);
         this.frame.add(cancel);
+        this.frame.add(label);
         this.frame.setLocationRelativeTo(null);
         this.frame.setVisible(true);
     }
@@ -89,6 +92,14 @@ public class InsertView {
 
     public JTextField[] getFields() {
         return fields;
+    }
+
+    public JLabel getLabel() {
+        return label;
+    }
+    
+    public JFrame getFrame() {
+        return frame;
     }
 
 }

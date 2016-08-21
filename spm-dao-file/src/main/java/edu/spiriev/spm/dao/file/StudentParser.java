@@ -31,4 +31,13 @@ public class StudentParser implements Parser<Student, Student>{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
+    @Override
+    public boolean isNumeric(String str) {
+        try {
+            int i = Integer.parseInt(str);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        return true;
+    }
 }

@@ -5,11 +5,11 @@
  */
 package edu.spiriev.spm.gui;
 
-import edu.spiriev.spm.application.file.AnnualLessonDispositionAppOrm;
+import edu.spiriev.spm.business.logic.SpmBusinessProcess;
+import edu.spiriev.spm.dao.api.BusinessConnection;
 import edu.spiriev.spm.domain.model.MusicalPiece;
 import edu.spiriev.spm.domain.model.Student;
 import java.awt.CardLayout;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
@@ -36,16 +36,16 @@ public class EditDataController {
     private String[][] studentsArray;
     private String[][] musicalPieceArray;
     private String[][] datesArray;
-    private final AnnualLessonDispositionAppOrm app;
+    private final BusinessConnection bc;
 
-    public EditDataController(AnnualLessonDispositionAppOrm app) {
-        this.app = app;
+    public EditDataController(BusinessConnection bc) {
+        this.bc = bc;
     }
-
+    
     public void start() {
         SwingUtilities.invokeLater(() -> {
             editDataView = new EditDataView();
-            editDataView.addButtonEvents(this);
+            editDataView.addButtonEventsEditData(this);
         });
 
     }
@@ -70,7 +70,7 @@ public class EditDataController {
 
                 @Override
                 protected Void doInBackground() throws Exception {
-                    datesList = app.getAllDates();
+                    datesList = SpmBusinessProcess.instance.getDates(bc);
                     datesArray = new String[datesList.size()][1];
 
                     for (int i = 0; i < datesList.size(); i++) {
@@ -83,6 +83,7 @@ public class EditDataController {
 
                 @Override
                 protected void done() {
+                    
                     DefaultTableModel dtm = new DefaultTableModel(datesArray, new String[]{"Dates"});
                     tableModels[0] = dtm;
                     JTable table = new JTable(dtm);
@@ -128,7 +129,7 @@ public class EditDataController {
 
                 @Override
                 protected Void doInBackground() throws Exception {
-                    musicalPieceList = app.getAllMusicalPieces();
+                    musicalPieceList = SpmBusinessProcess.instance.getMusicalPieces(bc);
                     musicalPieceArray = new String[musicalPieceList.size()][4];
 
                     for (int i = 0; i < musicalPieceList.size(); i++) {
@@ -143,11 +144,11 @@ public class EditDataController {
 
                 @Override
                 protected void done() {
-
+                    
                     DefaultTableModel dtmPieces = new DefaultTableModel(musicalPieceArray, new String[]{"Name",
                         "Composer",
-                        "Complexity",
-                        "Grade"});
+                        "Grade",
+                        "Complexity"});
                     tableModels[1] = dtmPieces;
                     JTable musicalPieceTable = new JTable(dtmPieces);
                     JScrollPane newScrollPane = new JScrollPane(musicalPieceTable);
@@ -196,7 +197,7 @@ public class EditDataController {
                 @Override
                 protected Void doInBackground() throws Exception {
 
-                    studentsList = app.getAllStudents();
+                    studentsList = SpmBusinessProcess.instance.getStudents(bc);
                     studentsArray = new String[studentsList.size()][3];
                     for (int i = 0; i < studentsList.size(); i++) {
                         studentsArray[i][0] = studentsList.get(i).getName();
@@ -208,6 +209,7 @@ public class EditDataController {
 
                 @Override
                 protected void done() {
+                   
                     DefaultTableModel dtmStudents = new DefaultTableModel(studentsArray, new String[]{"Name",
                                                                                               "Grade",
                                                                                               "Ability"});
@@ -246,12 +248,13 @@ public class EditDataController {
                 @Override
                 protected Void doInBackground() throws Exception {
                     String studentName = (String) dtm.getValueAt(table.getSelectedRow(), 0);
-                    app.removeStudent(studentName);
+                    SpmBusinessProcess.instance.removeStudent(bc, studentName);
                     return null;
                 }
 
                 @Override
                 protected void done() {
+                    
                     dtm.removeRow(table.getSelectedRow());
                 }
             };
@@ -265,7 +268,7 @@ public class EditDataController {
         fields[0] = new JTextField("Student Name", 20);
         fields[1] = new JTextField("Grade", 6);
         fields[2] = new JTextField("Ability", 8);
-        InsertViewController ctrl = new InsertViewController(new InsertView(new JFrame(), fields), app, tableModels[2]);
+        InsertViewController ctrl = new InsertViewController(new InsertView(new JFrame(), fields), tableModels[2], bc);
         ctrl.startForStudent();
 
     }
@@ -280,12 +283,13 @@ public class EditDataController {
                 protected Void doInBackground() throws Exception {
                     String musicalPieceName = (String) dtm.getValueAt(table.getSelectedRow(), 0);
 
-                    app.removeMusicalPiece(musicalPieceName);
+                     SpmBusinessProcess.instance.removeMusicalPiece(bc, musicalPieceName);
                     return null;
                 }
 
                 @Override
                 protected void done() {
+                    
                     dtm.removeRow(table.getSelectedRow());
                 }
             };
@@ -299,9 +303,9 @@ public class EditDataController {
         JTextField[] fields = new JTextField[4];
         fields[0] = new JTextField("Musical Piece Name", 20);
         fields[1] = new JTextField("Composer", 15);
-        fields[2] = new JTextField("Complexity", 8);
-        fields[3] = new JTextField("Grade", 15);
-        InsertViewController ctrl = new InsertViewController(new InsertView(new JFrame(), fields), app, tableModels[1]);
+        fields[2] = new JTextField("Grade", 8);
+        fields[3] = new JTextField("Complexity", 15);
+        InsertViewController ctrl = new InsertViewController(new InsertView(new JFrame(), fields),tableModels[1], bc);
         ctrl.startForMusicalPiece();
     }
 
@@ -319,7 +323,7 @@ public class EditDataController {
                     dateToRemove[0] = Integer.parseInt(dateArray[0]);
                     dateToRemove[1] = Integer.parseInt(dateArray[1]);
                     dateToRemove[2] = Integer.parseInt(dateArray[2]);
-                    app.removeDate(dateToRemove);
+                     SpmBusinessProcess.instance.removeDate(bc, dateToRemove);
                     return null;
                 }
 
@@ -328,7 +332,6 @@ public class EditDataController {
                     dtm.removeRow(table.getSelectedRow());
                 }
             };
-
             worker.execute();
         }
     }
@@ -339,7 +342,7 @@ public class EditDataController {
         fields[1] = new JTextField("Month", 10);
         fields[2] = new JTextField("Year", 7);
 
-        InsertViewController ctrl = new InsertViewController(new InsertView(new JFrame(), fields), app, tableModels[0]);
+        InsertViewController ctrl = new InsertViewController(new InsertView(new JFrame(), fields),tableModels[0], bc);
         ctrl.startForDate();
     }
 

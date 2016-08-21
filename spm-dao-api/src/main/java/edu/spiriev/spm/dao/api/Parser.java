@@ -14,5 +14,7 @@ public interface Parser<T, E> {
      T parse(String stringToParse);
      
      T parse(E entity);
+     
+     boolean isNumeric(String str);
     
 }
