@@ -10,7 +10,12 @@ in Bulgarian musical high schools.
 Installation
 ------------------------------
 
-Extract the archive in a folder of your choosing. Use the bat file in root folder to run under Windows or the .sh to run under Unix/Linux. 
+Extract the archive in a folder of your choosing. Use the bat file in root folder to run under Windows or the .sh to run under Unix/Linux.
+
+Data storage
+------------------------------
+
+You can change the type of data storage in the file application.properties. Available options are Hibernate ORM, JDBC or file reading.  
 
 How does it work?
 ------------------------------

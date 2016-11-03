@@ -13,7 +13,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Date;
-import java.util.List;
 import java.util.Properties;
 
 /**
@@ -43,7 +42,7 @@ public class JdbcConnection implements BusinessConnection{
         } catch (ClassNotFoundException e) {
             System.err.println("Jdbc driver not found");
         }
-        String studentsQueryColumns = "Student.student_name, Student.ability, student_grade.grade_id";
+        String studentsQueryColumns = "Student.student_name, student_grade.grade_id, Student.ability ";
         String studentsQueryTable = "Student JOIN student_grade ON Student.student_id=student_grade.student_id";
         
         String musicalPieceQueryColumns = "MusicalPieces.piece_name, MusicalPieces.composer, MusicalPieces.complexity, musicalPiece_grade.grade_id";
@@ -70,7 +69,6 @@ public class JdbcConnection implements BusinessConnection{
                 conn.rollback();
             }
          } catch(SQLException e) {
-                
             System.err.println("Invalid operation or missing database file: " + e);
         }
         
@@ -93,7 +91,7 @@ public class JdbcConnection implements BusinessConnection{
 
     @Override
     public void close() throws Exception {
-        
+        conn.close();
     }
     
     
